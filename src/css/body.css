@@ -1,0 +1,17 @@
+article{
+    text-align: center;
+    margin-top: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+article h2{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+article h4{
+    margin-top: 50px;
+    font-size: 2em;
+}
+article p:first-of-type{
+    margin-bottom: 100px;
+}
