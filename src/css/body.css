@@ -15,3 +15,9 @@ article h4{
 article p:first-of-type{
     margin-bottom: 100px;
 }
+#project{
+    margin-top: 100px;
+}
+#project legend{
+    margin-bottom: 70px;
+}

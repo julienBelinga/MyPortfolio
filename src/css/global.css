@@ -22,6 +22,6 @@ body{
 h1,h2,h3{
     font-family: BreeSerif;
 }
-h4,h5,h6,p{
+h4,h5,h6,legend,p,a{
     font-family: Montserrat;
 }
