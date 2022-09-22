@@ -1,3 +1,5 @@
+.desktop{display: none;}
+
 /* TOP-HEADER */
 #top-header{
     display: flex;
@@ -55,4 +57,52 @@
 }
 #bottom-header h3, #bottom-header p{
     color: #fff;
+}
+@media screen and (min-width: 1024px) {
+    .mobil{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+
+    #mid-header{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 0;
+        text-align: left;
+        margin-top: 0;
+    }
+    #bg-title{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-transform: uppercase;
+        font-family: BebasNeue;
+        font-size: 15em;
+        margin: 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    #desktop-header{
+        position: relative;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        z-index: 2;
+        vertical-align: bottom;
+    }
+
+    #desktop-header div{
+        height: fit-content;
+        position: relative;
+        bottom: -500px;
+    }
+    #top-header img:first-of-type{
+        margin-bottom: 0;
+    }
+    img.desktop{
+        padding-right: 5%;
+    }
 }
