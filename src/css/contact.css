@@ -1,0 +1,19 @@
+form{
+    display: grid;
+    padding: 10%;
+}
+input, textarea{
+    margin-bottom: 20px;
+    border: solid 2px #252527;
+    border-radius: 7px;
+    font-size: 2em;
+    padding: 2px;
+}
+button{
+    background: #252527;
+    color: #fff;
+    font-size: 3em;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
