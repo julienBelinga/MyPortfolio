@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/body.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/1024.css">
     </head>
     <body>
         <header>
@@ -50,17 +51,19 @@
                 <img src="assets/img/codelogo.png" alt="logo balise HTML">
                 <h2>Front-end développeur</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                <h4>Skills</h4>
-                <p>PHP, Javascript, HTML & CSS, SQL, UX, UI</p>
-                <h4>Tools</h4>
-                <p>travail d’équipe, créativité, flexible, pédagogue </p>
-                <h4>Soft Skills</h4>
-                <p>Visual Studio Code / IntelIJ, Wamp, PHPMyAdmin, Github, Terminal, Figma</p>
-            </article>
+                <div class="desktop-left">
+                    <h4>Skills</h4>
+                    <p>PHP, Javascript, HTML & CSS, SQL, UX, UI</p>
+                    <h4>Tools</h4>
+                    <p>travail d’équipe, créativité, flexible, pédagogue </p>
+                    <h4>Soft Skills</h4>
+                    <p>Visual Studio Code / IntelIJ, Wamp, PHPMyAdmin, Github, Terminal, Figma</p>
+                </div>
+                </article>
             <article>   
-                <img src="assets/img/folder.png" alt="logo dossier">
-                <h2>Mes projets</h2>
-                <div id="project">
+                <img class="mobil" src="assets/img/folder.png" alt="logo dossier">
+                <h2 class="mobil">Mes projets</h2>
+                <div id="project" class="mobil">
                     <img src="assets/img/projectOverview.png" alt="overview projet">
                     <legend>Projet n°1</legend>
                     <img src="assets/img/projectOverview.png" alt="overview projet">
@@ -68,15 +71,18 @@
                     <img src="assets/img/projectOverview.png" alt="overview projet">
                     <legend>Projet n°3</legend>
                 </div>
+                <div class="desktop">
+
+                </div>
             </article>
             <h2 id="services-title">Mes services</h2>
             <article id="services">
-                <div id="services1">
+                <div id="services1" class="services">
                     <h3>Forfaitaire</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iure doloribus repellat enim ab illum ducimus! Fuga suscipit excepturi eum, quisquam adipisci inventore, pariatur assumenda ipsum quos modi, beatae sequi!</p>
                     <div class="tarif"><p>300€ / jour</p></div>
                 </div>
-                <div id="services2">
+                <div id="services2" class="services">
                     <h3>Projet</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nobis, perferendis deserunt fugit debitis voluptates nesciunt nam quis facilis, iusto non a natus. Sed nisi recusandae nam eveniet at hic.</p>
                     <div class="tarif"><p>Sur devis</p></div>

@@ -33,7 +33,7 @@ article p:first-of-type{
     border-radius: 30px;
     overflow: hidden;
 }
-#services1, #services2{
+.services{
     padding: 10%;
 }
 #services1 p:first-of-type,#services2 p:first-of-type{
