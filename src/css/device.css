@@ -1,17 +1,27 @@
+.project{
+  display: inline-flex;
+  justify-content: space-between;
+}
 
 .devices {
   display: flex;
-  justify-content: flex-end;
-  padding: 5%;
+  width: 50%;
+}
+
+#project-devices{
+  padding: 0;
+  margin: 0;
 }
 
 /* IPHONE */
 
 .iphone-x {
-  position: relative;
-  z-index: 1;
-  height: 221px;
-  width: 114px;
+    position: relative;
+    bottom: -163px;
+    left: 82px;
+    z-index: 1;
+    height: 221px;
+    width: 114px;
 }
 .iphone-x *, .iphone-x *::before, .iphone-x *::after {
   box-sizing: border-box;
@@ -20,23 +30,23 @@
 .iphone-x .side {
   background: #1c1c1c;
   border-radius: 24px;
-  box-shadow: inset 0 0 2px 2px dimgrey, inset 0 0 0 6px #e2e3e9, 0px -1px 13px 9px rgba(255,255,255,0.8) inset;
+  box-shadow: inset 0 0 2px 2px dimgrey, inset 0 0 0 4px #e2e3e9, 0px -1px 13px 5px rgb(255 255 255 / 80%) inset;
   height: 221px;
   padding: 15px 22px;
   width: 114px;
   z-index: 1;
 }
 .iphone-x .screen {
-  background:#000;
-  background-position: center center;
+  background: #000;
+    background-position: center center;
     background-size: cover;
-    border-radius: 14px;
+    border-radius: 17px;
     position: relative;
-    height: 200px;
-    margin-left: -13px;
-    margin-top: -4px;
+    height: 205px;
+    margin-left: -15px;
+    margin-top: -7px;
     z-index: 3;
-    width: 95px;
+    width: 100px;
     overflow: hidden;
 }
 video {
@@ -69,7 +79,7 @@ video {
   left: 100%;
   margin-left: -82px;
   position: absolute;
-  top: 9px;
+  top: 6px;
   width: 54px;
   z-index: 199;
 }
@@ -164,9 +174,12 @@ video {
 
 /* MACBOOK */
 .mac_container{
-	width: 300px;
+	width: 500px;
   height: fit-content;
 	margin: 0;
+  position: relative;
+  right: 78px;
+  bottom: -250px;
 }
 
 .mac_scaler{
@@ -184,11 +197,11 @@ video {
 
 
 .mac_holder{
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -311,7 +324,8 @@ video {
 
 /* I-MAC */
 .iMac {
-  width: 580px;
+  position: relative;
+  width: 1000px;
   margin: 50px auto;
 }
 
@@ -332,6 +346,7 @@ video {
   border-left: 140px solid transparent;
   border-right: 140px solid rgba(255, 255, 255, 0.04);
   position: absolute;
+  right: 0;
 }
 
 .iMac .body .screen {
