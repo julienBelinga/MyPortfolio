@@ -76,3 +76,7 @@ article p:first-of-type{
     border-radius: 15px;
     font-weight: lighter;
 }
+
+#project-devices{
+    display: none;
+}

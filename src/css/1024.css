@@ -1,4 +1,7 @@
 @media screen and (min-width: 1024px) {
+    #project-mobil .mobil{
+        display: block;
+    }
     .mobil{
         display: none;
     }
@@ -70,6 +73,10 @@
         top: -115px;
         padding-top: 45px;
         padding-bottom: 45px;
+    }
+
+    img.mobil{
+        margin-left: calc(50% - 68px);
     }
 
     .desktop-left{

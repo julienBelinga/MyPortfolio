@@ -388,3 +388,8 @@ video {
     box-shadow: 0px 4px 0px -2px #909090;
   	margin: 0 auto;
 }
+
+.screen-project{
+  height: 100%;
+  width: 100%;
+}
