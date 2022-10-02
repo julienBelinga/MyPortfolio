@@ -1,6 +1,7 @@
 .project{
   display: inline-flex;
-  justify-content: space-between;
+  width: 98vw;
+  overflow: hidden;
 }
 
 .devices {
