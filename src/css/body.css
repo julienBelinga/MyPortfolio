@@ -24,7 +24,7 @@ article p:first-of-type{
 
 #services{
     border: solid 2px #252527;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 100px;
     margin-left: 10%;
     margin-right: 10%;
@@ -64,7 +64,7 @@ article p:first-of-type{
     color: #fff;
 }
 #services-title{
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 #contact{
@@ -79,4 +79,8 @@ article p:first-of-type{
 
 #project-devices{
     display: none;
+}
+
+h3{
+    margin-top: 0;
 }
