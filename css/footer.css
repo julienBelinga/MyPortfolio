@@ -1,11 +1,10 @@
 ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #252527;
     margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 li a{
@@ -13,4 +12,13 @@ li a{
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
+}
+
+.icon-set{
+    width: 150px;
+    justify-content: space-between;
+}
+.icon{
+    width: 40px;
+    height: 40px;
 }
