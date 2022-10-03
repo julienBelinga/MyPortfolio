@@ -4,7 +4,7 @@ ul{
     justify-content: space-between;
     background-color: #252527;
     margin: 0;
-    padding: 10px;
+    padding: 5px 70px;
 }
 
 li a{
@@ -19,6 +19,9 @@ li a{
     justify-content: space-between;
 }
 .icon{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
+}
+.link{
+    margin-top: 10px;
 }
