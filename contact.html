@@ -5,21 +5,65 @@
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/contact.css">
+        <script src="https://use.fontawesome.com/e073950383.js"></script>
     </head>
     <body>
-        <div id="top-header">
-            <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
-            <img src="assets/img/flag.png" alt="langue">
+        <section id="contact">
+            <h1 class="section-header">Contact</h1>
+            <div class="contact-wrapper">
+            <!-- Left contact page --> 
+              <form id="contact-form" class="form-horizontal" role="form">
+                <div class="id">
+                    <input type="text" class="form-control" id="name" placeholder="Nom" name="name" value="" required>
+                    <input type="text" class="form-control" id="first-name" placeholder="Prénom" name="name" value="" required>
+                </div>
+                <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" value="" required>
+                <input type="text" class="form-control" id="telephone" name="telephone" placeholder="N° téléphone" value="" required>
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                  <div class="alt-send-button">
+                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                  </div>
+                </button>
+              </form>
+            <!-- Left contact page --> 
+                <div class="direct-contact-container">
+                  <ul class="contact-list">
+                    <li class="list-item">
+                        <i class="fa fa-map-marker fa-2x"><span class="contact-text place">Nantes, France</span></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">06 45 20 54 90</a></span></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">julienbelinga.pro@gmail.com</a></span></i>
+                    </li>
+                  </ul>
+                  <hr>
+                  <ul class="social-media-list">
+                    <li><a href="https://github.com/julienBelinga" target="blank" class="contact-icon">
+                      <i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/julien-belinga-19111a199/" target="blank" class="contact-icon">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.malt.fr/profile/julienbelinga?overview=true" target="blank" class="contact-icon">
+                      <img src="./assets/img/malt.png" alt="" style="width: 27px; height: 27px;"></a>
+                    </li>       
+                  </ul>
+                  <hr>
+                  <div class="copyright">&copy; tous droits réservés</div>
+                </div>
+            <!-- </div> -->
+        </section>   
         </div>
-        <h1>Contact</h1>
-        <form action="submit">
-            <input type="text" name="nom" placeholder="Nom et Prénom">
-            <input type="text" name="telephone" placeholder="N° téléphone">
-            <input type="text" name="E-mail" placeholder="E-mail">
-            <input type="text" name="Société" placeholder="Société">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
-        
-            <button submit>Envoyer</button>
-        </form>
     </body>
+    <script>
+        document.querySelector('#contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            e.target.elements.name.value = '';
+            e.target.elements.email.value = '';
+            e.target.elements.message.value = '';
+        });
+    </script>
 </html>
