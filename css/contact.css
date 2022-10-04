@@ -29,7 +29,7 @@ button{
 body {
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #252527;
     padding-bottom: 100px;
   }
   
@@ -68,7 +68,8 @@ body {
   .form-control, 
   textarea {
     max-width: 400px;
-    background-color: #000;
+    background-color: #252527;
+    border-color: #aaa;
     color: #fff;
     letter-spacing: 1px;
   }
@@ -79,6 +80,8 @@ body {
     width: 400px;
     overflow: hidden;
     transition: all .2s ease-in-out;
+    background-color: #337AB7;
+    border-color: #337AB7;
   }
   
   .alt-send-button {
@@ -101,6 +104,7 @@ body {
   /* Begin Right Contact Page */
   .direct-contact-container {
     max-width: 400px;
+    padding-top: 6.5%;
   }
   
   /* Location, Phone, Email Section */
@@ -113,6 +117,7 @@ body {
   .list-item {
     line-height: 4;
     color: #aaa;
+    text-align: left;
   }
   
   .contact-text {
@@ -190,6 +195,14 @@ body {
   .social-media-list li:hover {
     background-color: #fff; 
   }
+
+  .social-media-list li:hover img{
+    filter: invert(1);
+    -webkit-filter: invert(1);
+  }
+  .social-media-list li img{
+    margin-top: 20px;
+  }
   
   .social-media-list li:hover:after {
     opacity: 1;  
@@ -197,7 +210,7 @@ body {
     transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
   }
   
-  .social-media-list li:hover a {
+  .social-media-list li:hover a{
     color: #000;
   }
   
@@ -212,7 +225,6 @@ body {
     border-color: rgba(255,255,255,.6);
   }
   
-  /* Begin Media Queries*/
   @media screen and (max-width: 850px) {
     .contact-wrapper {
       display: flex;
