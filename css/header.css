@@ -46,6 +46,17 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+#contact-button{
+    text-decoration: none;
+    color: #252527;
+    border: solid 1px #252527;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 15px;
+}
+
 /* BOTTOM-HEADER */
 #bottom-header{
     background-color: #252527;
