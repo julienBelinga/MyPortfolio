@@ -63,6 +63,7 @@ body {
     max-width: 400px;
     font-family: 'Lato';
     font-weight: 400;
+    padding-left: 0;
   }
   
   .form-control, 
