@@ -30,13 +30,13 @@
     background-color: #C4C4C4;
     border-radius: 50%;
     position: relative;
-    bottom: -128px;
+    bottom: -13vw;
 }
 #profil img{
     position: relative;
     width: 50vw;
     height: auto;
-    top: -490px;
+    top: -49vw;
 }
 
 #profil{
