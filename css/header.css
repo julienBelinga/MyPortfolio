@@ -67,6 +67,16 @@
     display: none;
 }
 
+@media screen and (max-width: 1024px){
+    .margin-contact{
+        margin-bottom: 70px;
+    }
+    #bottom-header{
+        margin-top: 70px;
+    }
+}
+
+
 /* BOTTOM-HEADER */
 #bottom-header{
     background-color: #252527;
