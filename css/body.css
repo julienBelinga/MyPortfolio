@@ -85,3 +85,13 @@ h3{
     margin-top: 0;
     letter-spacing: .5px;
 }
+
+.text-block{
+    background-color: #252527;
+    color: #EDEDED;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 90px;
+}
