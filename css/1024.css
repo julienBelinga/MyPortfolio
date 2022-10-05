@@ -102,3 +102,9 @@
         vertical-align: center;
     }
 }
+
+@media screen and (min-width: 1365px) {
+    #bg-title{
+        display: block;
+    }
+}

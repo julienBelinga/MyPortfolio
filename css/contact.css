@@ -226,6 +226,27 @@ body {
     border-color: rgba(255,255,255,.6);
   }
 
+  /* medias query */
+  @media screen and (max-width: 1000px) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .direct-contact-container, .form-horizontal {
+      margin-left: calc(50% - 200px);
+    }     
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  } 
+/* 
   @media screen and (max-width: 850px) {
     .contact-wrapper {
       display: flex;
@@ -292,4 +313,4 @@ body {
     .send-button {
       width: 99%;
     }
-  }
+  } */
