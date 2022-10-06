@@ -101,6 +101,22 @@
         font-size: 1em;
         vertical-align: center;
     }
+
+    .wrapper .static-txt, .dynamic-txts li{
+        font-size: 30px;
+    }
+    .wrapper .dynamic-txts{
+        margin-top: 35px;
+    }
+
+    #mid-header h1{
+        margin: 0;
+    }
+
+    #contact-button{
+        font-size: 20px;
+        width: fit-content;
+    }
 }
 
 @media screen and (min-width: 1365px) {
