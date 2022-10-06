@@ -40,7 +40,7 @@
         vertical-align: bottom;
     }
 
-    #desktop-header div{
+    #desktop-header #div{
         height: fit-content;
         position: relative;
         bottom: -290px;

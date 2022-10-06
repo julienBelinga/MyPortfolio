@@ -61,6 +61,7 @@
     border-radius: 5px;
     position: relative;
     top: 15px;
+    font-size: 3vw;
 }
 
 #bg-title{
@@ -89,3 +90,72 @@
 #bottom-header h3, #bottom-header p{
     color: #fff;
 } 
+
+/* dynamic txt */
+.wrapper{
+    display: inline-flex;
+    font-family: Montserrat;
+    text-align: left;
+    margin: auto;
+}
+
+.wrapper .static-txt{
+    color: #252527;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+    height: 30px;
+    line-height: 27px;
+    overflow: hidden;
+    padding: 0;
+    margin-left: 8px;
+    margin-top: 3.6vw;
+}
+
+.dynamic-txts li{
+    color: #FC6D6D;
+    list-style: none;
+    font-size: 3vw;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+    margin-bottom: 5px;
+}
+
+/* .dynamic-txts li:nth-child(odd){
+    background-color: red;
+}
+.dynamic-txts li:nth-child(even){
+    background-color: blue;
+} */
+
+@keyframes slide {
+    100%{
+        top: -130px;
+    }
+}
+
+.dynamic-txts li span{
+    position: relative;
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 83%;
+    width: 100%;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 1.5s steps(10) infinite;
+    background-color: #ededed;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
