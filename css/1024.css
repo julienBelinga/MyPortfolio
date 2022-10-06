@@ -117,6 +117,14 @@
         font-size: 20px;
         width: fit-content;
     }
+
+    #top-header img:first-of-type{
+        width: 6vw;
+    }
+
+    #top-header img{
+        width: 4vw;
+    }
 }
 
 @media screen and (min-width: 1365px) {

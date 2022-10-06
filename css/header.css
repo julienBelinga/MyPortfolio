@@ -7,11 +7,11 @@
 }
 #top-header img{
     margin: 30px;
-    width: 100px;
+    width: 10vw;
     height: fit-content;
 }
 #top-header img:first-of-type{
-    width: 140px;
+    width: 13vw;
 }
 
 /* MID-HEADER*/
