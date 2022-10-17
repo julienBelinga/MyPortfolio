@@ -9,6 +9,11 @@
   width: 50%;
 }
 
+.deviceSlideLeft{
+  position: relative;
+  left: -100%;
+}
+
 #project-devices{
   padding: 0;
   margin: 0;
