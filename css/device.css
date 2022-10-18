@@ -10,8 +10,13 @@
 }
 
 .deviceSlideLeft{
-  position: relative;
-  left: -100%;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.deviceSlideRight{
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 #project-devices{
@@ -382,4 +387,16 @@ video {
 .screen-project{
   height: 100%;
   width: 100%;
+}
+
+/* ANIMATION */
+.active-left{
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.active-right{
+  transform: translate(0);
+  opacity: 1;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
