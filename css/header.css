@@ -125,13 +125,6 @@
     margin-bottom: 5px;
 }
 
-/* .dynamic-txts li:nth-child(odd){
-    background-color: red;
-}
-.dynamic-txts li:nth-child(even){
-    background-color: blue;
-} */
-
 @keyframes slide {
     100%{
         top: -130px;
@@ -158,4 +151,16 @@
         left: 100%;
         margin: 0 -35px 0 35px;
     }
+}
+
+/* animation on load */
+#pp{
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+.pp-onload{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    transition: transform .5s ease-in-out, opacity .5s ease-in-out;
 }
