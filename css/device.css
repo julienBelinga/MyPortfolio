@@ -389,14 +389,25 @@ video {
   width: 100%;
 }
 
+.phone1-right, .mac1-right{
+  transform: translateX(70%);
+  opacity: 0;
+}
+
+.phone1-left, .mac1-left{
+  transform: translateX(-70%);
+  opacity: 0;
+}
+
 /* ANIMATION */
-.active-left{
+.active-overall-devices{
   transform: translateX(0);
   opacity: 1;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-.active-right{
-  transform: translate(0);
+
+.active-specific-devices{
+  transform: translateX(0);
   opacity: 1;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.9s ease-in-out, opacity 0.9s ease-in-out;
 }
