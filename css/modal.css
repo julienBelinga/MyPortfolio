@@ -1,21 +1,10 @@
 :root {
     --modal-duration: 1s;
-    --modal-color: #428bca;
+    --modal-color: #252527;
   }
   
-  /* body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-    font-size: 17px;
-    line-height: 1.6;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-  } */
-  
   .button {
-    background: #428bca;
+    background: #252527;
     padding: 1em 2em;
     color: #fff;
     border: 0;
