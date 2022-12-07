@@ -13,10 +13,11 @@
         <link rel="stylesheet" href="css/device.css">
     </head>
     <body>
+        <!-- ****** HEADER START ****** -->
         <header>
             <div id="top-header">
                 <img src="assets/img/logo.png" alt="logo">
-                <img src="assets/img/flag.png" alt="langue">
+                <!-- <img src="assets/img/flag.png" alt="langue"> -->
             </div>
             <div id="mid-header">
                 <div id="profil" class="mobil">
@@ -60,7 +61,9 @@
                 </p>
             </div>
         </header>
-        <!-- <body> -->
+        <!-- ****** HEADER END ****** -->
+        <!-- ****** BODY START ***** -->
+            <!-- ***** SKILLS START ****** -->
             <article id="skills">
                 <img src="assets/img/codelogo.png" alt="logo balise HTML">
                 <h2>Front-end développeur</h2>
@@ -73,6 +76,8 @@
                     <p>Visual Studio Code / IntelIJ, Wamp, PHPMyAdmin, Github, Terminal, Figma</p>
                 </div>
             </article>
+            <!-- ****** SKILLS END ****** -->
+
             <div class="mobil text-block">
                 <h3 style="margin-top: 15px;">L'approche "mobile-first" ?</h3>
                 <p>
@@ -82,6 +87,7 @@
                 </p>
             </div>
             
+            <!-- ***** PROJECT START ****** -->
             <article id="project-mobil">   
                 <img class="mobil" src="assets/img/folder.png" alt="logo dossier">
                 <h2 class="mobil">Mes projets</h2>
@@ -203,6 +209,11 @@
                     </div>
                 </div>
             </div>
+            <!-- ***** PROJECT END ***** -->
+
+            <!-- <div include-html="project-einden.html" id="einden_file"></div>
+            <div include-html="project-portfolio.html" id="portfolio_file"></div> -->
+
             <h2 id="services-title">Mes services</h2>
             <article id="services">
                 <div id="services1" class="services">
@@ -220,6 +231,7 @@
                     <div class="tarif"><p>Sur devis</p></div>
                 </div>
             </article>
+        <!-- ***** BODY END ***** -->
         <footer>
             <ul>
                 <li class="link"><a href="assets/CV freelance.pdf" download>Mon CV</a></li>
@@ -235,3 +247,5 @@
     </body>
 </html>
 <script type="text/javascript" src="script.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="include-html.min.js"></script>
