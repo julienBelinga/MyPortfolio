@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/1024.css">
         <link rel="stylesheet" href="css/1400.css">
         <link rel="stylesheet" href="css/device.css">
+        <link rel="stylesheet" href="css/modal.css">
     </head>
     <body>
         <!-- ****** HEADER START ****** -->
@@ -93,11 +94,28 @@
                 <img class="mobil" src="assets/img/folder.png" alt="logo dossier">
                 <h2 class="mobil">Mes projets</h2>
                 <div id="project" class="mobil">
-                    <img src="assets/img/eidenOverview.png" alt="overview projet" style="border: solid 2px #CFC4C4; border-radius: 31px;">
-                    <legend>EINDEN</legend>
-                    <img src="assets/img/projectOverview.png" alt="overview projet">
-                    <legend>Mon Portfolio</legend>
+                    <div>
+                        <img src="assets/img/eidenOverview.png" alt="overview projet" style="border: solid 2px #CFC4C4; border-radius: 31px;">
+                        <legend>EINDEN</legend>
+                        <button id="modal-btn" class="button">Voir plus</button>
+                    </div>
+                    <div>
+                        <img src="assets/img/projectOverview.png" alt="overview projet">
+                        <legend>Mon Portfolio</legend>
+                    </div>
                 </div>
+                <div id="my-modal" class="modal">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Modal Header</h2>
+                      </div>
+                      <div include-html="project-einden.html" id="einden-file"></div>
+                      <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                      </div>
+                    </div>
+                  </div>
             </article>
             <!-- ***** PROJECT MOBIL END ***** -->
             <div class="desktop" id="project-devices">
@@ -251,3 +269,4 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/include-html.min.js"></script>
+<script src="js/modal.js"></script>
