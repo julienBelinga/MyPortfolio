@@ -389,7 +389,7 @@ video {
   width: 100%;
 }
 
-.phone1-right, .mac1-right{
+.phone1-right, .mac1-right, .phone2-right, .mac2-right {
   transform: translateX(70%);
   opacity: 0;
 }
