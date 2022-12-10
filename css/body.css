@@ -21,9 +21,9 @@ article p:first-of-type{
 #project legend{
     margin-bottom: 30px;
 }
-button.open-modal{
+/* button.open-modal{
     margin-bottom: 50px;
-}
+} */
 
 #services{
     border: solid 2px #252527;
