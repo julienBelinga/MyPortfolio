@@ -1,4 +1,19 @@
 body{
-    padding: 50px;
     text-align: left;
+    height: 100%;
+}
+
+section{
+    padding: 50px;
+}
+
+#logo-img{
+    width: 6vw;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+footer{
+    position: relative;
+    bottom: -2.1vh;
 }
