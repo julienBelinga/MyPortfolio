@@ -14,6 +14,7 @@ section{
 }
 
 footer{
-    position: relative;
-    bottom: -2.1vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
