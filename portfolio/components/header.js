@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import logo from 'assets/img/logo.png'
 
-
 function Header(){
     return(
         <header>
