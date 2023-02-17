@@ -1,0 +1,19 @@
+@media screen and (min-width: 1400px) {
+    #project-devices{
+        display: block;
+    }
+    #project-mobil{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 2150px) {
+    .devices{
+        height: 500px;
+    }
+}
+@media screen and (min-width: 2900px) {
+    .devices{
+        height: 600px;
+    }
+}
