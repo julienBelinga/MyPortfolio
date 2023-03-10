@@ -5,43 +5,43 @@ export default function device(props) {
   return (
     <>
        <div>
-          <div id="device-right" class="devices deviceSlideRight">
-              <div class="iphone-x phone1-right">
-                  <div class="side">
-                  <div class="screen">
-                      <Image class="screen-project" src={props.img1} width={500} height={500} alt="my Portfolio screen"/>
+          <div id="device-right" className="devices deviceSlideRight">
+              <div className="iphone-x phone1-right">
+                  <div className="side">
+                  <div className="screen">
+                      <Image className="screen-project" src={props.img1} width={500} height={500} alt="my Portfolio screen"/>
                   </div>
                   </div>
-                  <div class="line"></div>
-                  <div class="header">
-                  <div class="sensor-1"></div>
-                  <div class="sensor-2"></div>
-                  <div class="sensor-3"></div>
+                  <div className="line"></div>
+                  <div className="header">
+                  <div className="sensor-1"></div>
+                  <div className="sensor-2"></div>
+                  <div className="sensor-3"></div>
                   </div>
-                  <div class="volume-button"></div>
-                  <div class="power-button"></div>
+                  <div className="volume-button"></div>
+                  <div className="power-button"></div>
               </div>
-              <div class="iMac">
-                  <div class="body">
-                  <div class="shine"></div>
-                  <div class="screen">
-                      <Image class="screen-project" src={props.img2} width={500} height={500} alt="my Portfolio screen"/>
+              <div className="iMac">
+                  <div className="body">
+                  <div className="shine"></div>
+                  <div className="screen">
+                      <Image className="screen-project" src={props.img2} width={500} height={500} alt="my Portfolio screen"/>
                   </div>
                   </div>
-                  <div class="stand"></div>
+                  <div className="stand"></div>
               </div>
-              <div class="mac_container mac1-right">
-                  <div class="mac_scaler">
-                      <div class="mac_holder">
-                          <div class="mac_screen">
-                              <div class="mac_camera"></div>
-                              <div class="mac_screen_content">
-                                  <Image class="screen-project" src={props.img2} width={500} height={500} alt="my Portfolio screen"/>
+              <div className="mac_container mac1-right">
+                  <div className="mac_scaler">
+                      <div className="mac_holder">
+                          <div className="mac_screen">
+                              <div className="mac_camera"></div>
+                              <div className="mac_screen_content">
+                                  <Image className="screen-project" src={props.img2} width={500} height={500} alt="my Portfolio screen"/>
                               </div>
                           </div>
-                          <div class="mac_bottom">
-                              <div class="mac_bottom_top_half">
-                                  <div class="mac_thumb_space"></div>
+                          <div className="mac_bottom">
+                              <div className="mac_bottom_top_half">
+                                  <div className="mac_thumb_space"></div>
                               </div>
                           </div>
                       </div>
