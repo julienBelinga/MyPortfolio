@@ -4,7 +4,10 @@ import logo from 'assets/img/logo.png'
 function Header(){
     return(
         <header>
-                <Image src={logo} alt="logo"/>
+            <Image src={logo} alt="logo"/>
+            <nav>
+                
+            </nav>
         </header>
     )
 }

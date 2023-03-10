@@ -18,11 +18,9 @@
 html{
     scroll-behavior: smooth;
 }
-
 body{
     background: #EDEDED;
     margin: 0;
-    text-align: center;
 }
 h1,h2,h3{
     font-family: BreeSerif;
