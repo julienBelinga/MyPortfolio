@@ -9,7 +9,7 @@ export default function device(props) {
               <div className="iphone-x phone1-right">
                   <div className="side">
                   <div className="screen">
-                      <Image className="screen-project" src={props.img1} width={500} height={500} alt="my Portfolio screen"/>
+                      <Image className="screen-project" src={props.img1} width={500} height={500} alt="project screenshot"/>
                   </div>
                   </div>
                   <div className="line"></div>
@@ -25,7 +25,7 @@ export default function device(props) {
                   <div className="body">
                   <div className="shine"></div>
                   <div className="screen">
-                      <Image className="screen-project" src={props.img2} width={500} height={500} alt="my Portfolio screen"/>
+                      <Image className="screen-project" src={props.img2} width={500} height={500} alt="project screenshot"/>
                   </div>
                   </div>
                   <div className="stand"></div>
@@ -36,7 +36,7 @@ export default function device(props) {
                           <div className="mac_screen">
                               <div className="mac_camera"></div>
                               <div className="mac_screen_content">
-                                  <Image className="screen-project" src={props.img2} width={500} height={500} alt="my Portfolio screen"/>
+                                  <Image className="screen-project" src={props.img2} width={500} height={500} alt="project screenshot"/>
                               </div>
                           </div>
                           <div className="mac_bottom">

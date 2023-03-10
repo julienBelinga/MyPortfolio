@@ -32,14 +32,14 @@ export default function Home() {
       <ProjectL
         title="Portfolio"
         description= {description_portfolio}
-        img1='/assets/img/einden_phone_screen.png'
-        img2='/assets/img/einden_laptop_screen.png'
+        img1='/assets/img/project_phone_screen.png'
+        img2='/assets/img/project_desktop_screen.png'
       />
       <ProjectR
         title="get-touchdown"
         description={description_getTouchdown}
-        img1='/assets/img/einden_phone_screen.png'
-        img2='/assets/img/einden_laptop_screen.png'
+        img1='/assets/img/touchdown_phone_screen.png'
+        img2='/assets/img/touchdown_laptop_screen.png'
       />
     </>
   )
