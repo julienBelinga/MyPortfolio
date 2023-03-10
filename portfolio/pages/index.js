@@ -2,7 +2,6 @@ import Presentation from 'components/presentation'
 import Skills from 'components/skills'
 import ProjectR from 'components/project_right'
 import ProjectL from 'components/project_left'
-import Footer from 'components/footer'
 import einden_phone_screen from "assets/img/einden_phone_screen.png"
 import einden_laptop_screen from "/assets/img/einden_laptop_screen.png"
 import project_phone_screen from "assets/img/project_phone_screen.png"
