@@ -17,11 +17,11 @@ function Navbar(){
                     <span></span>
                 </button>
                 <div class="navlinks-container">
-                <a href="#" aria-current="page">Home</a>
+                <a href="/" aria-current="page">Home</a>
                 <a href="#">Services</a>
                 <a href="#">Site vitrine</a>
                 <a href="#">Site E-commerce</a>
-                <a href="#">Contact</a>
+                <a href="/contact">Contact</a>
                 </div>
             </div>
         

@@ -13,6 +13,14 @@ nav {
   padding: 15px 25px;
   background: #fafafa;
   box-shadow: inset 0px -1px 0px #c5c5c6;
+
+  span {
+    font-family: Roboto Flex, sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 400;
+    color: #333;
+  }
 }
 .nav-icon {
   display: flex;
@@ -21,41 +29,37 @@ nav {
   margin-right: 20px;
 }
 
-.nav-icon span {
-  font-family: Roboto Flex, sans-serif;
-  font-size: 25px;
-  margin-left: 10px;
-  font-weight: 400;
-  color: #333;
-}
-
 .hamburger {
   display: none;
 }
 
-.navlinks-container a {
-  margin: 0 10px;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #414141;
-  position: relative;
-}
-.navlinks-container a::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  width: 100%;
-  height: 1px;
-  transform: scale(0);
-  transform-origin: left;
-  background: #333;
-  transition: transform 0.3s ease-out;
-}
-.navlinks-container a:hover::after {
-  transform: scaleX(1);
-}
+.navlinks-container{
+  a {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #414141;
+    position: relative;
+
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      width: 100%;
+      height: 1px;
+      transform: scale(0);
+      transform-origin: left;
+      background: #333;
+      transition: transform 0.3s ease-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+} 
 
 @media (max-width: 900px) {
   nav {
@@ -87,17 +91,19 @@ nav {
     background: #fafafa;
     align-items: center;
     position: relative;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #333;
+      position: absolute;
+      pointer-events: none;
+      transition: opacity 0.3s 0.15s ease-out;
+    }
   }
 
-  .hamburger span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #333;
-    position: absolute;
-    pointer-events: none;
-    transition: opacity 0.3s 0.15s ease-out;
-  }
+  .hamburger 
   .hamburger span:nth-child(1),
   .hamburger span:nth-child(3) {
     transition: transform 0.3s ease-out;

@@ -1,0 +1,119 @@
+#presentation{
+    display: flex;
+    justify-content: space-between;
+
+    div:first-of-type{
+        z-index: 1;
+    }
+
+    div:nth-child(0n+2), #presentation div:nth-child(0n+3){
+        z-index: 2;
+        height: fit-content;
+    }
+}
+
+#pp{
+    position: relative;
+    width: 50vw;
+    height: auto;
+    margin-bottom: -.2vw;
+    z-index: 2;
+}
+
+#contact-button{
+    text-decoration: none;
+    color: #252527;
+    border: solid 1px #252527;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 15px;
+    font-size: 3vw;
+
+}
+
+#bg-title{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-transform: uppercase;
+    font-family: BebasNeue;
+    font-size: 15vw;
+    margin: 0;
+    text-align: center;
+    z-index: 1;
+    text-shadow: -2px 3px 6px rgb(37 37 39 / 25%);
+    color: #EDEDED;
+}
+
+#presentation-info{
+    position: relative;
+    top: 20vw;
+}
+
+#contact-button{
+    font-size: 20px;
+    width: fit-content;
+}
+
+/* dynamic txt */
+.wrapper-txt{
+    display: inline-flex;
+    font-family: Montserrat;
+    text-align: left;
+    margin: auto;
+
+    .static-txt{
+        color: #252527;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .dynamic-txts{
+        margin-top: 7px;
+        font-size: 30px;
+        height: 30px;
+        line-height: 27px;
+        overflow: hidden;
+        padding: 0;
+        margin-left: 8px;
+
+        li{
+            color: #FC6D6D;
+            list-style: none;
+            font-weight: 500;
+            position: relative;
+            top: 0;
+            animation: slide 6s steps(4) infinite;
+            margin-bottom: 5px;
+        }
+
+        li span{
+            position: relative;
+        }
+
+        li span::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 83%;
+            width: 100%;
+            border-left: 2px solid #FC6D6D;
+            animation: typing 1.5s steps(10) infinite;
+            background-color: #ededed;
+        }
+    }
+}
+
+@keyframes slide {
+    100%{
+        top: -130px;
+    }
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
