@@ -17,10 +17,10 @@ function Navbar(){
                     <span></span>
                 </button>
                 <div className="navlinks-container">
-                <a href="/" aria-current="page">Home</a>
-                <a href="#">Services</a>
+                <a href="#">Projet</a>
                 <a href="#">Site vitrine</a>
                 <a href="#">Site E-commerce</a>
+                <a href="#">Autre services</a>
                 <a href="/contact">Contact</a>
                 </div>
             </div>

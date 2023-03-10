@@ -49,6 +49,10 @@
 #presentation-info{
     position: relative;
     top: 20vw;
+
+    h1{
+        margin-bottom: 20px;
+    }
 }
 
 #contact-button{
@@ -62,6 +66,7 @@
     font-family: Montserrat;
     text-align: left;
     margin: auto;
+    margin-bottom: 5px;
 
     .static-txt{
         color: #252527;

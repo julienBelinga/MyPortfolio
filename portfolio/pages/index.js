@@ -2,6 +2,7 @@ import Presentation from 'components/presentation'
 import Skills from 'components/skills'
 import ProjectR from 'components/project_right'
 import ProjectL from 'components/project_left'
+import Footer from 'components/footer'
 
 export default function Home() {
 
