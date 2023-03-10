@@ -3,6 +3,12 @@ import Skills from 'components/skills'
 import ProjectR from 'components/project_right'
 import ProjectL from 'components/project_left'
 import Footer from 'components/footer'
+import einden_phone_screen from "assets/img/einden_phone_screen.png"
+import einden_laptop_screen from "/assets/img/einden_laptop_screen.png"
+import project_phone_screen from "assets/img/project_phone_screen.png"
+import project_desktop_screen from "assets/img/project_desktop_screen.png"
+import touchdown_phone_screen from "assets/img/touchdown_phone_screen.png"
+import touchdown_laptop_screen from "assets/img/touchdown_laptop_screen.png"
 
 export default function Home() {
 
@@ -19,29 +25,29 @@ export default function Home() {
   quelque chose de créatif et original.<br/><br/>
   Le framework Next.js à été utilisé pour ce projet, ce dernier est héberger sur Vercel une intégration continue et un déploiement continue on été mis en place (CI/CD). J'ai également lié le site à Stripe (un module de paiement).</p>
 
-  return (
-    <>
+	return (
+		<>
       <Presentation/>
       <Skills/>
-      <ProjectR
-        title="Einden"
-        description={description_einden}
-        img1='/assets/img/einden_phone_screen.png'
-        img2='/assets/img/einden_laptop_screen.png'
-        legend="Les images présenter ici sont tirer du site d'EINDEN et non des mes réalisations, car ces dernières appartiennent à l'entreprise. Je ne peut donc pas les montrer pour des raisons de confidentialité."
-      />
-      <ProjectL
-        title="Portfolio"
+			<ProjectR
+				title="Einden"
+				description={description_einden}
+				img1={einden_phone_screen}
+				img2={einden_laptop_screen}
+				legend="Les images présenter ici sont tirer du site d'EINDEN et non des mes réalisations, car ces dernières appartiennent à l'entreprise. Je ne peut donc pas les montrer pour des raisons de confidentialité."
+			/>
+			<ProjectL
+				title="Portfolio"
         description= {description_portfolio}
-        img1='/assets/img/project_phone_screen.png'
-        img2='/assets/img/project_desktop_screen.png'
-      />
-      <ProjectR
-        title="get-touchdown"
-        description={description_getTouchdown}
-        img1='/assets/img/touchdown_phone_screen.png'
-        img2='/assets/img/touchdown_laptop_screen.png'
-      />
-    </>
-  )
+				img1={project_phone_screen}
+				img2={project_desktop_screen}
+			/>
+			<ProjectR
+				title="get-touchdown"
+				description={description_getTouchdown}
+				img1={touchdown_phone_screen}
+				img2={touchdown_laptop_screen}
+			/>
+		</>
+	)
 }
