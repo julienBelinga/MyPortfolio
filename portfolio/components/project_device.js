@@ -1,9 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import img1 from 'assets/img/einden_phone_screen.png'
-import img2 from 'assets/img/einden_laptop_screen.png'
 
-export default function device() {
+export default function device(props) {
   return (
     <>
        <div>
@@ -11,7 +9,7 @@ export default function device() {
               <div class="iphone-x phone1-right">
                   <div class="side">
                   <div class="screen">
-                      <Image class="screen-project" src={img1} alt="my Portfolio screen"/>
+                      <Image class="screen-project" src={props.img1} width={500} height={500} alt="my Portfolio screen"/>
                   </div>
                   </div>
                   <div class="line"></div>
@@ -27,7 +25,7 @@ export default function device() {
                   <div class="body">
                   <div class="shine"></div>
                   <div class="screen">
-                      <Image class="screen-project" src={img2} alt="my Portfolio screen"/>
+                      <Image class="screen-project" src={props.img2} width={500} height={500} alt="my Portfolio screen"/>
                   </div>
                   </div>
                   <div class="stand"></div>
@@ -38,7 +36,7 @@ export default function device() {
                           <div class="mac_screen">
                               <div class="mac_camera"></div>
                               <div class="mac_screen_content">
-                                  <Image class="screen-project" src={img2} alt="my Portfolio screen"/>
+                                  <Image class="screen-project" src={props.img2} width={500} height={500} alt="my Portfolio screen"/>
                               </div>
                           </div>
                           <div class="mac_bottom">
@@ -50,6 +48,7 @@ export default function device() {
                   </div>
               </div>
           </div>
+          <legend>{props.legend}</legend>
       </div>
     </>
   )

@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function project_description() {
+export default function project_description(props) {
   return (
     <>
-    description
+        <div>
+            <h3>{props.title}</h3>
+            {props.description}
+        </div>
     </>
   )
 }
