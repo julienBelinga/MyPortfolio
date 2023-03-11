@@ -18,9 +18,9 @@ function Navbar(){
                 </button>
                 <div className="navlinks-container">
                 <a href="#">Projet</a>
-                <a href="#">Site vitrine</a>
-                <a href="#">Site E-commerce</a>
-                <a href="#">Autre services</a>
+                <a href="/#pricing_vitrine">Site vitrine</a>
+                <a href="/#pricing_Ecommerce">Site E-commerce</a>
+                <a href="/#pricing_services">Autre services</a>
                 <a href="/contact">Contact</a>
                 </div>
             </div>
