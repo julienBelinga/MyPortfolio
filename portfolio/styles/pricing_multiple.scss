@@ -141,3 +141,29 @@
         }
     }
 }
+
+#pricing:last-of-type{
+
+    .title{
+        margin-bottom: 70px;
+    }
+    
+    .services{
+        display: flex;
+    }
+
+    #vitrine{
+        background-color: #ffffff;
+        color: #000000;
+        transform: scale(1);
+        margin: 20px;
+
+        .popular{
+            display: none;
+        }
+
+        strong{
+            color: #000;
+        }
+    }
+}

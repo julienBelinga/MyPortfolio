@@ -72,6 +72,34 @@ export default function pricing_multiple() {
           />
         </div>
       </section>
+      <section id="pricing">
+        <h2 id="pricing_services">Autres service</h2>
+        <p className="title">La meilleure solution en conseil informatique</p>
+        <div className="services">
+          <Card
+          title="Audit de site web"
+          price="80 €"
+          info1={<p>Audit de votre site <strong>Wix</strong></p>}
+          info2={<p>Audit de votre site <strong>Wordpress</strong></p>}
+          info3={<p>Audit de votre <strong>landing page/Portfolio</strong></p>}
+          />
+          <Card
+          title="Cours/Formation"
+          price="30 €"
+          info1={<p>Domaine du web <br/>(<strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, PHP, SQL, framework diverse)</p>}
+          info2={<p>Algorhytmie</p>}
+          info3={<p>Architecture et logiciel</p>}
+          info4={<p>Abordable pour <strong>tout les niveaux</strong></p>}
+          />
+          <Card
+          title="Developpement spécifiques"
+          price="300 €"
+          info1={<p>Analysons le besoin <strong>ensemble</strong></p>}
+          info2={<p>Une communication et <strong>livraison efficace</strong></p>}
+          info3={<p>Taux Journalier Moyen</p>}
+          />
+        </div>
+      </section>
   </>
   )
 }
