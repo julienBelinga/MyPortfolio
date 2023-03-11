@@ -8,17 +8,17 @@ export default function project(props) {
 
   return (
     <>
-        <div id="project" className={`${even}`}>
-            <Description 
-                title={props.title}
-                description={props.description}
-            />
-            <Device
-                img1={props.img1}
-                img2={props.img2}
-                legend={props.legend}
-            />
-        </div>
+      <div id="project" className={`${even}`}>
+          <Description 
+              title={props.title}
+              description={props.description}
+          />
+          <Device
+              img1={props.img1}
+              img2={props.img2}
+              legend={props.legend}
+          />
+      </div>
     </>
   )
 }

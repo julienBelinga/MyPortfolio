@@ -9,9 +9,10 @@ export default function pricing_multiple() {
   const info4= <p>Création d'adresses <strong>mails custom</strong></p>
   const info5= <p>Module de <strong>réservations/prise de RDV</strong></p>
   const info6= <p>Création d'une <strong>FAQ</strong></p>
-  const info7= <p>Cration du site comprenant <strong>1 à 3 pages</strong></p>
+  const info7= <p>Création du site comprenant <strong>1 à 3 pages</strong></p>
   const info8= <p>Module de <strong>paiement</strong></p>
   const info9= <p>Nombres de pages <strong>illimités</strong></p>
+  const info0= <p>Fonctionnalités sur mesure</p>
 
   return (
     <section id="pricing_vitrine">
@@ -37,7 +38,7 @@ export default function pricing_multiple() {
             title="Premium"
             price="1 500 €"
             info1={info2}
-            info2="Fonctionnalités sur mesure"
+            info2={info0}
             info3={info8}
             />
         </div>
