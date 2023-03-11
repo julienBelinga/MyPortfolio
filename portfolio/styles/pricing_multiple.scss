@@ -47,10 +47,6 @@
         width: 19vw;
     }
 
-    li:last-of-type{
-        display: none;
-    }
-
     p{
         color: #9CA3AF;
         font-size: 1rem;
@@ -72,9 +68,6 @@
             color: #ffffff;
             border-radius: 5px;
             padding: 10px;
-            &:first-child{
-                margin-bottom: 18px;
-            }
         }
     }
 
@@ -164,6 +157,12 @@
 
         strong{
             color: #000;
+        }
+
+        &:last-of-type{
+            li:last-of-type{
+                display: none;
+            }
         }
     }
 }

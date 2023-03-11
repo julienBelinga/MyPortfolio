@@ -26,6 +26,7 @@ export default function pricing_multiple() {
               info1={info7}
               info2={info3}
               info3={info4}
+              info4={<p>Certificat <strong>SSL</strong></p>}
               />
               <Card
               title="Personnalisé"
@@ -41,6 +42,8 @@ export default function pricing_multiple() {
               info1={info2}
               info2={info0}
               info3={info8}
+              info4={<p>référencement <strong>Google</strong></p>}
+
               />
           </div>
       </section>
@@ -54,6 +57,7 @@ export default function pricing_multiple() {
           info1={<p>Création du site comprenant <strong>1 à 5 articles</strong></p>}
           info2={info3}
           info3={info4}
+          info4={<p>Certificat <strong>SSL</strong></p>}
           />
           <Card
           title="Personnalisé"
@@ -69,6 +73,7 @@ export default function pricing_multiple() {
           info1={<p>Nombres d'articles <strong>illimités</strong></p>}
           info2={info0}
           info3={<p>Design <strong>sur mesure</strong></p>}
+          info4={<p>référencement <strong>Google</strong></p>}
           />
         </div>
       </section>
@@ -82,6 +87,7 @@ export default function pricing_multiple() {
           info1={<p>Audit de votre site <strong>Wix</strong></p>}
           info2={<p>Audit de votre site <strong>Wordpress</strong></p>}
           info3={<p>Audit de votre <strong>landing page/Portfolio</strong></p>}
+          info4={<p>Audit de votre site <strong>E-commerce</strong></p>}
           />
           <Card
           title="Cours/Formation"

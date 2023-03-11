@@ -36,7 +36,6 @@ export default function pricing_card(props) {
                 </li>
             </ul>
             <div id="button-container">
-                <button>Commander</button>
                 <button onClick={() => router.push('/contact')}>Demander un devis</button>
             </div>
         </div>
