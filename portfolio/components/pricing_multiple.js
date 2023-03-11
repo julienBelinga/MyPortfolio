@@ -16,7 +16,7 @@ export default function pricing_multiple() {
   return (
     <div id="pricing_vitrine">
         <h2 className="title">Site vitrine</h2>
-        <p className="title">Meilleur solution pour...</p>
+        <p className="title">La meilleur solution pour commencer à augmenter votre présence en ligne</p>
         <div className="pricing_vitrine">
             <Card
             title="Standard"
