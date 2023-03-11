@@ -16,19 +16,19 @@ export default function pricing_card(props) {
             <ul>
                 <li>
                     <Image src={check} width={20} alt="checkmark png"/>
-                    <p>{props.info1}</p>
+                    {props.info1}
                 </li>
                 <li>
                     <Image src={check} width={20} alt="checkmark png"/>
-                    <p>{props.info2}</p>
+                    {props.info2}
                 </li>
                 <li>
                     <Image src={check} width={20} alt="checkmark png"/>
-                    <p>{props.info3}</p>
+                    {props.info3}
                 </li>
                 <li>
                     <Image src={check} width={20} alt="checkmark png"/>
-                    <p>{props.info4}</p>
+                    {props.info4}
                 </li>
             </ul>
             <div id="button-container">

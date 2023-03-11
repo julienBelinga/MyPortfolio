@@ -14,7 +14,7 @@ export default function pricing_multiple() {
   const info9= <p>Nombres de pages <strong>illimités</strong></p>
 
   return (
-    <div id="pricing_vitrine">
+    <section id="pricing_vitrine">
         <h2 className="title">Site vitrine</h2>
         <p className="title">La meilleur solution pour commencer à augmenter votre présence en ligne</p>
         <div className="pricing_vitrine">
@@ -41,6 +41,6 @@ export default function pricing_multiple() {
             info3={info8}
             />
         </div>
-    </div>
+    </section>
   )
 }
