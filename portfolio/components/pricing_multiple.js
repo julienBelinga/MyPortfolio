@@ -17,7 +17,7 @@ export default function pricing_multiple() {
   return (
     <>
       <section id="pricing">
-          <h2 id="pricing_vitrine" className="title">Site vitrine</h2>
+          <h2 id="pricing_vitrine" className="title">Site <strong>vitrine</strong></h2>
           <p className="title">La meilleure solution pour commencer à augmenter votre présence en ligne</p>
           <div className="pricing">
               <Card
@@ -48,7 +48,7 @@ export default function pricing_multiple() {
           </div>
       </section>
       <section id="pricing">
-        <h2 id="pricing_Ecommerce" className="title">Site E-commerce</h2>
+        <h2 id="pricing_Ecommerce" className="title">Site <strong>E-commerce</strong></h2>
         <p className="title">La meilleure solution pour lancer un business en ligne</p>
         <div className="pricing">
           <Card
@@ -78,7 +78,7 @@ export default function pricing_multiple() {
         </div>
       </section>
       <section id="pricing">
-        <h2 id="pricing_services">Autres service</h2>
+        <h2 id="pricing_services">Autres <strong>services</strong></h2>
         <p className="title">La meilleure solution en conseil informatique</p>
         <div className="services">
           <Card

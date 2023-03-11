@@ -8,6 +8,7 @@ import project_phone_screen from "assets/img/project_phone_screen.png"
 import project_desktop_screen from "assets/img/project_desktop_screen.png"
 import touchdown_phone_screen from "assets/img/touchdown_phone_screen.png"
 import touchdown_laptop_screen from "assets/img/touchdown_laptop_screen.png"
+import Image from 'next/image'
 
 export default function Home() {
 

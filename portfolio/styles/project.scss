@@ -6,8 +6,8 @@
     padding-right: 5%;
     margin-bottom: 50px;
 
-    &.even{
-        flex-direction: row-reverse !important;
+    &.odd{
+        flex-direction: row-reverse;
     }
 
     h3{
@@ -18,23 +18,4 @@
 #description{
     position: relative;
     top: 50px;
-}
-
-@media screen and (max-width: 1350px) {
-    #project{
-        flex-direction: column-reverse;
-
-        &.even{
-            display: flex;
-            flex-direction: column-reverse;
-        }
-
-        #description{
-            margin-bottom: 50px;
-
-            h3{
-                text-align: center;
-            }
-        }
-    }
 }

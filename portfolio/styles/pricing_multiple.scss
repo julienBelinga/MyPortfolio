@@ -8,6 +8,10 @@
 
     h2{
         margin-bottom: 15px;
+
+        strong{
+            color: #2563EB;
+        }
     }
     p.title{
         margin-bottom: 140px;
@@ -112,27 +116,6 @@
     display: flex;
     width: 100%;
     text-align: center;
-}
-
-@media screen and (max-width: 1250px) {
-    .pricing{
-        display: grid;
-    }
-    
-    #pricing p.title{
-        margin-bottom: 50px !important;
-    }
-
-    #vitrine{
-        width: 65vw;
-        margin-bottom: 100px;
-        padding-left: 5vw;
-        padding-right: 5vw;
-
-        hr{
-            width: 55vw;
-        }
-    }
 }
 
 #pricing:last-of-type{

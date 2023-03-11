@@ -1,0 +1,61 @@
+@media screen and (max-width: 1350px) {
+    #project{
+
+        display: flex;
+        flex-direction: column !important;
+
+        &.odd{
+            flex-direction: none;
+        }
+
+        #description{
+            margin-bottom: 100px;
+
+            h3{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .pricing, #pricing:last-of-type .services{
+        display: grid !important;
+    }
+    
+    #pricing {
+        margin-bottom: 50px;
+
+        p.title{
+            margin-bottom: 50px !important;
+        }
+    }
+
+    #vitrine{
+        width: 65vw;
+        margin-bottom: 100px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+
+        hr{
+            width: 55vw;
+        }
+    }
+}
+
+@media screen and (max-width: 932px) {
+    #device{
+        width: 100%;
+
+        .mac_container, .iMac{
+            display: none;
+        }
+
+        .iphone-x{
+            bottom: 0;
+            left: 50%;
+            margin-left: -18%;
+        }
+    }
+    
+}
