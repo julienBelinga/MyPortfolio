@@ -1,7 +1,6 @@
 import Presentation from 'components/presentation'
 import Skills from 'components/skills'
-import ProjectR from 'components/project_right'
-import ProjectL from 'components/project_left'
+import Project from 'components/project'
 import PricingMultiple from 'components/pricing_multiple'
 import einden_phone_screen from "assets/img/einden_phone_screen.png"
 import einden_laptop_screen from "/assets/img/einden_laptop_screen.png"
@@ -30,20 +29,23 @@ export default function Home() {
 			<Presentation/>
 			<Skills/>
 			<section id="project-container">
-				<ProjectR
+				<Project
+					even={false}
 					title="Einden"
 					description={description_einden}
 					img1={einden_phone_screen}
 					img2={einden_laptop_screen}
 					legend="Les images présenter ici sont tirer du site d'EINDEN et non des mes réalisations, car ces dernières appartiennent à l'entreprise. Je ne peut donc pas les montrer pour des raisons de confidentialité."
 				/>
-				<ProjectL
+				<Project
+					even={true}
 					title="Portfolio"
 					description= {description_portfolio}
 					img1={project_phone_screen}
 					img2={project_desktop_screen}
 				/>
-				<ProjectR
+				<Project
+					even={false}
 					title="get-touchdown"
 					description={description_getTouchdown}
 					img1={touchdown_phone_screen}

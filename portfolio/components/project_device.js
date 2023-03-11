@@ -5,8 +5,8 @@ export default function device(props) {
   return (
     <>
        <div>
-          <div id="device-right" className="devices deviceSlideRight">
-              <div className="iphone-x phone1-right">
+          <div id="device" className="devices deviceSlide">
+              <div className="iphone-x phone1">
                   <div className="side">
                   <div className="screen">
                       <Image className="screen-project" src={props.img1} width={500} height={500} alt="project screenshot"/>
@@ -30,7 +30,7 @@ export default function device(props) {
                   </div>
                   <div className="stand"></div>
               </div>
-              <div className="mac_container mac1-right">
+              <div className="mac_container mac1">
                   <div className="mac_scaler">
                       <div className="mac_holder">
                           <div className="mac_screen">
