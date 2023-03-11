@@ -23,7 +23,7 @@ export default function contact() {
     <>
         <div id="contact">
 
-            <h1 className="section-header">Contact</h1>
+            {/* <h1 className="section-header">Contact</h1> */}
 
             <div className="contact-wrapper">
 
@@ -83,7 +83,7 @@ export default function contact() {
                         <i className="fa fa-paper-plane"></i><span className="send-text">SEND</span>
                         </div>
                     </button>
-                    <p style={{color: "#fff", fontSize: "9px"}}>
+                    <p style={{fontSize: "9px"}}>
                         <em>Lors de la validation de ce formulaire, vous consentez à ce que les données soumises soient collectées et stockées en vue d'être utilisées pour traiter votre demande de contact.</em>
                     </p>
                 </form>
@@ -104,17 +104,17 @@ export default function contact() {
                     <ul className="social-media-list">
                         <Link href="https://github.com/julienBelinga" target="blank" className="contact-icon">
                             <li>
-                                <Image src={github} alt="github" style="width: 20px; height: 20px;"/>
+                                <Image src={github} alt="github" width={20} height={20}/>
                             </li>
                         </Link>
                         <Link href="https://www.linkedin.com/in/julien-belinga-19111a199/" target="blank" className="contact-icon">
                             <li>
-                                <Image src={linkedIn} alt="linkedIn" style="width: 20px; height: 20px;"/>
+                                <Image src={linkedIn} alt="linkedIn" width={20} height={20}/>
                             </li>
                         </Link>
                         <Link href="https://www.malt.fr/profile/julienbelinga?overview=true" target="blank" className="contact-icon">
                             <li id="malt">
-                                <Image src={malt} alt="malt" style="width: 20px; height: 20px;"/>
+                                <Image src={malt} alt="malt" width={20} height={20}/>
                             </li>
                         </Link>
                     </ul>
