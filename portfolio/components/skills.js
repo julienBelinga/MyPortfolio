@@ -21,7 +21,7 @@ export default function skills() {
         <article id="skills-skill">
             <Image src={logo} alt="logo"/>
             <h2>Front-end développeur</h2>
-            <div class="left">
+            <div className="left">
                 <h4>Skills</h4>
                 <p>PHP, Javascript, HTML & CSS, SQL, UX, UI, AJAX, XML</p>
                 <h4>Soft Skills</h4>
