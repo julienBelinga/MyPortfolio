@@ -1,10 +1,10 @@
-#pricing_vitrine{
+#pricing{
     position: relative;
-    text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     left: 50%;
     transform: translateX(-50%);
     width: fit-content;
+    text-align: center;
 
     h2{
         margin-bottom: 15px;
@@ -17,6 +17,17 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+}
+
+#vitrine{
+    padding: 2.5vw;
+    width: 24vw;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px -17px #000;
+    justify-content: space-between;
+    display: grid;
+    text-align: center;
 
     ul{
         list-style-type: none;
@@ -31,16 +42,6 @@
             }
         }
     }
-}
-
-#vitrine{
-    padding: 2.5vw;
-    width: 24vw;
-    border-radius: 15px;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 25px -17px #000;
-    justify-content: space-between;
-    display: grid;
 
     hr{
         width: 19vw;
@@ -113,7 +114,7 @@
     }
 }
 
-.pricing_vitrine{
+.pricing{
     position: relative;
     display: flex;
     width: 100%;
@@ -121,11 +122,11 @@
 }
 
 @media screen and (max-width: 1250px) {
-    .pricing_vitrine{
+    .pricing{
         display: grid;
     }
     
-    #pricing_vitrine p.title{
+    #pricing p.title{
         margin-bottom: 50px !important;
     }
 

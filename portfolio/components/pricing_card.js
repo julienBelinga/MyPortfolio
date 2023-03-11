@@ -1,8 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 import check from 'assets/img/checkmark.png'
+import { useRouter } from 'next/router';
 
 export default function pricing_card(props) {
+
+    const router = useRouter();
+
   return (
     <>
         <div id="vitrine">
@@ -33,7 +37,7 @@ export default function pricing_card(props) {
             </ul>
             <div id="button-container">
                 <button>Commander</button>
-                <button>Demander un devis</button>
+                <button onClick={() => router.push('/contact')}>Demander un devis</button>
             </div>
         </div>
     </>
