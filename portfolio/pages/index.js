@@ -27,28 +27,30 @@ export default function Home() {
 
 	return (
 		<>
-      <Presentation/>
-      <Skills/>
-			<ProjectR
-				title="Einden"
-				description={description_einden}
-				img1={einden_phone_screen}
-				img2={einden_laptop_screen}
-				legend="Les images présenter ici sont tirer du site d'EINDEN et non des mes réalisations, car ces dernières appartiennent à l'entreprise. Je ne peut donc pas les montrer pour des raisons de confidentialité."
-			/>
-			<ProjectL
-				title="Portfolio"
-        description= {description_portfolio}
-				img1={project_phone_screen}
-				img2={project_desktop_screen}
-			/>
-			<ProjectR
-				title="get-touchdown"
-				description={description_getTouchdown}
-				img1={touchdown_phone_screen}
-				img2={touchdown_laptop_screen}
-			/>
-      <PricingMultiple/>
+			<Presentation/>
+			<Skills/>
+			<section id="project-container">
+				<ProjectR
+					title="Einden"
+					description={description_einden}
+					img1={einden_phone_screen}
+					img2={einden_laptop_screen}
+					legend="Les images présenter ici sont tirer du site d'EINDEN et non des mes réalisations, car ces dernières appartiennent à l'entreprise. Je ne peut donc pas les montrer pour des raisons de confidentialité."
+				/>
+				<ProjectL
+					title="Portfolio"
+					description= {description_portfolio}
+					img1={project_phone_screen}
+					img2={project_desktop_screen}
+				/>
+				<ProjectR
+					title="get-touchdown"
+					description={description_getTouchdown}
+					img1={touchdown_phone_screen}
+					img2={touchdown_laptop_screen}
+				/>
+			</section>
+			<PricingMultiple/>
 		</>
 	)
 }

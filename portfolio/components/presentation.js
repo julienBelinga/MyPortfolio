@@ -28,7 +28,7 @@ function Presentation(){
             </div>
             <div id="profil">
                 <div id="profile-mobile-bg"></div>
-                <Image id="pp" src={pp_entier} alt="photo de profil"/>
+                <Image id="pp" src={pp_entier} alt="photo de profil" priority/>
             </div>
         </div>
         </>
