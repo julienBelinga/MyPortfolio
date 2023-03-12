@@ -19,7 +19,7 @@
         .devices{
             position: relative;
             left: 50%;
-            margin-left: -35vw;
+            margin-left: -40vw;
         }
     }
 }
@@ -60,6 +60,14 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    #skills-skill{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 @media screen and (max-width: 932px) {
     #device{
         width: 100%;
@@ -79,5 +87,10 @@
 @media screen and (max-width: 600px) {
     #vitrine:nth-child(0n+2) .popular{
         display: none;
+    }
+
+    #skills-skill .left{
+        margin-left: 35px;
+        margin-right: 35px;
     }
 }
