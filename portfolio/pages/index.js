@@ -1,6 +1,7 @@
 import Presentation from 'components/presentation'
 import Skills from 'components/skills'
 import Project from 'components/project'
+import PageHead from 'components/head'
 import PricingMultiple from 'components/pricing_multiple'
 import einden_phone_screen from "assets/img/einden_phone_screen.png"
 import einden_laptop_screen from "/assets/img/einden_laptop_screen.png"
@@ -26,6 +27,7 @@ export default function Home() {
 
 	return (
 		<>
+			<PageHead title="Julien Belinga" description="Portfolio de Julien Belinga, développeur web freelance Nantais." />
 			<Presentation/>
 			<Skills/>
 			<section id="project-container">
