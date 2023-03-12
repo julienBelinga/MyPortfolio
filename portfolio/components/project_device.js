@@ -48,7 +48,7 @@ export default function device(props) {
                   </div>
               </div>
           </div>
-          <legend style={{fontSize: '8.5px'}}>{props.legend}</legend>
+          <legend style={{fontSize: '8.5px', textAlign: 'center'}}>{props.legend}</legend>
       </div>
     </>
   )

@@ -15,6 +15,12 @@
                 text-align: center;
             }
         }
+
+        .devices{
+            position: relative;
+            left: 50%;
+            margin-left: -35vw;
+        }
     }
 }
 
@@ -41,11 +47,16 @@
         padding-left: 5vw;
         padding-right: 5vw;
         margin-left: 17.5vw !important;
-        margin-right: 0;
+        margin-right: 17.5vw;
 
         hr{
             width: 55vw;
         }
+    }
+
+    .services #vitrine{
+        left: 0;
+        transform: scaleX(0);
     }
 }
 
