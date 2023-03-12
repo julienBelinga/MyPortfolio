@@ -1,4 +1,4 @@
-import '@/styles/global.css'
+import '@/styles/global.scss'
 import '@/styles/navbar.scss'
 import '@/styles/presentation.scss'
 import '@/styles/skills.scss'
