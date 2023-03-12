@@ -1,4 +1,5 @@
 #presentation{
+    position: relative;
     display: flex;
     justify-content: space-between;
 
@@ -10,14 +11,21 @@
         z-index: 2;
         height: fit-content;
     }
+
+    #info-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 #pp{
     position: relative;
-    width: 50vw;
+    width: 19vw;
     height: auto;
-    margin-bottom: -.2vw;
+    margin-bottom: -.3vw;
     z-index: 2;
+    right: -23vw;
 }
 
 #contact-button{
@@ -47,8 +55,9 @@
 }
 
 #presentation-info{
-    position: relative;
-    top: 20vw;
+    position: absolute;
+    bottom: 3vw;
+    left: 9vw;
 
     h1{
         margin-bottom: 20px;
