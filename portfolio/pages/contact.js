@@ -1,10 +1,10 @@
-import React from 'react'
-import Contact from 'components/contact'
+import React from "react"
+import { default as ContactComp } from "components/contact"
 
 export default function contact() {
-  return (
-    <>
-      <Contact/>  
-    </>
-  )
+	return (
+		<>
+			<ContactComp />
+		</>
+	)
 }
