@@ -1,14 +1,15 @@
 import Image from 'next/image';
 import logo from 'assets/img/logo.png'
+import Link from 'next/link';
 
 function Navbar(){
 
     return(
         <nav>
 
-            <a href="/" className="nav-icon" aria-label="homepage" aria-current="page">
+            <Link href="/" className="nav-icon" aria-label="homepage" aria-current="page">
                 <Image src={logo} alt="logo"/>
-            </a>
+            </Link>
 
             <div className="main-navlinks">
                 <button type="button" className="hamburger"  aria-label="Toggle Navigation" aria-expanded="false">
@@ -17,11 +18,11 @@ function Navbar(){
                     <span></span>
                 </button>
                 <div className="navlinks-container">
-                <a href="/#project-container">Projet</a>
-                <a href="/#pricing_vitrine">Site vitrine</a>
-                <a href="/#pricing_Ecommerce">Site E-commerce</a>
-                <a href="/#pricing_services">Autre services</a>
-                <a href="/contact">Contact</a>
+                <Link href="/#project-container">Projet</Link>
+                <Link href="/#pricing_vitrine">Site vitrine</Link>
+                <Link href="/#pricing_Ecommerce">Site E-commerce</Link>
+                <Link href="/#pricing_services">Autre services</Link>
+                <Link href="/contact">Contact</Link>
                 </div>
             </div>
         

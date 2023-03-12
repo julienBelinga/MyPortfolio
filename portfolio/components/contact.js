@@ -94,10 +94,10 @@ export default function contact() {
                             <i className="fa fa-map-marker fa-2x"><span className="contact-text place">Nantes, France</span></i>
                         </li>
                         <li className="list-item">
-                            <i className="fa fa-phone fa-2x"><span className="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">06 45 20 54 90</a></span></i>
+                            <i className="fa fa-phone fa-2x"><span className="contact-text phone"><Link href="tel:1-212-555-5555" title="Give me a call">06 45 20 54 90</Link></span></i>
                         </li>
                         <li className="list-item">
-                            <i className="fa fa-envelope fa-2x"><span className="contact-text gmail"><a href="mailto:#" title="Send me an email">julienbelinga.pro@gmail.com</a></span></i>
+                            <i className="fa fa-envelope fa-2x"><span className="contact-text gmail"><Link href="mailto:#" title="Send me an email">julienbelinga.pro@gmail.com</Link></span></i>
                         </li>
                     </ul>
                     <hr/>

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import pp_entier from 'assets/img/pp_entier.png'
+import Link from 'next/link'
 
 function Presentation(){
     return(
@@ -22,7 +23,7 @@ function Presentation(){
                                     <li><span>Freelance.</span></li>
                                 </ul>
                             </div>
-                            <a id="contact-button" href="/contact">Contactez moi</a>
+                            <Link id="contact-button" href="/contact">Contactez moi</Link>
                         </div>
                         
                     </div>
