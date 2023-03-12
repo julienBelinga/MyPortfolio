@@ -76,16 +76,17 @@
     text-align: left;
     margin: auto;
     margin-bottom: 5px;
+    white-space: nowrap;
 
     .static-txt{
         color: #252527;
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 2em;
     }
 
     .dynamic-txts{
         margin-top: 7px;
-        font-size: 2rem;
+        font-size: 2em;
         height: 30px;
         line-height: 27px;
         overflow: hidden;

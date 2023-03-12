@@ -98,6 +98,26 @@
     }
 }
 
+@media screen and (max-width: 604px) {
+    .wrapper-txt{
+        transform: scale(.7);
+        margin-left: -1vw;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .wrapper-txt{
+        transform: scale(.5);
+        margin-left: -18vw;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .wrapper-txt{
+        margin-left: -25vw;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #vitrine:nth-child(0n+2) .popular{
         display: none;

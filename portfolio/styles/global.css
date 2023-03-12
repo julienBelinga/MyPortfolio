@@ -21,6 +21,7 @@ html{
 body{
     background: #EDEDED;
     margin: 0;
+    overflow-x: hidden
 }
 h1,h2,h3{
     font-family: BreeSerif;
