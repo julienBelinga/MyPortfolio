@@ -5,8 +5,7 @@ import github from 'assets/img/github.png'
 import linkedIn from 'assets/img/linkedIn.png'
 import malt from 'assets/img/malt.png'
 
-export default function contact() {
-	const [name, setName] = useState("")
+export default function Contact() {
     const [name, setName] = useState('')
     const [firstName, setFirstName] = useState('')
     const [email, setEmail] = useState('')
