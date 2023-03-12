@@ -17,35 +17,34 @@ export default function pricing_multiple() {
   return (
     <>
       <section id="pricing">
-          <h2 id="pricing_vitrine" className="title">Site <strong>vitrine</strong></h2>
-          <p className="title">La meilleure solution pour commencer à augmenter votre présence en ligne</p>
-          <div className="pricing">
-              <Card
-              title="Standard"
-              price="800 €"
-              info1={info7}
-              info2={info3}
-              info3={info4}
-              info4={<p>Certificat <strong>SSL</strong></p>}
-              />
-              <Card
-              title="Personnalisé"
-              price="1 100 €"
-              info1={info1}
-              info2={info9}
-              info3={info5}
-              info4={info6}
-              />
-              <Card
-              title="Premium"
-              price="1 500 €"
-              info1={info2}
-              info2={info0}
-              info3={info8}
-              info4={<p>référencement <strong>Google</strong></p>}
-
-              />
-          </div>
+        <h2 id="pricing_vitrine" className="title">Site <strong>vitrine</strong></h2>
+        <p className="title">La meilleure solution pour commencer à augmenter votre présence en ligne</p>
+        <div className="pricing">
+          <Card
+          title="Standard"
+          price="800 €"
+          info1={info7}
+          info2={info3}
+          info3={info4}
+          info4={<p>Certificat <strong>SSL</strong></p>}
+          />
+          <Card
+          title="Personnalisé"
+          price="1 100 €"
+          info1={info1}
+          info2={info9}
+          info3={info5}
+          info4={info6}
+          />
+          <Card
+          title="Premium"
+          price="1 500 €"
+          info1={info2}
+          info2={info0}
+          info3={info8}
+          info4={<p>référencement <strong>Google</strong></p>}
+          />
+        </div>
       </section>
       <section id="pricing">
         <h2 id="pricing_Ecommerce" className="title">Site <strong>E-commerce</strong></h2>

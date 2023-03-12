@@ -29,6 +29,10 @@
         p.title{
             margin-bottom: 50px !important;
         }
+
+        .pricing{
+            width: fit-content;
+        }
     }
 
     #vitrine{
@@ -36,6 +40,8 @@
         margin-bottom: 100px;
         padding-left: 5vw;
         padding-right: 5vw;
+        margin-left: 17.5vw !important;
+        margin-right: 0;
 
         hr{
             width: 55vw;
@@ -57,5 +63,10 @@
             margin-left: -18%;
         }
     }
-    
+}
+
+@media screen and (max-width: 600px) {
+    #vitrine:nth-child(0n+2) .popular{
+        display: none;
+    }
 }
