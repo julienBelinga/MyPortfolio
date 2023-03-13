@@ -110,6 +110,19 @@
         transform: scale(.7);
         margin-left: -1vw;
     }
+
+    footer{
+        width: 100%;
+
+        > ul{
+            flex-direction: column;
+            text-align: center;
+
+            ul.icon-set{
+                width: 100% !important;
+            }
+        }
+    } 
 }
 
 @media screen and (max-width: 508px) {
@@ -133,5 +146,9 @@
     #skills-skill .left{
         margin-left: 35px;
         margin-right: 35px;
+    }
+
+    footer ul{
+        padding: 5px 5px;
     }
 }
