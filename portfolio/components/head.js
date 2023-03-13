@@ -9,11 +9,9 @@ function PageHead({ title, description }) {
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      {/* Ajouter la feuille de style FontAwesome en ligne */}
-      <style dangerouslySetInnerHTML={{ __html: "@import url('https://use.fontawesome.com/e073950383.css')" }} />
     </Head>
-    {/* Différer le chargement du script FontAwesome */}
     <Script src="https://use.fontawesome.com/e073950383.js" strategy="lazyOnload" />
+    <Script src="https://use.fontawesome.com/e073950383.css" strategy="lazyOnload" />
     </>
   );
 }
