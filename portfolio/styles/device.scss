@@ -1,0 +1,423 @@
+.devices {
+    display: flex;
+    width: 870px;
+}
+  
+//   .deviceSlideLeft{
+//     transform: translateX(-100%);
+//     opacity: 0;
+//   }
+
+//   .deviceSlideRight{
+//     transform: translateX(100%);
+//     opacity: 0;
+//   }
+  
+#project-devices{
+    padding: 0;
+    margin: 0;
+}
+  
+.iphone-x {
+    position: relative;
+    bottom: -163px;
+    left: 82px;
+    z-index: 1;
+    height: 221px;
+    width: 114px;
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .side {
+        background: #1c1c1c;
+        border-radius: 24px;
+        box-shadow: inset 0 0 2px 2px dimgrey, inset 0 0 0 4px #e2e3e9, 0px -1px 13px 5px rgb(255 255 255 / 80%) inset;
+        height: 221px;
+        padding: 15px 22px;
+        width: 114px;
+        z-index: 1;
+    }
+
+    .screen {
+        background: #000;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 17px;
+        position: relative;
+        height: 205px;
+        margin-left: -15px;
+        margin-top: -7px;
+        z-index: 3;
+        width: 100px;
+        overflow: hidden;
+    }
+
+    .line::after, .line::before {
+        content: "";
+        position: absolute;
+        border: solid rgba(68, 68, 68, 0.25);
+        border-width: 0 6px;
+        height: 5px;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+    }
+    .line::after {
+        top: 68px;
+    }
+    .line::before {
+        bottom: 68px;
+    }
+
+    .header {
+        background: #1c1c1c;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        height: 9px;
+        left: 100%;
+        margin-left: -82px;
+        position: absolute;
+        top: 6px;
+        width: 54px;
+        z-index: 199;
+    }
+
+    .sensor-1::after, .iphone-x .sensor-1::before {
+        content: "";
+        position: absolute;
+    }
+
+    .sensor-1::after {
+        background: #2a2a2a;
+        border-radius: 50%;
+        height: 3px;
+        width: 3px;
+        left: 1%;
+        margin-left: 4px;
+        top: 3px;
+    }
+
+    .sensor-1::before {
+        background: #2a2a2a;
+        border-radius: 50%;
+        height: 3px;
+        width: 3px;
+        left: 10%;
+        margin-left: 6px;
+        top: 3px;
+    }
+
+    .sensor-2::after, .sensor-2::before {
+        content: "";
+        position: absolute;
+    }
+
+    .sensor-2::before {
+        background: #333;
+        border-radius: 2.5px;
+        height: 2px;
+        width: 13px;
+        left: 74%;
+        margin-left: -20px;
+        top: 4px;
+    }
+
+    .sensor-3::after, .sensor-3::before {
+        content: "";
+        position: absolute;
+    }
+
+    .sensor-3::before {
+        background: #444;
+        border-radius: 50%;
+        height: 3px;
+        width: 3px;
+        left: 50%;
+        margin-left: 10px;
+        top: 3px;
+        box-shadow: 0px 0px 5px 2px navy inset;
+    }
+
+    .sensor-3::after {
+        background: #2a2a2a;
+        border-radius: 50%;
+        height: 5px;
+        width: 5px;
+        left: 65%;
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+
+    .volume-button {
+        background: #c8cacb;
+        height: 13px;
+        left: -2px;
+        position: absolute;
+        top: 40px;
+        width: 3px;
+    }
+
+    .volume-button::after, .volume-button::before {
+        content: "";
+        position: absolute;
+        background: #c8cacb;
+        height: 20px;
+        left: 0;
+        width: 3px;
+    }
+
+    .volume-button::after {
+        top: 25px;
+    }
+
+    .volume-button::before {
+        top: 55px;
+    }
+
+    .power-button {
+        background: #c8cacb;
+        height: 20px;
+        right: -2px;
+        position: absolute;
+        top: 47px;
+        width: 3px;
+    }
+}
+
+video {
+height: 700px;
+width: 350px;
+margin-top: -30px;
+margin-left:-10px;
+}
+
+/* MACBOOK */
+.mac_container{
+    width: 500px;
+height: fit-content;
+    margin: 0;
+position: relative;
+right: 78px;
+bottom: -250px;
+}
+
+.mac_scaler{
+    margin: auto;
+    width: 100%;
+    padding-top: 57.875%;
+    height: 0px;
+    position: relative;
+}
+
+.mac_holder{
+position: absolute;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+}
+
+.mac_screen{
+    margin: auto;
+    background: #111;
+    width: 81%;
+    height: 94%;
+    border-top-left-radius: 2% 3%;
+    border-top-right-radius: 2% 3%;
+    border-bottom-left-radius: 5% 3%;
+    border-bottom-right-radius: 5% 3%;
+    box-sizing: border-box;
+    padding: 3%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+
+    &:before{
+        content: '';
+        position: absolute;
+        right: 0.3%;
+        top: 0.5%;
+        width: 36.5%;
+        height: 35%;
+        border: 1px solid #666;
+        border-bottom: none;
+        border-left: none;
+        border-top-right-radius: 4.5% 7%;
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        right: -25%;
+        top: -25%;
+        width: 40%;
+        height: 150%;
+        background: rgba(200,200,200,0.2);
+        background: linear-gradient(rgba(255,255,255,0.2), rgba(200,200,200,0) 40%);
+        transform: rotate(-30deg);
+    }
+
+}
+.mac_camera{
+    background: #333;
+    border-radius: 50%;
+    width: 1%;
+    height: 1.5%;
+    position: absolute;
+    left: 49.5%;
+    top: 2%;
+
+    &:after{
+        content: '';
+        position: absolute;
+        left: 35%;
+        top: 40%;
+        width: 30%;
+        height: 30%;
+        border-radius: 50%;
+        background: #777;
+    }
+}
+
+.mac_bottom{
+    background: #e9e9e9;
+    background: linear-gradient(#ccc 50%, #444);
+    width: 100%;
+    height: 5%;
+    position: relative;
+    top: -1.7%;
+    border-bottom-left-radius: 6% 50%;
+    border-bottom-right-radius: 6% 50%;
+
+    &:after{
+        content: '';
+        position: absolute;
+        right: 1%;
+        bottom: 11%;
+        width: 98%;
+        height: 0%;
+        box-shadow: 1px 0px 8px 1px #333;
+    }
+}
+
+.mac_bottom_top_half{
+    width: 100%;
+    height: 50%;
+    background: #e9e9e9;
+    background: linear-gradient(90deg, #aaa, #f3f3f3 0.5%, #aaa 2.5%, #f3f3f3 5.5%, #f3f3f3 94.5%, #aaa 97.5%, #f3f3f3 99.5%, #aaa);
+}
+
+.mac_thumb_space{
+    background: #bbb;
+    background: radial-gradient(90% 150% at 50% 1%, #eee 49%, #888);
+    margin: auto;
+    width: 15%;
+    height: 60%;
+    border-bottom-left-radius: 8% 100%;
+    border-bottom-right-radius: 8% 100%;
+}
+
+.mac_screen_content{
+    background: #333;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+}
+
+/* I-MAC */
+.iMac {
+    position: relative;
+    width: 1000px;
+    margin: 50px auto;
+
+    .body {
+        height: 280px;
+        background: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: inset 0px -2px 0px #909090;
+
+        .shine {
+            width: 0;
+            height: 0;
+            border-top: 75px solid rgba(255, 255, 255, 0.04);
+            border-bottom: 75px solid transparent;
+            border-left: 140px solid transparent;
+            border-right: 140px solid rgba(255, 255, 255, 0.04);
+            position: absolute;
+            right: 0;
+        }
+
+        .screen {
+            height: 220px;
+            border: 10px solid #000;
+            background: #101010;
+            overflow: hidden;
+            border-radius: 5px 5px 0px 0px;
+
+            h1 {
+                padding-top: 58px;
+                text-align: center;
+                font-size: 150%;
+                opacity: 0;
+                transition: opacity 0.5s 0.5s;
+                color: #fff;
+                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .logo {
+            width: 16px;
+            height: 16px;
+            border-radius: 100px;
+            background: #bbb;
+            margin: 5px auto 0 auto;
+            box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .stand {
+        width: 50px;
+        height: 25px;
+        background: #aeaeae;
+        border: 20px solid #EDEDED;
+        border-top: 0;
+        border-bottom: 20px solid #c5c5c5;
+        border-radius: 5px;
+        box-shadow: 0px 4px 0px -2px #909090;
+        margin: 0 auto;
+    }
+}
+
+.screen-project{
+    height: 100%;
+    width: 100%;
+}
+
+//   .phone1-right, .mac1-right, .phone2-right, .mac2-right {
+//     transform: translateX(70%);
+//     opacity: 0;
+//   }
+
+//   .phone1-left, .mac1-left{
+//     transform: translateX(-70%);
+//     opacity: 0;
+//   }
+
+/* ANIMATION */
+.active-overall-devices{
+transform: translateX(0);
+opacity: 1;
+transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.active-specific-devices{
+transform: translateX(0);
+opacity: 1;
+transition: transform 0.9s ease-in-out, opacity 0.9s ease-in-out;
+}

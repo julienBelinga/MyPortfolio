@@ -1,0 +1,21 @@
+#project{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 50px;
+
+    &.odd{
+        flex-direction: row-reverse;
+    }
+
+    h3{
+        margin-bottom: 15px;
+    }
+}
+
+#description{
+    position: relative;
+    top: 50px;
+}

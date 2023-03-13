@@ -1,0 +1,137 @@
+@media screen and (max-width: 1350px) {
+    #project{
+
+        display: flex;
+        flex-direction: column !important;
+
+        &.odd{
+            flex-direction: none;
+        }
+
+        #description{
+            margin-bottom: 100px;
+
+            h3{
+				text-align: center;
+			}
+		}
+
+        .devices{
+			position: relative;
+			left: 50%;
+			margin-left: -40vw;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+    #skills-skill{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .contact-wrapper{
+        margin-top: 100px;
+    }
+
+    #presentation{
+
+        margin-top: 100px;
+
+        #bg-title{
+            display: none;
+        }
+
+        #info-container{
+            flex-direction: column-reverse;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+
+            #profile-mobile-bg {
+                width: 100%;
+                height: 81vw;
+                background-color: #C4C4C4;
+                border-radius: 50%;
+                position: relative;
+                bottom: -13vw;
+            }
+
+            #pp{
+                position: relative;
+                width: 77vw;
+                height: auto;
+                top: -83vw;
+                right: -5vw;
+            }
+
+            #profil{
+                height: 92vw;
+                border-radius: 0 0 45% 45%;
+                overflow: hidden;
+                margin-bottom: 50px;
+            }
+
+            #presentation-info{
+                position: static;
+            }
+
+            #presentation-info{
+                text-align: center;
+                margin-bottom: 50px;
+
+                #contact-button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 932px) {
+    #device{
+        width: 100%;
+
+        .mac_container, .iMac{
+            display: none;
+        }
+
+        .iphone-x{
+            bottom: 0;
+            left: 50%;
+            margin-left: -18%;
+        }
+    }
+}
+
+@media screen and (max-width: 604px) {
+    .wrapper-txt{
+        transform: scale(.7);
+        margin-left: -1vw;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .wrapper-txt{
+        transform: scale(.5);
+        margin-left: -18vw;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .wrapper-txt{
+        margin-left: -25vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #vitrine:nth-child(0n+2) .popular{
+        display: none;
+    }
+
+    #skills-skill .left{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}

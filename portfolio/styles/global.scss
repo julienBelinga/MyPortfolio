@@ -1,0 +1,41 @@
+@font-face{
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url(../assets/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: BreeSerif;
+    src: url(../assets/fonts/BreeSerif-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #EDEDED;
+    margin: 0;
+    overflow-x: hidden;
+}
+h1,h2,h3{
+    font-family: BreeSerif;
+}
+h4,h5,h6,legend,p,a{
+    font-family: Montserrat;
+}
+
+#__next{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    > div, > section{
+        flex: 1;
+    }
+}
