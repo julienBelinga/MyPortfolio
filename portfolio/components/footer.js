@@ -6,11 +6,12 @@ import linkedIn from '/assets/img/linkedIn.png'
 import malt from '/assets/img/malt.png'
 
 export default function footer() {
+
   return (
     <>
         <footer>
             <ul>
-                <li className="link"><Link href="/assets/CV freelance.pdf" download>Mon CV</Link></li>
+                <li className="link"><Link href="/assets/CV_freelance.pdf" download>Mon CV</Link></li>
                 <li className="link"><Link href="/contact">Contact</Link></li>
                 <li className="link"><Link href="/mentions-legales">Mentions légales</Link></li>
                 <ul className="icon-set">
