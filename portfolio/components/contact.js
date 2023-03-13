@@ -22,8 +22,6 @@ export default function Contact() {
     <>
         <div id="contact">
 
-            {/* <h1 className="section-header">Contact</h1> */}
-
             <div className="contact-wrapper">
 
                 <form action="https://formsubmit.co/julienbelinga.pro@gmail.com"
@@ -35,49 +33,49 @@ export default function Contact() {
 
                     <div className="id">
                         <input type="text"
-                            className="form-control"
-                            id="name"
-                            placeholder="Nom"
-                            name="name"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            required />
+                        className="form-control"
+                        id="name"
+                        placeholder="Nom"
+                        name="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required />
                         <input type="text"
-                            className="form-control"
-                            id="first-name"
-                            placeholder="Prénom"
-                            name="first-name"
-                            value={firstName}
-                            onChange={(e) => setFirstName(e.target.value)}
-                            required />
+                        className="form-control"
+                        id="first-name"
+                        placeholder="Prénom"
+                        name="first-name"
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        required />
                     </div>
                     <input type="email"
-                            className="form-control"
-                            id="email"
-                            placeholder="E-mail"
-                            name="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required />
+                        className="form-control"
+                        id="email"
+                        placeholder="E-mail"
+                        name="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required />
                     <input type="tel"
-                            className="form-control"
-                            id="telephone"
-                            name="telephone"
-                            placeholder="N° téléphone"
-                            value={telephone}
-                            onChange={(e) => setTelephone(e.target.value)}
-                            required />
+                        className="form-control"
+                        id="telephone"
+                        name="telephone"
+                        placeholder="N° téléphone"
+                        value={telephone}
+                        onChange={(e) => setTelephone(e.target.value)}
+                        required />
                     <textarea className="form-control"
-                                rows="10"
-                                placeholder="MESSAGE"
-                                name="message"
-                                value={message}
-                                onChange={(e) => setMessage(e.target.value)}
-                                required></textarea>
+                        rows="10"
+                        placeholder="MESSAGE"
+                        name="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        required></textarea>
                     <button className="btn btn-primary send-button"
-                            id="submit"
-                            type="submit"
-                            value="SEND">
+                        id="submit"
+                        type="submit"
+                        value="SEND">
                         <div className="alt-send-button">
                         <i className="fa fa-paper-plane"></i><span className="send-text">SEND</span>
                         </div>
