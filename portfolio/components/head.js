@@ -8,8 +8,7 @@ function PageHead({ title, description }) {
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="style.css" />
-      <script src="script.js" defer></script>
-      <script src="https://use.fontawesome.com/e073950383.js"></script>
+      <script async src="https://use.fontawesome.com/e073950383.js"></script>
       <link href="https://use.fontawesome.com/e073950383.css" media="all" rel="stylesheet"></link>
     </Head>
   );
