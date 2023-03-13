@@ -11,6 +11,7 @@ import '@/styles/responsive.scss'
 import '@/styles/footer.scss'
 import Navbar from '@/components/navbar'
 import Footer from 'components/footer'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }) {
   return(
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }) {
       <Navbar/>
       <Component {...pageProps} />
       <Footer/>
+      <Analytics />
     </>
   )
 }
