@@ -164,12 +164,10 @@
 					color: #ffffff;
 				}
 			}
-
-			&:last-of-type {
-				li:last-of-type {
-					display: none;
-				}
-			}
 		}
 	}
+}
+
+.pricing.no-promote > div#vitrine:last-child > ul > li:last-of-type{
+	display: none !important;
 }
