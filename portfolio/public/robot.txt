@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://julien-belinga.fr/sitemap.xml
