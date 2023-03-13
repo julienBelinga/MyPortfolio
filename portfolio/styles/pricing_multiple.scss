@@ -120,7 +120,8 @@
 			> #button-container {
 				width: 100%;
 
-				> button {
+				> a button {
+					cursor: pointer;
 					background-color: #2563eb;
 					border: none;
 					color: #ffffff;

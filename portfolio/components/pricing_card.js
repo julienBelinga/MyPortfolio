@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import check from 'assets/img/checkmark.png'
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function pricing_card(props) {
 
@@ -40,7 +41,7 @@ export default function pricing_card(props) {
 					</li>
 				</ul>
 				<div id="button-container">
-                <button onClick={() => router.push('/contact')}>Demander un devis</button>
+                <Link className='button' href="/contact"><button>Demander un devis</button></Link>
 				</div>
 			</div>
 		</>
