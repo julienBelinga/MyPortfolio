@@ -11,7 +11,6 @@ function PageHead({ title, description }) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
     <Script src="https://use.fontawesome.com/e073950383.js" strategy="lazyOnload" />
-    <Script src="https://use.fontawesome.com/e073950383.css" strategy="lazyOnload" />
     </>
   );
 }
