@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import Head from 'next/head'
+import Script from 'next/script'
 
 function PageHead({ title, description }) {
   return (
@@ -7,8 +8,8 @@ function PageHead({ title, description }) {
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script async src="https://use.fontawesome.com/e073950383.js" defer></script>
-      <link href="https://use.fontawesome.com/e073950383.css" media="all" rel="stylesheet" defer></link>
+      <script async src="https://use.fontawesome.com/e073950383.js"></script>
+      <link href="https://use.fontawesome.com/e073950383.css" media="all" rel="stylesheet"></link>
     </Head>
   );
 }
