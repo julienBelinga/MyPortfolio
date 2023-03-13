@@ -68,7 +68,11 @@
                 height: auto;
                 top: -83vw;
                 right: -5vw;
+                animation-name: slideIn;
+                animation-duration: 1s;
+                animation-timing-function: ease-in;
             }
+              
 
             #profil{
                 height: 92vw;
@@ -154,5 +158,16 @@
 
     footer ul{
         padding: 5px 5px;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
 }
