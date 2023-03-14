@@ -12,12 +12,6 @@ export default function Contact() {
     const [telephone, setTelephone] = useState('')
     const [message, setMessage] = useState('')
 
-    const handleSubmit = (event) => {
-        event.preventDefault()
-        // Code to handle form submission
-        console.log(`Name: ${name}, firstName: ${firstName}, Email: ${email}, Telephone: ${telephone}, Message: ${message}`)
-    }
-
   return (
     <>
         <div id="contact">
@@ -28,8 +22,7 @@ export default function Contact() {
                     method="POST"
                     id="contact-form"
                     className="form-horizontal"
-                    role="form"
-                    onSubmit={handleSubmit}>
+                    role="form">
 
                     <div className="id">
                         <input type="text"
