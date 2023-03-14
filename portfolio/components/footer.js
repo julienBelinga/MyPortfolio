@@ -11,7 +11,7 @@ export default function footer() {
     <>
         <footer>
             <ul>
-                <li className="link"><Link href="/assets/CV_freelance.pdf" download>Mon CV</Link></li>
+                <li className="link"><Link href="/CV_freelance.pdf" download>mon CV</Link></li>
                 <li className="link"><Link href="/contact">Contact</Link></li>
                 <li className="link"><Link href="/mentions-legales">Mentions légales</Link></li>
                 <li>
