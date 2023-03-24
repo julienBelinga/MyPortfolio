@@ -12,6 +12,7 @@ import '@/styles/footer.scss'
 import Navbar from '@/components/navbar'
 import Footer from 'components/footer'
 import { Analytics } from '@vercel/analytics/react';
+import "../i18n"
 
 export default function App({ Component, pageProps }) {
   return(

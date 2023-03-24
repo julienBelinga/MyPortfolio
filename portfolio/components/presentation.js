@@ -2,10 +2,18 @@ import Image from 'next/image'
 import pp_entier from 'assets/img/pp_entier.png'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next';
-import i18n from '../i18n';
+import { useEffect, useState } from "react"
 
 function Presentation() {
-  const { t } = useTranslation();
+	const { t } = useTranslation()
+
+	const [isHydrated, setIsHydrated] = useState(false)
+
+	useEffect(() => {
+		setIsHydrated(true)
+	}, [])
+
+	if (isHydrated === false) return null
 
   return (
     <>
