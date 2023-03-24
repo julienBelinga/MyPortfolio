@@ -29,10 +29,10 @@ function Presentation() {
                 <div className="wrapper-txt">
                   <p className="static-txt">{t('presentation.description')}</p>
                   <ul className="dynamic-txts">
-                    <li>{t('presentation.role1')}</li>
-                    <li>{t('presentation.role2')}</li>
-                    <li>{t('presentation.role3')}</li>
-                    <li>{t('presentation.role4')}</li>
+                    <li><span>{t('presentation.role1')}</span></li>
+                    <li><span>{t('presentation.role2')}</span></li>
+                    <li><span>{t('presentation.role3')}</span></li>
+                    <li><span>{t('presentation.role4')}</span></li>
                   </ul>
                 </div>
                 <Link id="contact-button" href="/contact">
