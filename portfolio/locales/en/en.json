@@ -1,0 +1,15 @@
+{
+    "presentation": {
+      "title": "Web Developer",
+      "name": "Julien BELINGA",
+      "description": "I am a",
+      "roles": [
+        "Front End Developer",
+        "Back End Developer",
+        "DevOps",
+        "Freelance"
+      ],
+      "contact": "Contact me"
+    }
+}
+  
