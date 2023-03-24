@@ -25,7 +25,7 @@ export default function Home() {
   const description_portfolio = <p>{t('project.description2')}</p>
   const description_getTouchdown = <p>{t('project.description3')}</p>
 
-	return ( //TODO: fix <br/> in description JSON
+	return (
 		<>
 			<PageHead title="Julien Belinga" description="Portfolio de Julien Belinga, développeur web freelance Nantais." />
 			<Presentation/>
