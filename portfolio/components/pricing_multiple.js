@@ -31,7 +31,7 @@ export default function pricing_multiple() {
 						info1={info7}
 						info2={info3}
 						info3={info4}
-          info4={<p>Certificat <strong>SSL</strong></p>}
+          				info4={<p>Certificat <strong>SSL</strong></p>}
 					/>
 					<Card
 						title="Personnalisé"
@@ -48,7 +48,7 @@ export default function pricing_multiple() {
 						info1={info2}
 						info2={info0}
 						info3={info8}
-          info4={<p>référencement <strong>Google</strong></p>}
+          				info4={<p>référencement <strong>Google</strong></p>}
 					/>
 				</div>
 			</section>
@@ -64,15 +64,15 @@ export default function pricing_multiple() {
 					<Card
 						title="Standard"
 						price="3 000 €"
-          info1={<p>Création du site comprenant <strong>1 à 5 articles</strong></p>}
+          				info1={<p>Création du site comprenant <strong>1 à 5 articles</strong></p>}
 						info2={info3}
 						info3={info4}
-          info4={<p>Certificat <strong>SSL</strong></p>}
+          				info4={<p>Certificat <strong>SSL</strong></p>}
 					/>
 					<Card
 						title="Personnalisé"
 						price="5 000 €"
-          info1={<p>Jusqu' à <strong>20 articles</strong></p>}
+          				info1={<p>Jusqu' à <strong>20 articles</strong></p>}
 						info2={info9}
 						info3={info5}
 						info4={info6}
@@ -81,10 +81,10 @@ export default function pricing_multiple() {
 					<Card
 						title="Premium"
 						price="8 000 €"
-          info1={<p>Nombres d'articles <strong>illimités</strong></p>}
+          				info1={<p>Nombres d'articles <strong>illimités</strong></p>}
 						info2={info0}
-          info3={<p>Design <strong>sur mesure</strong></p>}
-          info4={<p>référencement <strong>Google</strong></p>}
+          				info3={<p>Design <strong>sur mesure</strong></p>}
+          				info4={<p>référencement <strong>Google</strong></p>}
 					/>
 				</div>
 			</section>
@@ -100,24 +100,24 @@ export default function pricing_multiple() {
 					<Card
 						title="Audit de site web"
 						price="80 €"
-          info1={<p>Audit de votre site <strong>Wix</strong></p>}
-          info2={<p>Audit de votre site <strong>Wordpress</strong></p>}
-          info3={<p>Audit de votre <strong>landing page/Portfolio</strong></p>}
-          info4={<p>Audit de votre site <strong>E-commerce</strong></p>}
+          				info1={<p>Audit de votre site <strong>Wix</strong></p>}
+          				info2={<p>Audit de votre site <strong>Wordpress</strong></p>}
+          				info3={<p>Audit de votre <strong>landing page/Portfolio</strong></p>}
+          				info4={<p>Audit de votre site <strong>E-commerce</strong></p>}
 					/>
 					<Card
 						title="Cours/Formation"
 						price="30 €"
-          info1={<p>Domaine du web <br/>(<strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, PHP, SQL, framework diverse)</p>}
-          info2={<p>Algorhytmie</p>}
-          info3={<p>Architecture et logiciel</p>}
-          info4={<p>Abordable pour <strong>tout les niveaux</strong></p>}
+          				info1={<p>Domaine du web <br/>(<strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, PHP, SQL, framework diverse)</p>}
+          				info2={<p>Algorhytmie</p>}
+          				info3={<p>Architecture et logiciel</p>}
+          				info4={<p>Abordable pour <strong>tout les niveaux</strong></p>}
 					/>
 					<Card
 						title="Developpement spécifiques"
 						price="300 €"
-          info1={<p>Analysons le besoin <strong>ensemble</strong></p>}
-          info2={<p>Une communication et <strong>livraison efficace</strong></p>}
+          				info1={<p>Analysons le besoin <strong>ensemble</strong></p>}
+          				info2={<p>Une communication et <strong>livraison efficace</strong></p>}
 						info3={<p>Taux Journalier Moyen</p>}
 					/>
 				</div>

@@ -1,4 +1,12 @@
 {
+  "navbar":{
+    "link1": "Project",
+    "link2": "Showcase website",
+    "link3": "E-commerce website",
+    "link4": "Others services",
+    "link5": "Contact"
+  },
+
   "presentation": {
     "title": "Web Developer",
     "name": "Julien BELINGA",
@@ -8,6 +16,31 @@
     "role3":"DevOps",
     "role4":"Freelance",
     "contact": "Contact me"
+  },
+
+  "skills": {
+    "title1": "Who am I?",
+    "presentation": "I am a Front-end developer specializing in web development. I can adapt to your needs by implementing certain methods such as the \"mobile-first\" approach to provide you with a responsive site that perfectly meets your needs. I will put my DEVOPS skills at your service to set up continuous integration and continuous deployment.",
+    "title2": "What is the \"mobile-first\" approach?",
+    "text-part1": "About 80% of people who visit your website will do so from a smartphone, and with mobile conversion rates up 63% compared to average desktop conversion rates, and 35% of online purchases now made via mobile devices, a mobile-first strategy can lead to greater profits for your business.",
+    "text-part2": "This is why it is important not to neglect mobile rendering. The mobile-first approach is based on this observation. The design process will therefore begin with the mobile view.",
+    "title3": "Front-end developer",
+    "subtitle1": "Skills",
+    "skills": "PHP, Javascript, HTML & CSS, SQL, UX, UI, AJAX, XML",
+    "subtitle2": "Soft Skills",
+    "softskills": "teamwork, creativity, flexibility, pedagogy, and autonomy",
+    "subtitle3": "Tools",
+    "tools": "Git, Github/Gitlab, Visual Studio Code / IntelIJ, Wamp, PHPMyAdmin, Terminal, Figma, Slack, Trello, Jira, Miro,"
+  },
+
+  "project": {
+    "title1": "Einden",
+    "title2": "Portfolio",
+    "title3": "get-touchdown",
+    "description1": "I spent just over a year at EIDEN as a web developer where I had the opportunity to work on over thirty projects. My missions consisted of creating responsive websites connected to the EPHOTODAM software via an API. I also had the opportunity to develop some small features, participate in the design of certain modules and sites. I also worked on the scalability of a website model.<br/><br/> The technologies I used were PHP, Javascript, HTML, CSS, and XML, while respecting an AJAX method.",
+    "description2": "For this project, it's simply my portfolio, which is the site you are currently on.<br/><br/> The technologies used for this project are HTML, CSS, Javascript, while following a \"mobile-first\" approach. I also set up continuous deployment from a Github repository.",
+    "description3": "For this project, it's the e-commerce landing page of get-touchdown, for which I created something very catchy with eye-catching effects, something creative and original.<br/><br/> The Next.js framework was used for this project, which is hosted on Vercel. Continuous integration and continuous deployment (CI/CD) have been implemented. I also linked the site to Stripe (a payment module).",
+    "legend1": "The images presented here are taken from the EINDEN website and not from my own work, as they belong to the company. Therefore, I cannot show them for confidentiality reasons."
   }
 }
   

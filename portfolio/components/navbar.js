@@ -2,10 +2,12 @@ import Image from 'next/image';
 import logo from 'assets/img/logo.png'
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
   const navLinksContainerRef = useRef(null);
+  const [isHydrated, setIsHydrated] = useState(false)
 
   useEffect(() => {
     const handleResize = () => {
@@ -19,6 +21,8 @@ function Navbar() {
 
     window.addEventListener('resize', handleResize);
 
+    setIsHydrated(true);
+
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -27,6 +31,9 @@ function Navbar() {
   const toggleNav = () => {
     setNavOpen(!navOpen);
   };
+
+  const { t } = useTranslation()
+	if (isHydrated === false) return null
 
   return (
     <div id='nav-container'>
@@ -42,11 +49,11 @@ function Navbar() {
             <span></span>
           </button>
           <div className={`navlinks-container ${navOpen ? 'open' : ''}`} ref={navLinksContainerRef}>
-            <Link href="/#project-container">Projet</Link>
-            <Link href="/#pricing_vitrine">Site vitrine</Link>
-            <Link href="/#pricing_Ecommerce">Site E-commerce</Link>
-            <Link href="/#pricing_services">Autre services</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/#project-container">{t('navbar.link1')}</Link>
+            <Link href="/#pricing_vitrine">{t('navbar.link2')}</Link>
+            <Link href="/#pricing_Ecommerce">{t('navbar.link3')}</Link>
+            <Link href="/#pricing_services">{t('navbar.link4')}</Link>
+            <Link href="/contact">{t('navbar.link5')}</Link>
           </div>
         </div>
       </nav>
