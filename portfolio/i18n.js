@@ -11,7 +11,7 @@ i18n.use(Backend)
 		debug: true,
 
 		interpolation: {
-			escapeValue: false,
+			escapeValue: false, //TODO: put to true before merging
 		},
 	})
 
