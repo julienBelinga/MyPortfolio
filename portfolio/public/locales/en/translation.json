@@ -105,6 +105,12 @@
     "button": "Request a quote",
     "popular": "POPULAR",
     "starting-price": "Starting at"
+  },
+
+  "footer":{
+    "CV": "My resume",
+    "contact": "Contact",
+    "legal-mentions": "Legal mentions"
   }
 }
   

@@ -105,6 +105,12 @@
     "button": "Demander un devis",
     "popular": "POPULAIRE",
     "starting-price": "à partir de"
+  },
+
+  "footer":{
+    "CV": "Mon CV",
+    "contact": "Contact",
+    "legal-mentions": "Mentions légales"
   }
 }
   
