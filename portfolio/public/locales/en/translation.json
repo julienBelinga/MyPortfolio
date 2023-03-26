@@ -111,6 +111,39 @@
     "CV": "My resume",
     "contact": "Contact",
     "legal-mentions": "Legal mentions"
+  },
+
+  "contact": {
+    "firstName": "Name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "data": "By submitting this form, you consent to the collection and storage of the submitted data for the purpose of processing your contact request.",
+    "right": "All rights reserved.",
+    "button": "SEND"
+  },
+
+  "legalMentions":{
+    "about-us": {
+      "title": "Who are we?",
+      "content": "The address of my website is: julien-belinga.fr"
+    },
+    "copyright": {
+      "title": "Copyright",
+      "content": "This entire site is subject to copyright protection according to Articles L335-2 and following of the Intellectual Property Code. Any total or partial reproduction or representation of its content, images, texts, sounds, by any means used, without the prior authorization of the company \"Julien Victor Belinga EI\" is strictly prohibited. Any violation will result in a sanction and will be subject to prosecution."
+    },
+    "website": {
+      "title": "Website",
+      "creation": {
+        "subtitle": "Creation:",
+        "content": "Custom theme creation, branding, referencing, and hosting of any \"turnkey\" service.<br/>Julien Victor Belinga EI<br/>SIRET: 950 698 001 00019<br/>30 rue Alphonse Daudet<br/>44 000 Nantes<br/>Phone: (+33)06 45 20 54 90<br/><a href=\"https://julien-belinga.fr/\">https://julien-belinga.fr/</a>"
+      },
+      "hosting": {
+        "subtitle": "Hosting:",
+        "content": "VERCEL<br/>Vercel Inc.<br/>340 S Lemon Ave #4133<br/>Walnut, CA 91789<br/><a href=\"https://vercel.com\" target=\"_blank\">https://vercel.com</a>"
+      }
+    }
   }
 }
   
