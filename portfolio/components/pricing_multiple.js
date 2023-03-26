@@ -12,17 +12,6 @@ export default function pricing_multiple() {
 	}, [])
 	if (isHydrated === false) return null
 
-	const info1= <p>L'offre <strong>Standard</strong></p>
-	const info2= <p>L'offre <strong>Personnalisé</strong></p>
-	const info3= <p>Design <strong>Personnalisé</strong></p>
-	const info4= <p>Création d'adresses <strong>mails custom</strong></p>
-	const info5= <p>Module de <strong>réservations/prise de RDV</strong></p>
-	const info6= <p>Création d'une <strong>FAQ</strong></p>
-	const info7= <p>Création du site comprenant <strong>1 à 3 pages</strong></p>
-	const info8= <p>Module de <strong>paiement</strong></p>
-	const info9= <p>Nombres de pages <strong>illimités</strong></p>
-	const info0= <p>Fonctionnalités sur mesure</p>
-
 	return (
 		<>
 			<section id="pricing">
@@ -102,9 +91,9 @@ export default function pricing_multiple() {
 					id="pricing_services"
 					className="pricing-title"
 				>
-					Autres <strong>services</strong>
+					{t('pricing.other.main-title')}
 				</h2>
-				<p className="title">La meilleure solution en conseil informatique</p>
+				<p className="title">{t('pricing.other.description')}</p>
 				<div className="pricing no-promote">
 					<Card
 						title={t('pricing.other.title1')}
