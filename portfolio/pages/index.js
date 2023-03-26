@@ -9,8 +9,8 @@ import project_phone_screen from "assets/img/project_phone_screen.png"
 import project_desktop_screen from "assets/img/project_desktop_screen.png"
 import touchdown_phone_screen from "assets/img/touchdown_phone_screen.png"
 import touchdown_laptop_screen from "assets/img/touchdown_laptop_screen.png"
-import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from "react"
+import { useTranslation } from 'react-i18next'
 
 export default function Home() {
 

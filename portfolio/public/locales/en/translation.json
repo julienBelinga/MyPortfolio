@@ -47,16 +47,16 @@
     "showcase":{
       "main-title": "Showcase <strong>website</strong>",
       "description": "The best solution to start increasing your visibility on the web.",
-      "price1": "€800",
-      "price2": "€1,100",
-      "price3": "€1,500"
+      "price1": "€ 800",
+      "price2": "€ 1,100",
+      "price3": "€ 1,500"
     },
     "ecommerce":{
       "main-title": "E-commerce <strong>website</strong>",
       "description": "The ideal solution for selling your products online.",
-      "price1": "€3,000",
-      "price2": "€5,000",
-      "price3": "€8,000",
+      "price1": "€ 3,000",
+      "price2": "€ 5,000",
+      "price3": "€ 8,000",
       "info1.1": "Creation of the site including <strong>1 to 5 articles</strong>",
       "info1.2": "<strong>Customized</strong> design",
       "info1.3": "Creation of <strong>custom emails</strong>",
@@ -68,9 +68,9 @@
     "other":{
       "main-title": "Other <strong>services</strong>",
       "description": "Do you have a project in mind? I am at your disposal to help you.",
-      "price1": "€80",
-      "price2": "€30/h",
-      "price3": "€300",
+      "price1": "€ 80",
+      "price2": "€ 30/h",
+      "price3": "€ 300",
       "title1": "Website audit",
       "title2": "Course/Training",
       "title3": "Custom development",
@@ -103,7 +103,8 @@
     "info3.3": "Module for <strong>payment</strong>",
     "info3.4": "<strong>Google</strong> referencing",
     "button": "Request a quote",
-    "popular": "POPULAR"
+    "popular": "POPULAR",
+    "starting-price": "Starting at"
   }
 }
   

@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import pp_entier from 'assets/img/pp_entier.png'
 import Link from 'next/link'
-import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from "react"
+import { useTranslation } from 'react-i18next'
 
 function Presentation() {
   

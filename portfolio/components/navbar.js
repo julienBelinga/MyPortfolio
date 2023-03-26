@@ -2,7 +2,7 @@ import Image from 'next/image';
 import logo from 'assets/img/logo.png'
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);

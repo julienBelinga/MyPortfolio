@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from 'assets/img/codelogo.png'
-import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from "react"
+import { useTranslation } from 'react-i18next'
 
 export default function skills() {
     const { t } = useTranslation()
