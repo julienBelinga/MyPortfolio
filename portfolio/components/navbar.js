@@ -1,8 +1,11 @@
-import Image from 'next/image';
+import Image from 'next/image'
 import logo from 'assets/img/logo.png'
-import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import fr from 'assets/img/flag_fr.png'
+import en from 'assets/img/flag_en.png'
+import Link from 'next/link'
+import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { i18n } from '../i18n.js'
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
@@ -35,6 +38,10 @@ function Navbar() {
   const { t } = useTranslation()
 	if (isHydrated === false) return null
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div id='nav-container'>
       <div id='nav-bg'></div>
@@ -56,6 +63,14 @@ function Navbar() {
             <Link href="/contact">{t('navbar.link5')}</Link>
           </div>
         </div>
+        <div id="flags">
+            <button type="button" onClick={() => changeLanguage('fr')}>
+              <Image src={fr} alt="flag" width={30} height={30}/>
+            </button>
+            <button type="button" onClick={() => changeLanguage('en')}>
+              <Image src={en} alt="flag" width={30} height={30}/>
+            </button>
+          </div>
       </nav>
     </div>
   )

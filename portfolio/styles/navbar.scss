@@ -38,6 +38,24 @@ nav {
     font-weight: 400;
     color: #333;
   }
+
+  #flags{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+
+    button{
+      background: none;
+      border: none;
+    }
+
+    img{
+      margin: 0 5px;
+      cursor: pointer;
+      border-radius: 15px;
+    }
+  }
 }
 .nav-icon {
   display: flex;
