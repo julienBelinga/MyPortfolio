@@ -55,22 +55,24 @@ function Navbar() {
             <span></span>
             <span></span>
           </button>
-          <div className={`navlinks-container ${navOpen ? 'open' : ''}`} ref={navLinksContainerRef}>
-            <Link href="/#project-container">{t('navbar.link1')}</Link>
-            <Link href="/#pricing_vitrine">{t('navbar.link2')}</Link>
-            <Link href="/#pricing_Ecommerce">{t('navbar.link3')}</Link>
-            <Link href="/#pricing_services">{t('navbar.link4')}</Link>
-            <Link href="/contact">{t('navbar.link5')}</Link>
+          <div id="navitems-container" className={`navlinks-container ${navOpen ? 'open' : ''}`}>
+            <div className="navlink-container" ref={navLinksContainerRef}>
+              <Link href="/#project-container">{t('navbar.link1')}</Link>
+              <Link href="/#pricing_vitrine">{t('navbar.link2')}</Link>
+              <Link href="/#pricing_Ecommerce">{t('navbar.link3')}</Link>
+              <Link href="/#pricing_services">{t('navbar.link4')}</Link>
+              <Link href="/contact">{t('navbar.link5')}</Link>
+            </div>
+            <div id="flags">
+              <button type="button" onClick={() => changeLanguage('fr')}>
+                <Image src={fr} alt="flag" width={30} height={30}/>
+              </button>
+              <button type="button" onClick={() => changeLanguage('en')}>
+                <Image src={en} alt="flag" width={30} height={30}/>
+              </button>
+            </div>
           </div>
         </div>
-        <div id="flags">
-            <button type="button" onClick={() => changeLanguage('fr')}>
-              <Image src={fr} alt="flag" width={30} height={30}/>
-            </button>
-            <button type="button" onClick={() => changeLanguage('en')}>
-              <Image src={en} alt="flag" width={30} height={30}/>
-            </button>
-          </div>
       </nav>
     </div>
   )
