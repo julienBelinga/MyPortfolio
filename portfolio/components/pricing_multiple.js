@@ -4,7 +4,7 @@ import Parser from 'html-react-parser'
 import { useEffect, useState } from "react"
 import { useTranslation } from 'react-i18next'
 
-export default function pricing_multiple() {
+export default function Pricing_multiple() {
 
 	const { t } = useTranslation()
 	const [isHydrated, setIsHydrated] = useState(false)

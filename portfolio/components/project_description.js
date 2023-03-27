@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function project_description(props) {
+export default function Project_description(props) {
   return (
     <>
         <div id="description">

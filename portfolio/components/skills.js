@@ -4,7 +4,7 @@ import logo from 'assets/img/codelogo.png'
 import { useEffect, useState } from "react"
 import { useTranslation } from 'react-i18next'
 
-export default function skills() {
+export default function Skills() {
     const { t } = useTranslation()
 
 	const [isHydrated, setIsHydrated] = useState(false)

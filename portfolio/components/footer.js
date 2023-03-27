@@ -7,7 +7,7 @@ import malt from '/assets/img/malt.png'
 import { useEffect, useState } from "react"
 import { useTranslation } from 'react-i18next'
 
-export default function footer() {
+export default function Footer() {
 
   const { t } = useTranslation()
 	const [isHydrated, setIsHydrated] = useState(false)
