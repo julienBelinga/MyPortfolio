@@ -1,0 +1,149 @@
+{
+  "navbar":{
+    "link1": "Projet",
+    "link2": "Site vitrine",
+    "link3": "Site E-commerce",
+    "link4": "Autres services",
+    "link5": "Contact"
+  },
+
+  "presentation": {
+    "title": "Développeur web",
+    "name": "Julien BELINGA",
+    "description": "Je suis un",
+    "role1": "Développeur Front End",
+    "role2": "Développeur Back End",
+    "role3": "DevOps",
+    "role4": "Freelance",
+    "contact": "Contactez moi"
+  },
+
+  "skills": {
+    "title1": "Qui suis-je ?",
+    "presentation": "Je suis un développeur Front-end spécialisé dans le développement web. Je sais m'adapter à vos besoins en mettant en place certaines méthodes tels que le \"mobile-first\" afin de vous fournir un site responsive répondant parfaitement à vos besoins. Je mettrais mes compétences de DEVOPS à votre service pour mettre en place de l'intégration continue et du déploiement continu.",
+    "title2": "L'approche \"mobile-first\" ?",
+    "text-part1": "Environ 80% des personnes qui consulteront votre site web le feront depuis un smartphone et avec des taux de conversion mobiles en hausse de 63 % par rapport aux taux de conversion moyens des ordinateurs de bureau, et que 35% des achats en ligne se font désormais via les supports mobiles, une stratégie mobile-first peut conduire à davantage de profits pour votre entreprise.",
+    "text-part2": "C'est la raison pour laquelle il est important de ne pas négliger le rendu mobile, c'est sur ce constat sur lequel repose l'approche mobile-first. Il s'agira donc de commencer la conception par la vue mobile.",
+    "title3": "Front-end développeur",
+    "subtitle1": "Compétences",
+    "skills": "PHP, Javascript, HTML & CSS, SQL, UX, UI, AJAX, XML",
+    "subtitle2": "Compétences générales",
+    "softskills": "travail d’équipe, créativité, flexible, pédagogue et autonome",
+    "subtitle3": "Outils",
+    "tools": "Git, Github/Gitlab, Visual Studio Code / IntelIJ, Wamp, PHPMyAdmin, Terminal, Figma, Slack, Trello, Jira, Miro,"
+  },
+
+  "project": {
+    "title1": "Einden",
+    "title2": "Portfolio",
+    "title3": "get-touchdown",
+    "description1": "J'ai passé un peu plus d'un an au sein d'EINDEN en tant que développeur web où j'ai eu l'occasion de travailler sur plus d'une trentaine de projets. Mes missions consistaient à réaliser des sites web responsive connecté au logiciel EPHOTODAM via une API. J'ai également eu l'occasion de développer quelques petites features, participer à la conception de certains modules et sites. J'ai aussi travaillé sur la scalabilité d'un modèle de site web.\n\n Les technologies que j'ai utilisé sont PHP, Javascript, HTML, CSS et XML en respectant une méthode AJAX.",
+    "description2": "Pour ce projet, il s'agit simplement de mon Portfolio, c'est le site sur lequel vous vous trouvez actuellement.\n\n Les technologies utilisées pour ce projet sont : HTML, CSS, Javascript tout en respectant une approche \"mobile-first\". J'ai également mis en place un déploiement continu depuis un dépôt Github.",
+    "description3": "Pour ce projet, il s'agit de la landing-page e-commerce de get-touchdown, pour leur landing page j'ai réalisé quelque chose de très \"catchy\" avec des effets attirants l'oeil, quelque chose de créatif et original.\n\n Le framework Next.js à été utilisé pour ce projet, ce dernier est héberger sur Vercel une intégration continue et un déploiement continue on été mis en place (CI/CD). J'ai également lié le site à Stripe (un module de paiement).",
+    "legend1": "Les images présenter ici sont tirer du site d'EINDEN et non des mes réalisations, car ces dernières appartiennent à l'entreprise. Je ne peut donc pas les montrer pour des raisons de confidentialité."
+  },
+
+  "pricing": {
+    "showcase":{
+      "main-title": "Site <strong>vitrine</strong>",
+      "description": "La meilleure solution pour commencencer à augmenter votre visibilité sur le web.",
+      "price1": "800 €",
+      "price2": "1 100 €",
+      "price3": "1 500 €"
+    },
+    "ecommerce":{
+      "main-title": "Site <strong>E-commerce</strong>",
+      "description": "La solution idéale pour vendre vos produits en ligne.",
+      "price1": "3 000 €",
+      "price2": "5 000 €",
+      "price3": "8 000 €",
+      "info1.1": "Création du site comprenant <strong>1 à 5 articles</strong>",
+      "info1.2": "Design <strong>Personnalisé</strong>",
+      "info1.3": "Création d'adresses <strong>mails custom</strong>",
+      "info1.4": "Intégration d'un <strong>module de paiement</strong>",
+      "info2.1": "Jusqu' à <strong>20 articles</strong>",
+      "info3.1": "Nombres d'articles <strong>illimités</strong>",
+      "info3.3": "Design <strong>sur mesure</strong>"
+    },
+    "other":{
+      "main-title": "Autres <strong>services</strong>",
+      "description": "Vous avez un projet en tête ? Je suis à votre disposition pour vous aider.",
+      "price1": "80 €",
+      "price2": "30 €/h",
+      "price3": "300 €",
+      "title1": "Audit de site web",
+      "title2": "Cours/Formation",
+      "title3": "Développement spécifique",
+      "info1.1": "Audit de votre site <strong>Wix</strong>",
+      "info1.2": "Audit de votre site <strong>Wordpress/Shopify</strong>",
+      "info1.3": "Audit de votre <strong>Landing page/Portfolio</strong>",
+      "info1.4": "Audit de votre site <strong>E-commerce</strong>",
+      "info2.1": "Domaine du web <br/>(<strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, PHP, SQL, framework diverse)",
+      "info2.2": "Programmation orienté objet/algorithmique",
+      "info2.3": "Architecture et logiciel",
+      "info2.4": "Abordable pour <strong>tous les niveaux</strong>",
+      "info3.1": "Analysons le besoin <strong>ensemble</strong>",
+      "info3.2": "Développement d'une <strong>application</strong>",
+      "info3.3": "Développement d'un <strong>module</strong>",
+      "info3.4": "Développement d'une <strong>API</strong>"
+    },
+    "title1": "Standard",
+    "info1.1": "Création du site comprenant <strong>1 à 3 pages</strong>",
+    "info1.2": "Design <strong>Personnalisé</strong>",
+    "info1.3": "Création d'adresses <strong>mails custom</strong>",
+    "info1.4": "Certificat <strong>SSL</strong>",
+    "title2": "Personnaliser",
+    "info2.1": "L'offre <strong>Standard</strong>",
+    "info2.2": "Nombres de pages <strong>illimités</strong>",
+    "info2.3": "Module de <strong>réservations/prise de RDV</strong>",
+    "info2.4": "Création d'une <strong>FAQ</strong>",
+    "title3": "Premium",
+    "info3.1": "L'offre <strong>Personnalisé</strong>",
+    "info3.2": "Fonctionnalités sur mesure",
+    "info3.3": "Module de <strong>paiement</strong>",
+    "info3.4": "référencement <strong>Google</strong>",
+    "button": "Demander un devis",
+    "popular": "POPULAIRE",
+    "starting-price": "à partir de"
+  },
+
+  "footer":{
+    "CV": "Mon CV",
+    "contact": "Contact",
+    "legal-mentions": "Mentions légales"
+  },
+
+  "contact":{
+    "lastName": "Nom",
+    "firstName": "Prénom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "message": "Message",
+    "data": "Lors de la validation de ce formulaire, vous consentez à ce que les données soumises soient collectées et stockées en vue d'être utilisées pour traiter votre demande de contact.",
+    "right": "Tous droits réservés",
+    "button": "ENVOYER"
+  },
+
+  "legalMentions":{
+    "about-us": {
+      "title": "Qui sommes nous ?",
+      "content": "L'adresse me mon site est: julien-belinga.fr"
+    },
+    "copyright": {
+      "title": "Droit d'auteur",
+      "content": "L’ensemble de ce site est soumis à une protection de droits d’auteur selon les Articles L335-2 et suivants du Code de la propriété intellectuelle. Toute reproduction ou représentation totale ou partielle de son contenu, images, textes, sons, par quelque procédé utilisé, sans l’autorisation préalable de la société \"Julien Victor Belinga EI\" est strictement interdite. Toute violation constituera une sanction et fera l’objet de poursuite."
+    },
+    "website": {
+      "title": "Site Internet",
+      "creation": {
+        "subtitle": "Création:",
+        "content": "Création de thème personnalisé, d’image de marque, référencement, et hébergement de tout, prestation ‘clé en main’.<br/> Julien Victor Belinga EI<br/> SIRET : 950 698 001 00019<br/> 30 rue Alphonse Daudet<br/> 44 000 Nantes<br/> Tel : (+33)06 45 20 54 90<br/> <Link href=\"https://julien-belinga.fr/\">https://julien-belinga.fr/</Link>"
+      },
+      "hosting": {
+        "subtitle": "Hébergement:",
+        "content": "VERCEL<br/>Vercel Inc.<br/>340 S Lemon Ave #4133<br/>Walnut, CA 91789<br/><Link href=\"https://vercel.com\" target=\"_blank\">https://vercel.com</Link>"
+      }
+    }
+  }
+}
+  

@@ -1,11 +1,19 @@
 import Image from 'next/image'
 import React from 'react'
 import check from 'assets/img/checkmark.png'
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+import { useEffect, useState } from "react"
+import { useTranslation } from 'react-i18next'
 
-export default function pricing_card(props) {
+export default function Pricing_card(props) {
 
+	const { t } = useTranslation()
+	const [isHydrated, setIsHydrated] = useState(false)
+	useEffect(() => {
+		setIsHydrated(true)
+	}, [])
+	if (isHydrated === false) return null
 
 	return (
 		<>
@@ -15,10 +23,10 @@ export default function pricing_card(props) {
 			>
 				<div className="header-container">
 					<p className="popular">
-						<strong>POPULAIRE</strong>
+						<strong>{t('pricing.popular')}</strong>
 					</p>
 					<h3>{props.title}</h3>
-                <p>à partir de<br/>
+                <p>{t('pricing.starting-price')}<br/>
                 <strong>{props.price}</strong></p>
                 <hr/>
 				</div>
@@ -41,7 +49,7 @@ export default function pricing_card(props) {
 					</li>
 				</ul>
 				<div id="button-container">
-                <Link className='button' href="/contact"><button>Demander un devis</button></Link>
+                <Link className='button' href="/contact"><button>{t('pricing.button')}</button></Link>
 				</div>
 			</div>
 		</>

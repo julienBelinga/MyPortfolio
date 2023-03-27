@@ -30,6 +30,20 @@ nav {
   position: fixed;
   z-index: 3;
 
+  .main-navlinks {
+    width: 100%;
+  }
+
+  #navitems-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .navlink-container{
+      padding-top: 20px;
+    }
+
+  }
 
   span {
     font-family: Roboto Flex, sans-serif;
@@ -37,6 +51,24 @@ nav {
     margin-left: 10px;
     font-weight: 400;
     color: #333;
+  }
+
+  #flags{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+
+    button{
+      background: none;
+      border: none;
+    }
+
+    img{
+      margin: 0 5px;
+      cursor: pointer;
+      border-radius: 15px;
+    }
   }
 }
 .nav-icon {
@@ -81,6 +113,26 @@ nav {
 @media (max-width: 900px) {
   nav {
     padding: 15px 20px;
+
+    .main-navlinks{
+      width: fit-content;
+    }
+
+    #navitems-container {
+      flex-direction: column;
+      width: fit-content;
+      justify-content: none;
+      justify-content: flex-start;
+
+      .navlink-container{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    #flags{
+      margin: 0;
+    }
   }
 
   /* nav */

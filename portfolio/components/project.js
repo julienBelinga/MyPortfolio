@@ -2,7 +2,7 @@ import React from 'react'
 import Description from 'components/project_description'
 import Device from 'components/project_device'
 
-export default function project(props) {
+export default function Project(props) {
 
   const even = props.even ? "even" : "odd";
 

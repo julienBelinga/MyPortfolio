@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
 import github from 'assets/img/github.png'
 import linkedIn from 'assets/img/linkedIn.png'
 import malt from 'assets/img/malt.png'
+import { useEffect, useState } from "react"
+import { useTranslation } from 'react-i18next'
 
 export default function Contact() {
     const [name, setName] = useState('')
@@ -11,6 +12,13 @@ export default function Contact() {
     const [email, setEmail] = useState('')
     const [telephone, setTelephone] = useState('')
     const [message, setMessage] = useState('')
+
+    const { t } = useTranslation()
+	const [isHydrated, setIsHydrated] = useState(false)
+	useEffect(() => {
+		setIsHydrated(true)
+	}, [])
+	if (isHydrated === false) return null
 
   return (
     <>
@@ -28,7 +36,7 @@ export default function Contact() {
                         <input type="text"
                         className="form-control"
                         id="name"
-                        placeholder="Nom"
+                        placeholder={t('contact.lastName')}
                         name="name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
@@ -36,7 +44,7 @@ export default function Contact() {
                         <input type="text"
                         className="form-control"
                         id="first-name"
-                        placeholder="Prénom"
+                        placeholder={t('contact.firstName')}
                         name="first-name"
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
@@ -45,7 +53,7 @@ export default function Contact() {
                     <input type="email"
                         className="form-control"
                         id="email"
-                        placeholder="E-mail"
+                        placeholder={t('contact.email')}
                         name="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
@@ -54,13 +62,13 @@ export default function Contact() {
                         className="form-control"
                         id="telephone"
                         name="telephone"
-                        placeholder="N° téléphone"
+                        placeholder={t('contact.phone')}
                         value={telephone}
                         onChange={(e) => setTelephone(e.target.value)}
                         required />
                     <textarea className="form-control"
                         rows="10"
-                        placeholder="MESSAGE"
+                        placeholder={t('contact.message')}
                         name="message"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
@@ -70,11 +78,11 @@ export default function Contact() {
                         type="submit"
                         value="SEND">
                         <div className="alt-send-button">
-                        <i className="fa fa-paper-plane"></i><span className="send-text">SEND</span>
+                        <i className="fa fa-paper-plane"></i><span className="send-text">{t('contact.button')}</span>
                         </div>
                     </button>
                     <p style={{fontSize: "9px"}}>
-                        <em>Lors de la validation de ce formulaire, vous consentez à ce que les données soumises soient collectées et stockées en vue d'être utilisées pour traiter votre demande de contact.</em>
+                        <em>{t('contact.data')}</em>
                     </p>
                 </form>
 
@@ -109,7 +117,7 @@ export default function Contact() {
                         </Link>
                     </ul>
                     <hr/>
-                    <div className="copyright">&copy; tous droits réservés</div>
+                    <div className="copyright">&copy; {t('contact.right')}</div>
                 </div>
             </div> 
         </div> 
