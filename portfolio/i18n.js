@@ -15,4 +15,8 @@ i18n.use(Backend)
 		},
 	})
 
-export default i18n
+const changeLanguage = (lng) => {
+	i18n.changeLanguage(lng)
+}
+	
+export { i18n, changeLanguage }
