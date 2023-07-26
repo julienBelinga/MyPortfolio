@@ -1,31 +1,33 @@
-import Image from 'next/image'
-import React, { useState, useEffect, useRef } from 'react'
-import { useInView } from 'react-intersection-observer'
+import Image from 'next/image';
+import React, { useState, useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 export default function Device(props) {
-
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
     threshold: 0.9,
     triggerOnce: true,
-  })
-  const deviceRef = useRef(null)
+  });
+  const deviceRef = useRef(null);
 
   useEffect(() => {
     if (inView) {
-        setIsVisible(true)
+      setIsVisible(true);
     }
-  }, [inView])
+  }, [inView]);
 
   useEffect(() => {
-    const device = deviceRef.current
+    const device = deviceRef.current;
 
     if (isVisible) {
-        device.classList.add('deviceSlideIn')
+      device.classList.add('deviceSlideIn');
     } else {
-        device.classList.remove('deviceSlideIn')
+      device.classList.remove('deviceSlideIn');
     }
-  }, [isVisible])
+  }, [isVisible]);
+
+  // Set img3 to img2 if img3 is not provided
+  const img3 = props.img3 || props.img2;
 
   return (
     <div ref={ref}>
@@ -74,7 +76,7 @@ export default function Device(props) {
                 <div className="mac_screen_content">
                   <Image
                     className="screen-project"
-                    src={props.img2}
+                    src={img3}
                     width={500}
                     height={500}
                     alt="project screenshot"
@@ -94,5 +96,5 @@ export default function Device(props) {
         {props.legend}
       </legend>
     </div>
-  )
+  );
 }
