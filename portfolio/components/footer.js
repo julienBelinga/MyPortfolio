@@ -20,7 +20,7 @@ export default function Footer() {
     <>
         <footer>
             <ul>
-                <li className="link"><Link href="/CV_freelance.pdf" target="_blank" download>{t('footer.CV')}</Link></li>
+                <li className="link"><Link href="/CV_Julien_Belinga.pdf" target="_blank" download>{t('footer.CV')}</Link></li>
                 <li className="link"><Link href="/contact">{t('footer.contact')}</Link></li>
                 <li className="link"><Link href="/mentions-legales">{t('footer.legal-mentions')}</Link></li>
                 <li>
