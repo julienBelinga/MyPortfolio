@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import "@styles/main.scss";
 import Navbar from "@components/navbar";
 import I18nProvider from "../i18n/i18n-provider";
+import Footer from "@/components/footer";
 
 export async function generateStaticParams() {
   return languages.map((lang) => ({ lang }));
@@ -11,10 +12,11 @@ export async function generateStaticParams() {
 export const metadata: Metadata = {
   title: "Julien Belinga - Portfolio",
   description: "Portfolio de Julien Belinga, développeur web freelance Nantais",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -29,7 +31,8 @@ export default function RootLayout({
       <body>
         <I18nProvider>
           <Navbar />
-          {children}
+          <main>{children}</main>
+          <Footer />
         </I18nProvider>
       </body>
     </html>

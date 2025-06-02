@@ -2,15 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import github from "../assets/img/github.png";
-import linkedIn from "../assets/img/linkedIn.png";
-import malt from "../assets/img/malt.png";
+import github from "@assets/img/github.png";
+import linkedIn from "@assets/img/linkedIn.png";
+import malt from "@assets/img/malt.png";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useParams } from "next/navigation";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
   const [isHydrated, setIsHydrated] = useState<boolean>(false);
+  const params = useParams();
+  const lang = params.lang as string;
 
   useEffect(() => {
     setIsHydrated(true);
@@ -27,10 +30,12 @@ const Footer: React.FC = () => {
           </Link>
         </li>
         <li className="link">
-          <Link href="/contact">{t("footer.contact")}</Link>
+          <Link href={`/${lang}/contact`}>{t("footer.contact")}</Link>
         </li>
         <li className="link">
-          <Link href="/mentions-legales">{t("footer.legal-mentions")}</Link>
+          <Link href={`/${lang}/mentions-legales`}>
+            {t("footer.legal-mentions")}
+          </Link>
         </li>
         <li>
           <ul className="icon-set">

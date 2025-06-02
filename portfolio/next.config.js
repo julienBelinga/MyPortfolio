@@ -4,6 +4,21 @@ const nextConfig = {
     domains: ["localhost"],
     unoptimized: true,
   },
+  experimental: {
+    // appDir est maintenant activé par défaut dans Next.js 14
+  },
+  webpack: (config, { isServer, webpack }) => {
+    return config;
+  },
+  // Ajout de la configuration pour les fichiers statiques
+  async rewrites() {
+    return [
+      {
+        source: "/locales/:path*",
+        destination: "/public/locales/:path*",
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
