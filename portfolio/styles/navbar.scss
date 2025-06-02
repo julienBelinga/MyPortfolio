@@ -26,9 +26,10 @@ nav {
   display: flex;
   align-items: center;
   padding: 15px 25px;
-  background: rgba(250, 250, 250, .9);
+  background: rgba(250, 250, 250, 0.9);
   position: fixed;
   z-index: 3;
+  top: 0;
 
   .main-navlinks {
     width: 100%;
@@ -39,10 +40,9 @@ nav {
     justify-content: space-between;
     width: 100%;
 
-    .navlink-container{
+    .navlink-container {
       padding-top: 20px;
     }
-
   }
 
   span {
@@ -53,18 +53,18 @@ nav {
     color: #333;
   }
 
-  #flags{
+  #flags {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: 20px;
 
-    button{
+    button {
       background: none;
       border: none;
     }
 
-    img{
+    img {
       margin: 0 5px;
       cursor: pointer;
       border-radius: 15px;
@@ -82,7 +82,7 @@ nav {
   display: none;
 }
 
-.navlinks-container{
+.navlinks-container {
   a {
     margin: 0 10px;
     font-size: 16px;
@@ -91,7 +91,7 @@ nav {
     color: #414141;
     position: relative;
 
-    &:after{
+    &:after {
       content: "";
       display: block;
       position: absolute;
@@ -108,13 +108,13 @@ nav {
       transform: scaleX(1);
     }
   }
-} 
+}
 
 @media (max-width: 900px) {
   nav {
     padding: 15px 20px;
 
-    .main-navlinks{
+    .main-navlinks {
       width: fit-content;
     }
 
@@ -124,13 +124,13 @@ nav {
       justify-content: none;
       justify-content: flex-start;
 
-      .navlink-container{
+      .navlink-container {
         display: flex;
         flex-direction: column;
       }
     }
 
-    #flags{
+    #flags {
       margin: 0;
     }
   }
@@ -171,8 +171,7 @@ nav {
     }
   }
 
-  .hamburger 
-  .hamburger span:nth-child(1),
+  .hamburger .hamburger span:nth-child(1),
   .hamburger span:nth-child(3) {
     transition: transform 0.3s ease-out;
   }

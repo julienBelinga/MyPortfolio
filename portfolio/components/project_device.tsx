@@ -1,14 +1,23 @@
-import Image from 'next/image';
-import React, { useState, useEffect, useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
+"use client";
 
-export default function Device(props) {
-  const [isVisible, setIsVisible] = useState(false);
+import Image, { StaticImageData } from "next/image";
+import React, { useState, useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
+
+interface DeviceProps {
+  img1: string | StaticImageData;
+  img2: string | StaticImageData;
+  img3?: string | StaticImageData;
+  legend?: string;
+}
+
+const Device: React.FC<DeviceProps> = ({ img1, img2, img3, legend }) => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
   const { ref, inView } = useInView({
     threshold: 0.9,
     triggerOnce: true,
   });
-  const deviceRef = useRef(null);
+  const deviceRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (inView) {
@@ -18,16 +27,16 @@ export default function Device(props) {
 
   useEffect(() => {
     const device = deviceRef.current;
-
-    if (isVisible) {
-      device.classList.add('deviceSlideIn');
-    } else {
-      device.classList.remove('deviceSlideIn');
+    if (device) {
+      if (isVisible) {
+        device.classList.add("deviceSlideIn");
+      } else {
+        device.classList.remove("deviceSlideIn");
+      }
     }
   }, [isVisible]);
 
-  // Set img3 to img2 if img3 is not provided
-  const img3 = props.img3 || props.img2;
+  const finalImg3 = img3 || img2;
 
   return (
     <div ref={ref}>
@@ -37,10 +46,11 @@ export default function Device(props) {
             <div className="screen">
               <Image
                 className="screen-project"
-                src={props.img1}
+                src={img1}
                 width={500}
                 height={500}
-                alt="project screenshot"
+                alt="Capture d'écran du projet sur mobile"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           </div>
@@ -59,10 +69,11 @@ export default function Device(props) {
             <div className="screen">
               <Image
                 className="screen-project"
-                src={props.img2}
+                src={img2}
                 width={500}
                 height={500}
-                alt="project screenshot"
+                alt="Capture d'écran du projet sur desktop"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           </div>
@@ -76,10 +87,11 @@ export default function Device(props) {
                 <div className="mac_screen_content">
                   <Image
                     className="screen-project"
-                    src={img3}
+                    src={finalImg3}
                     width={500}
                     height={500}
-                    alt="project screenshot"
+                    alt="Capture d'écran du projet sur laptop"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
               </div>
@@ -92,9 +104,11 @@ export default function Device(props) {
           </div>
         </div>
       </div>
-      <legend style={{ fontSize: '8.5px', textAlign: 'center' }}>
-        {props.legend}
+      <legend style={{ fontSize: "8.5px", textAlign: "center" }}>
+        {legend}
       </legend>
     </div>
   );
-}
+};
+
+export default Device;
