@@ -1,3 +1,5 @@
+import HeroBanner from "@/sections/herobanner";
+
 export default function Home({
   params: { lang },
 }: {
@@ -5,7 +7,7 @@ export default function Home({
 }) {
   return (
     <div className="home-container">
-      <h1>Hello world</h1>
+      <HeroBanner />
     </div>
   );
 }
