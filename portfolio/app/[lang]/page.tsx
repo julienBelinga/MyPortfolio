@@ -3,5 +3,9 @@ export default function Home({
 }: {
   params: { lang: string };
 }) {
-  return <>Hello world</>;
+  return (
+    <div className="home-container">
+      <h1>Hello world</h1>
+    </div>
+  );
 }

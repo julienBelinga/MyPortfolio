@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import "@styles/main.scss";
 import Navbar from "@components/navbar";
 import I18nProvider from "../i18n/i18n-provider";
+import Footer from "@components/footer";
 
 export default function RootLayout({
   children,
@@ -17,6 +18,7 @@ export default function RootLayout({
         <I18nProvider>
           <Navbar />
           <main>{children}</main>
+          <Footer />
         </I18nProvider>
       </body>
     </html>
