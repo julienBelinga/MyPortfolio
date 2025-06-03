@@ -2,12 +2,10 @@
 
 import Image from "next/image";
 import logo from "@assets/img/logo.png";
-import fr from "@assets/img/flag_fr.png";
-import en from "@assets/img/flag_en.png";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { i18n } from "../i18n.js";
+import LanguageButton from "./navbar/language_btn_component";
 
 interface NavLinkProps {
   href: string;
@@ -50,10 +48,6 @@ const Navbar: React.FC = () => {
 
   if (!isHydrated) return null;
 
-  const changeLanguage = (lng: "fr" | "en") => {
-    i18n.changeLanguage(lng);
-  };
-
   return (
     <div id="nav-container">
       <div id="nav-bg"></div>
@@ -90,12 +84,7 @@ const Navbar: React.FC = () => {
               <NavLink href="/contact">{t("navbar.link5")}</NavLink>
             </div>
             <div id="flags">
-              <button type="button" onClick={() => changeLanguage("fr")}>
-                <Image src={fr} alt="Drapeau français" width={30} height={30} />
-              </button>
-              <button type="button" onClick={() => changeLanguage("en")}>
-                <Image src={en} alt="English flag" width={30} height={30} />
-              </button>
+              <LanguageButton />
             </div>
           </div>
         </div>
