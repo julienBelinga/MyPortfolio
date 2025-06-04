@@ -1,0 +1,101 @@
+@import "@styles/variables";
+
+.heroBanner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+
+  .content {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+      text-align: center;
+      gap: 2rem;
+    }
+  }
+
+  .textContent {
+    flex: 1;
+
+    h1 {
+      margin-bottom: 2rem;
+
+      .developer {
+        display: block;
+        font-size: 3rem;
+        color: $text-color-dark;
+        margin-bottom: 0.5rem;
+      }
+
+      .fullstack {
+        display: block;
+        font-size: 4rem;
+        color: $text-color-dark;
+        font-family: $font-special;
+      }
+
+      @media (max-width: 768px) {
+        .developer {
+          font-size: 2rem;
+        }
+
+        .fullstack {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    p {
+      color: $text-color-dark;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+      max-width: 600px;
+      line-height: 1.6;
+
+      @media (max-width: 1024px) {
+        margin: 0 auto 3rem auto;
+      }
+    }
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+
+    .profileImage {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 400px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 300px;
+    }
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

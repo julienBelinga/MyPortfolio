@@ -1,5 +1,5 @@
 {
-  "navbar":{
+  "navbar": {
     "link1": "Project",
     "link2": "Showcase website",
     "link3": "E-commerce website",
@@ -10,11 +10,11 @@
   "presentation": {
     "title": "Web Developer",
     "name": "Julien BELINGA",
-    "description": "I am a",
-    "role1":"Front End Developer",
-    "role2":"Back End Developer",
-    "role3":"DevOps",
-    "role4":"Freelance",
+    "description": "Developper",
+    "role1": "Front-end",
+    "role2": "Back-end",
+    "role3": "& DevOps",
+    "role4": "Freelance",
     "contact": "Contact me"
   },
 
@@ -46,14 +46,14 @@
   },
 
   "pricing": {
-    "showcase":{
+    "showcase": {
       "main-title": "Showcase <strong>website</strong>",
       "description": "The best solution to start increasing your visibility on the web.",
       "price1": "€ 800",
       "price2": "€ 1,100",
       "price3": "€ 1,500"
     },
-    "ecommerce":{
+    "ecommerce": {
       "main-title": "E-commerce <strong>website</strong>",
       "description": "The ideal solution for selling your products online.",
       "price1": "€ 3,000",
@@ -67,7 +67,7 @@
       "info3.1": "<strong>Unlimited</strong> number of articles",
       "info3.3": "<strong>Bespoke</strong> design"
     },
-    "other":{
+    "other": {
       "main-title": "Other <strong>services</strong>",
       "description": "Do you have a project in mind? I am at your disposal to help you.",
       "price1": "€ 80",
@@ -109,7 +109,7 @@
     "starting-price": "Starting at"
   },
 
-  "footer":{
+  "footer": {
     "CV": "My resume",
     "contact": "Contact",
     "legal-mentions": "Legal mentions"
@@ -126,7 +126,7 @@
     "button": "SEND"
   },
 
-  "legalMentions":{
+  "legalMentions": {
     "about-us": {
       "title": "Who are we?",
       "content": "The address of my website is: julien-belinga.fr"
@@ -148,4 +148,3 @@
     }
   }
 }
-  

@@ -1,5 +1,5 @@
 {
-  "navbar":{
+  "navbar": {
     "link1": "Projet",
     "link2": "Site vitrine",
     "link3": "Site E-commerce",
@@ -10,10 +10,10 @@
   "presentation": {
     "title": "Développeur web",
     "name": "Julien BELINGA",
-    "description": "Je suis un",
-    "role1": "Développeur Front End",
-    "role2": "Développeur Back End",
-    "role3": "DevOps",
+    "description": "Développeur",
+    "role1": "Front-end",
+    "role2": "Back-end",
+    "role3": "& DevOps",
     "role4": "Freelance",
     "contact": "Contactez moi"
   },
@@ -46,14 +46,14 @@
   },
 
   "pricing": {
-    "showcase":{
+    "showcase": {
       "main-title": "Site <strong>vitrine</strong>",
       "description": "La meilleure solution pour commencencer à augmenter votre visibilité sur le web.",
       "price1": "800 €",
       "price2": "1 100 €",
       "price3": "1 500 €"
     },
-    "ecommerce":{
+    "ecommerce": {
       "main-title": "Site <strong>E-commerce</strong>",
       "description": "La solution idéale pour vendre vos produits en ligne.",
       "price1": "3 000 €",
@@ -67,7 +67,7 @@
       "info3.1": "Nombres d'articles <strong>illimités</strong>",
       "info3.3": "Design <strong>sur mesure</strong>"
     },
-    "other":{
+    "other": {
       "main-title": "Autres <strong>services</strong>",
       "description": "Vous avez un projet en tête ? Je suis à votre disposition pour vous aider.",
       "price1": "80 €",
@@ -109,13 +109,13 @@
     "starting-price": "à partir de"
   },
 
-  "footer":{
+  "footer": {
     "CV": "Mon CV",
     "contact": "Contact",
     "legal-mentions": "Mentions légales"
   },
 
-  "contact":{
+  "contact": {
     "lastName": "Nom",
     "firstName": "Prénom",
     "email": "E-mail",
@@ -126,7 +126,7 @@
     "button": "ENVOYER"
   },
 
-  "legalMentions":{
+  "legalMentions": {
     "about-us": {
       "title": "Qui sommes nous ?",
       "content": "L'adresse me mon site est: julien-belinga.fr"
@@ -148,4 +148,3 @@
     }
   }
 }
-  

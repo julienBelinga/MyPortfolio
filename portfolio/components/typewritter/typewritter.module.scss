@@ -1,0 +1,35 @@
+.typewriter {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 300;
+
+  .staticText {
+    color: #cc7832;
+    margin-right: 8px;
+  }
+
+  .dynamicText {
+    color: #8888c6;
+    padding-left: 16px;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background-color: #2563eb;
+    margin-left: 4px;
+    animation: blink 0.7s infinite;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

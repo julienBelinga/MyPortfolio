@@ -22,5 +22,9 @@ body {
     flex-direction: column;
     padding: 2rem;
     margin-top: 4.5em; /* Correspond à la hauteur de la navbar */
+
+    h1 {
+      font-family: $font-title;
+    }
   }
 }

@@ -1,4 +1,4 @@
-import HeroBanner from "@/sections/herobanner";
+import HeroBanner from "@/sections/herobanner/herobanner";
 
 export default function Home({
   params: { lang },
