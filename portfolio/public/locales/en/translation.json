@@ -126,6 +126,15 @@
     "button": "SEND"
   },
 
+  "stats": {
+    "codeHours": "Coding Hours",
+    "last7Days": "last 30 days",
+    "popularLanguages": "My Popular Languages",
+    "loading": "Loading...",
+    "lastUpdated": "Last updated",
+    "hours": "hours"
+  },
+
   "legalMentions": {
     "about-us": {
       "title": "Who are we?",

@@ -1,0 +1,92 @@
+@import "@styles/variables";
+
+.statsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+  }
+
+  .error {
+    text-align: center;
+    padding: 2rem;
+    color: #ff4444;
+  }
+
+  .lastUpdated {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+    font-style: italic;
+  }
+}
+
+.codeHours {
+  text-align: center;
+  padding: 1rem;
+  width: 40%;
+  background: $color-light;
+  border-radius: 10px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  h3 {
+    color: $text-color-dark;
+    margin-bottom: 1rem;
+    font-family: $font-title;
+    text-align: center;
+  }
+
+  .hours {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $text-color-dark;
+    margin: 0;
+  }
+
+  .subtext {
+    color: $text-color-dark;
+    font-size: 0.9rem;
+  }
+}
+
+.languages {
+  padding: 1rem;
+  width: 40%;
+  background: $color-light;
+  border-radius: 10px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  h3 {
+    color: $text-color-dark;
+    margin-bottom: 1rem;
+    font-family: $font-title;
+    text-align: center;
+  }
+
+  .chart {
+    height: 300px;
+    width: 100%;
+  }
+}

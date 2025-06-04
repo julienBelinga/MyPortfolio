@@ -28,7 +28,7 @@
     "subtitle1": "Compétences",
     "skills": "PHP, Javascript, HTML & CSS, SQL, UX, UI, AJAX, XML",
     "subtitle2": "Compétences générales",
-    "softskills": "travail d’équipe, créativité, flexible, pédagogue et autonome",
+    "softskills": "travail d'équipe, créativité, flexible, pédagogue et autonome",
     "subtitle3": "Outils",
     "tools": "Git, Github/Gitlab, Visual Studio Code / IntelIJ, Wamp, PHPMyAdmin, Terminal, Figma, Slack, Trello, Jira, Miro,"
   },
@@ -48,7 +48,7 @@
   "pricing": {
     "showcase": {
       "main-title": "Site <strong>vitrine</strong>",
-      "description": "La meilleure solution pour commencencer à augmenter votre visibilité sur le web.",
+      "description": "La meilleure solution pour commencerner à augmenter votre visibilité sur le web.",
       "price1": "800 €",
       "price2": "1 100 €",
       "price3": "1 500 €"
@@ -126,6 +126,15 @@
     "button": "ENVOYER"
   },
 
+  "stats": {
+    "codeHours": "Heures de code",
+    "last7Days": "ces 30 derniers jours",
+    "popularLanguages": "Mes langages populaires",
+    "loading": "Chargement...",
+    "lastUpdated": "Dernière actualisation",
+    "hours": "heures"
+  },
+
   "legalMentions": {
     "about-us": {
       "title": "Qui sommes nous ?",
@@ -133,13 +142,13 @@
     },
     "copyright": {
       "title": "Droit d'auteur",
-      "content": "L’ensemble de ce site est soumis à une protection de droits d’auteur selon les Articles L335-2 et suivants du Code de la propriété intellectuelle. Toute reproduction ou représentation totale ou partielle de son contenu, images, textes, sons, par quelque procédé utilisé, sans l’autorisation préalable de la société \"Julien Victor Belinga EI\" est strictement interdite. Toute violation constituera une sanction et fera l’objet de poursuite."
+      "content": "L'ensemble de ce site est soumis à une protection de droits d'auteur selon les Articles L335-2 et suivants du Code de la propriété intellectuelle. Toute reproduction ou représentation totale ou partielle de son contenu, images, textes, sons, par quelque procédé utilisé, sans l'autorisation préalable de la société \"Julien Victor Belinga EI\" est strictement interdite. Toute violation constituera une sanction et fera l'objet de poursuite."
     },
     "website": {
       "title": "Site Internet",
       "creation": {
         "subtitle": "Création:",
-        "content": "Création de thème personnalisé, d’image de marque, référencement, et hébergement de tout, prestation ‘clé en main’.<br/> Julien Victor Belinga EI<br/> SIRET : 950 698 001 00019<br/> 30 rue Alphonse Daudet<br/> 44 000 Nantes<br/> Tel : (+33)06 45 20 54 90<br/> <Link href=\"https://julien-belinga.fr/\">https://julien-belinga.fr/</Link>"
+        "content": "Création de thème personnalisé, d'image de marque, référencement, et hébergement de tout, prestation 'clé en main'.<br/> Julien Victor Belinga EI<br/> SIRET : 950 698 001 00019<br/> 30 rue Alphonse Daudet<br/> 44 000 Nantes<br/> Tel : (+33)06 45 20 54 90<br/> <Link href=\"https://julien-belinga.fr/\">https://julien-belinga.fr/</Link>"
       },
       "hosting": {
         "subtitle": "Hébergement:",

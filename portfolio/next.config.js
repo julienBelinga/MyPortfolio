@@ -17,6 +17,11 @@ const nextConfig = {
         source: "/locales/:path*",
         destination: "/public/locales/:path*",
       },
+      // Ajout d'une règle pour servir wakatime-stats.json depuis n'importe quelle locale
+      {
+        source: "/:locale/wakatime-stats.json",
+        destination: "/wakatime-stats.json",
+      },
     ];
   },
 };

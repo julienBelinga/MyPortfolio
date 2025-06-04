@@ -1,0 +1,32 @@
+{
+  "total_seconds": 193589.772694,
+  "total_hours": "53.77",
+  "languages": [
+    {
+      "name": "Dart",
+      "total_seconds": 77060.404681,
+      "percent": 39.16
+    },
+    {
+      "name": "TypeScript",
+      "total_seconds": 58745.84884,
+      "percent": 29.86
+    },
+    {
+      "name": "SCSS",
+      "total_seconds": 34398.283447,
+      "percent": 17.48
+    },
+    {
+      "name": "XML",
+      "total_seconds": 7801.924452,
+      "percent": 3.97
+    },
+    {
+      "name": "Bash",
+      "total_seconds": 4368.744454,
+      "percent": 2.22
+    }
+  ],
+  "last_updated": "2025-06-04T20:58:55.754Z"
+}

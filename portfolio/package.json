@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
+    "@nivo/bar": "^0.99.0",
     "@types/negotiator": "^0.6.3",
     "@vercel/analytics": "^1.1.2",
     "eslint": "^8.32.0",
@@ -28,8 +29,12 @@
     "sass": "^1.58.3"
   },
   "devDependencies": {
-    "@types/node": "^20.10.8",
+    "@types/axios": "^0.9.36",
+    "@types/node": "^20.17.57",
     "@types/react": "^18.2.47",
-    "typescript": "^5.3.3"
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
