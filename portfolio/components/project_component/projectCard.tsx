@@ -54,7 +54,7 @@ export default function ProjectCard({
           {githubLink && (
             <Link href={githubLink} className={styles.link} target="_blank">
               <Image
-                src={require("@/assets/img/techno/github.png")}
+                src={"@/assets/img/techno/github.png"}
                 alt="GitHub"
                 width={24}
                 height={24}

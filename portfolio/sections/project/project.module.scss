@@ -1,11 +1,25 @@
 .projectSection {
-  margin: 0 -2rem;
   padding: 2rem;
 
   h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
     text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.projectContainer {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+
+  // Pour que les cartes ne soient pas déformées
+  & > * {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: min(100%, 400px);
   }
 }
