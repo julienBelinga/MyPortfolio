@@ -57,28 +57,19 @@ const WakatimeStats: React.FC = () => {
   // Trier les langages par pourcentage décroissant et prendre les 5 premiers
   const sortedLanguages = [...stats.languages]
     .sort((a, b) => b.percent - a.percent)
-    .slice(0, 5)
-    .reverse(); // Inverser l'ordre pour l'affichage de bas en haut
+    .slice(0, 5);
 
-  // Préparation des données pour le graphique
-  const chartData = sortedLanguages.map((lang) => ({
-    language: lang.name,
-    value: lang.percent,
-    background: 100, // Valeur pour la barre de fond
-    formattedValue: `${lang.percent.toFixed(1)}%`,
-  }));
-
-  // Configuration des couleurs ordonnées (inversées pour correspondre à l'ordre d'affichage)
+  // Configuration des couleurs
   const orderedColors = ["#6C8EAD", "#E77563", "#E0CCED", "#5AC9EE", "#EDA551"];
 
   return (
     <div className={styles.statsContainer}>
       <div className={styles.codeHours}>
         <h3>{t("stats.codeHours")}</h3>
-        <p className={styles.hours}>
-          {Math.round(parseFloat(stats.total_hours))} {t("stats.hours")}
-        </p>
         <span className={styles.subtext}>{t("stats.last7Days")}</span>
+        <h2 className={styles.hours}>
+          {Math.round(parseFloat(stats.total_hours))} {t("stats.hours")}
+        </h2>
         <div className={styles.lastUpdated}>
           <span>
             {t("stats.lastUpdated")}:{" "}
@@ -88,84 +79,27 @@ const WakatimeStats: React.FC = () => {
       </div>
       <div className={styles.languages}>
         <h3>{t("stats.popularLanguages")}</h3>
-        <div className={styles.chart}>
-          <ResponsiveBar
-            data={chartData}
-            keys={["value", "background"]}
-            indexBy="language"
-            layout="horizontal"
-            margin={{ top: 10, right: 10, bottom: 20, left: 120 }}
-            padding={0.45}
-            valueScale={{ type: "linear", max: 100 }}
-            layers={[
-              "grid",
-              ({ bars }) => {
-                return bars.map((bar) => {
-                  if (bar.key === "background") {
-                    return (
-                      <rect
-                        key={`${bar.key}.${bar.index}`}
-                        x={bar.x}
-                        y={bar.y}
-                        width={bar.width}
-                        height={bar.height}
-                        fill="#E5E5E5"
-                        rx={4}
-                        ry={4}
-                      />
-                    );
-                  }
-                  return null;
-                });
-              },
-              "bars",
-              ({ bars }) => {
-                return bars.map((bar) => {
-                  if (bar.key === "value") {
-                    return (
-                      <g key={`label-${bar.key}.${bar.index}`}>
-                        <text
-                          x={bar.x + bar.width + 5}
-                          y={bar.y + bar.height / 2}
-                          textAnchor="start"
-                          dominantBaseline="middle"
-                          style={{
-                            fill: "#666",
-                            fontSize: "12px",
-                          }}
-                        >
-                          {bar.data.formattedValue}
-                        </text>
-                      </g>
-                    );
-                  }
-                  return null;
-                });
-              },
-              "axes",
-            ]}
-            colors={({ id, indexValue, data }) => {
-              if (id === "background") return "transparent";
-              const index = chartData.findIndex(
-                (d) => d.language === indexValue
-              );
-              return orderedColors[index];
-            }}
-            borderRadius={4}
-            axisTop={null}
-            axisRight={null}
-            axisBottom={null}
-            axisLeft={{
-              tickSize: 0,
-              tickPadding: 5,
-              tickRotation: 0,
-            }}
-            enableGridY={false}
-            enableLabel={false}
-            role="application"
-            ariaLabel="Languages chart"
-            barAriaLabel={(e) => `${e.indexValue}: ${e.value}%`}
-          />
+        <span className={styles.subtext}>{t("stats.last7Days")}</span>
+        <div className={styles.languagesList}>
+          {sortedLanguages.map((lang, index) => (
+            <div key={lang.name} className={styles.languageItem}>
+              <div className={styles.languageHeader}>
+                <span className={styles.languageName}>{lang.name}</span>
+                <span className={styles.languagePercent}>
+                  {lang.percent.toFixed(1)}%
+                </span>
+              </div>
+              <div className={styles.progressBarContainer}>
+                <div
+                  className={styles.progressBar}
+                  style={{
+                    width: `${lang.percent}%`,
+                    backgroundColor: orderedColors[index],
+                  }}
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

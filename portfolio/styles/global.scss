@@ -23,8 +23,18 @@ body {
     padding: 2rem;
     margin-top: 4.5em; /* Correspond à la hauteur de la navbar */
 
-    h1 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-family: $font-title;
+    }
+
+    p,
+    span {
+      font-family: $font-text;
     }
   }
 }
