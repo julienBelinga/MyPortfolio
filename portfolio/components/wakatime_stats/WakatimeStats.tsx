@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { ResponsiveBar } from "@nivo/bar";
+import Image from "next/image";
 import styles from "./WakatimeStats.module.scss";
+import wakatimeLogo from "@/assets/img/techno/wakatime.png";
 
 interface WakatimeData {
   total_hours: string;
@@ -101,6 +102,23 @@ const WakatimeStats: React.FC = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className={styles.poweredBy}>
+        <span>{t("stats.poweredBy")}</span>{" "}
+        <a
+          href="https://wakatime.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="WakaTime"
+        >
+          <Image
+            src={wakatimeLogo}
+            alt="WakaTime Logo"
+            width={80}
+            height={20}
+            className={styles.wakatimeLogo}
+          />
+        </a>
       </div>
     </div>
   );
