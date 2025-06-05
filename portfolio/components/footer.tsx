@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import github from "@assets/img/github.png";
-import linkedIn from "@assets/img/linkedIn.png";
-import malt from "@assets/img/malt.png";
+import github from "@/assets/img/techno/github.png";
+import linkedIn from "@/assets/img/linkedIn.png";
+import malt from "@/assets/img/malt.png";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "next/navigation";
