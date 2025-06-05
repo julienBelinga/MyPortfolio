@@ -1,5 +1,36 @@
 @import "@styles/variables";
 
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .heroBanner {
   min-height: 90vh;
   display: flex;
@@ -7,6 +38,8 @@
   justify-content: center;
   padding: 0 1rem;
   overflow: visible;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-out forwards;
 
   .content {
     max-width: 1400px;
@@ -28,6 +61,8 @@
     width: 700px;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    animation: slideFromLeft 0.3s ease-out 0.1s forwards;
 
     @media (max-width: 1200px) {
       width: 500px;
@@ -76,6 +111,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    opacity: 0;
+    animation: slideFromBottom 0.3s ease-out 0.05s forwards;
 
     @media (max-width: 1200px) {
       width: 400px;

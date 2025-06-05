@@ -47,19 +47,6 @@ const WakatimeStats: React.FC = () => {
     fetchWakatimeStats();
   }, []);
 
-  if (error) {
-    return <div className={styles.error}>{error}</div>;
-  }
-
-  if (!stats) {
-    return <div className={styles.loading}>{t("stats.loading")}</div>;
-  }
-
-  // Trier les langages par pourcentage décroissant et prendre les 5 premiers
-  const sortedLanguages = [...stats.languages]
-    .sort((a, b) => b.percent - a.percent)
-    .slice(0, 5);
-
   // Configuration des couleurs
   const orderedColors = ["#6C8EAD", "#E77563", "#E0CCED", "#5AC9EE", "#EDA551"];
 
@@ -68,39 +55,77 @@ const WakatimeStats: React.FC = () => {
       <div className={styles.codeHours}>
         <h3>{t("stats.codeHours")}</h3>
         <span className={styles.subtext}>{t("stats.last7Days")}</span>
-        <h2 className={styles.hours}>
-          {Math.round(parseFloat(stats.total_hours))} {t("stats.hours")}
-        </h2>
-        <div className={styles.lastUpdated}>
-          <span>
-            {t("stats.lastUpdated")}:{" "}
-            {new Date(stats.last_updated).toLocaleDateString()}
-          </span>
-        </div>
+        {error ? (
+          <div className={styles.error}>{error}</div>
+        ) : !stats ? (
+          <h2 className={styles.hours}>{t("stats.loading")}</h2>
+        ) : (
+          <h2 className={styles.hours}>
+            {Math.round(parseFloat(stats.total_hours))} {t("stats.hours")}
+          </h2>
+        )}
+        {stats && (
+          <div className={styles.lastUpdated}>
+            <span>
+              {t("stats.lastUpdated")}:{" "}
+              {new Date(stats.last_updated).toLocaleDateString()}
+            </span>
+          </div>
+        )}
       </div>
       <div className={styles.languages}>
         <h3>{t("stats.popularLanguages")}</h3>
         <span className={styles.subtext}>{t("stats.last7Days")}</span>
         <div className={styles.languagesList}>
-          {sortedLanguages.map((lang, index) => (
-            <div key={lang.name} className={styles.languageItem}>
-              <div className={styles.languageHeader}>
-                <span className={styles.languageName}>{lang.name}</span>
-                <span className={styles.languagePercent}>
-                  {lang.percent.toFixed(1)}%
-                </span>
-              </div>
-              <div className={styles.progressBarContainer}>
-                <div
-                  className={styles.progressBar}
-                  style={{
-                    width: `${lang.percent}%`,
-                    backgroundColor: orderedColors[index],
-                  }}
-                />
-              </div>
-            </div>
-          ))}
+          {error ? (
+            <div className={styles.error}>{error}</div>
+          ) : !stats ? (
+            Array(5)
+              .fill(0)
+              .map((_, index) => (
+                <div key={index} className={styles.languageItem}>
+                  <div className={styles.languageHeader}>
+                    <span className={styles.languageName}>
+                      {t("stats.loading")}
+                    </span>
+                    <span className={styles.languagePercent}>--%</span>
+                  </div>
+                  <div className={styles.progressBarContainer}>
+                    <div
+                      className={`${styles.progressBar} ${styles.loading}`}
+                      style={{
+                        width: "100%",
+                        backgroundColor: orderedColors[index],
+                        opacity: 0.3,
+                      }}
+                    />
+                  </div>
+                </div>
+              ))
+          ) : (
+            stats.languages
+              .sort((a, b) => b.percent - a.percent)
+              .slice(0, 5)
+              .map((lang, index) => (
+                <div key={lang.name} className={styles.languageItem}>
+                  <div className={styles.languageHeader}>
+                    <span className={styles.languageName}>{lang.name}</span>
+                    <span className={styles.languagePercent}>
+                      {lang.percent.toFixed(1)}%
+                    </span>
+                  </div>
+                  <div className={styles.progressBarContainer}>
+                    <div
+                      className={styles.progressBar}
+                      style={{
+                        width: `${lang.percent}%`,
+                        backgroundColor: orderedColors[index],
+                      }}
+                    />
+                  </div>
+                </div>
+              ))
+          )}
         </div>
       </div>
       <div className={styles.poweredBy}>
