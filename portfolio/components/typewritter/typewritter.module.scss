@@ -3,7 +3,23 @@
   align-items: center;
   white-space: nowrap;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: min(3rem, 6vw);
+
+  @media (max-width: 1200px) {
+    font-size: min(2.8rem, 6vw);
+  }
+
+  @media (max-width: 1024px) {
+    font-size: min(2.5rem, 5vw);
+  }
+
+  @media (max-width: 768px) {
+    font-size: min(2rem, 5vw);
+  }
+
+  @media (max-width: 480px) {
+    font-size: min(1.8rem, 4.5vw);
+  }
 
   .staticText {
     color: #cc7832;
@@ -12,24 +28,7 @@
 
   .dynamicText {
     color: #8888c6;
-    padding-left: 16px;
-    font-size: min(3rem, 6vw);
-
-    @media (max-width: 1200px) {
-      font-size: min(2.8rem, 6vw);
-    }
-
-    @media (max-width: 1024px) {
-      font-size: min(2.5rem, 5vw);
-    }
-
-    @media (max-width: 768px) {
-      font-size: min(2rem, 5vw);
-    }
-
-    @media (max-width: 480px) {
-      font-size: min(1.8rem, 4.5vw);
-    }
+    padding-left: 10px;
   }
 
   .cursor {

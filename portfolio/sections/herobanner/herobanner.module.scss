@@ -35,7 +35,6 @@
 
     @media (max-width: 1024px) {
       width: 100%;
-      max-width: 500px;
       align-items: center;
     }
 
@@ -76,25 +75,61 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     @media (max-width: 1200px) {
       width: 400px;
     }
 
     @media (max-width: 1024px) {
-      width: 100%;
-      max-width: 400px;
+      width: 300px;
+      height: 500px;
+      overflow: hidden;
+
+      .circleContainer {
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: $color-tertiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     @media (max-width: 768px) {
-      max-width: 300px;
+      width: 250px;
+      height: 400px;
+      margin-top: 50px;
+
+      .circleContainer {
+        width: 250px;
+        height: 250px;
+      }
     }
 
     .profileImage {
       width: 100%;
       height: auto;
-      border-radius: 20px;
       object-fit: contain;
+
+      @media (max-width: 1024px) {
+        position: absolute;
+        object-fit: cover;
+        width: 300px;
+        height: 470px;
+        border-radius: 0 0 150px 150px;
+        transform: translateY(-18%);
+      }
+
+      @media (max-width: 768px) {
+        width: 250px;
+        height: 390px;
+        border-radius: 0 0 125px 125px;
+        transform: translateY(-18%);
+      }
     }
   }
 }

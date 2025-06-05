@@ -34,12 +34,14 @@ export default function HeroBanner() {
           <WakatimeStats />
         </div>
         <div className={styles.imageContainer}>
-          <Image
-            src={profilePic}
-            alt="Profile picture"
-            priority
-            className={styles.profileImage}
-          />
+          <div className={styles.circleContainer}>
+            <Image
+              src={profilePic}
+              alt="Profile picture"
+              priority
+              className={styles.profileImage}
+            />
+          </div>
         </div>
       </div>
     </section>
