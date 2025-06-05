@@ -5,9 +5,14 @@ import styles from "./iconSkill.module.scss";
 interface IconSkillProps {
   techno: string;
   isVisible?: boolean;
+  size?: number;
 }
 
-export default function IconSkill({ techno, isVisible }: IconSkillProps) {
+export default function IconSkill({
+  techno,
+  isVisible,
+  size = 22,
+}: IconSkillProps) {
   return (
     <div
       className={`${styles.iconContainer} ${isVisible ? styles.visible : ""}`}
@@ -16,8 +21,8 @@ export default function IconSkill({ techno, isVisible }: IconSkillProps) {
         <Image
           src={require(`@/assets/img/techno/${techno}.png`)}
           alt={`${techno} logo`}
-          width={50}
-          height={50}
+          width={size}
+          height={size}
         />
       </div>
       <span className={styles.technoName}>{techno}</span>

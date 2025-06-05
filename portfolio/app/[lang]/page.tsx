@@ -1,5 +1,6 @@
 import HeroBanner from "@/sections/herobanner/herobanner";
 import Skills from "@/sections/skills/skills";
+import Project from "@/sections/project/project";
 
 export default function Home({
   params: { lang },
@@ -10,6 +11,7 @@ export default function Home({
     <div className="home-container">
       <HeroBanner />
       <Skills />
+      <Project />
     </div>
   );
 }

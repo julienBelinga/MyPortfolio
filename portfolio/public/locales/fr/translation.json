@@ -27,6 +27,7 @@
   },
 
   "project": {
+    "title": "Projets",
     "title1": "Einden",
     "title2": "Portfolio",
     "title3": "get-touchdown",
@@ -36,70 +37,6 @@
     "description3": "Pour ce projet, il s'agit de la landing-page e-commerce de get-touchdown, pour leur landing page j'ai réalisé quelque chose de très \"catchy\" avec des effets attirants l'oeil, quelque chose de créatif et original.\n\n Le framework Next.js à été utilisé pour ce projet, ce dernier est héberger sur Vercel une intégration continue et un déploiement continue on été mis en place (CI/CD). J'ai également lié le site à Stripe (un module de paiement).",
     "description4": "Pour ce projet, il s'agit du site vitrine d'un bar Rennais, j'ai réalisé ce site en utilisant du HTML, CSS et Javascript, j'ai également mis en place un déploiement continu depuis un dépôt Github. J'ai également ajouté l'API Google Maps pour afficher la localisation du bar sur une carte.",
     "legend1": "Les images présenter ici sont tirer du site d'EINDEN et non des mes réalisations, car ces dernières appartiennent à l'entreprise. Je ne peut donc pas les montrer pour des raisons de confidentialité."
-  },
-
-  "pricing": {
-    "showcase": {
-      "main-title": "Site <strong>vitrine</strong>",
-      "description": "La meilleure solution pour commencerner à augmenter votre visibilité sur le web.",
-      "price1": "800 €",
-      "price2": "1 100 €",
-      "price3": "1 500 €"
-    },
-    "ecommerce": {
-      "main-title": "Site <strong>E-commerce</strong>",
-      "description": "La solution idéale pour vendre vos produits en ligne.",
-      "price1": "3 000 €",
-      "price2": "5 000 €",
-      "price3": "8 000 €",
-      "info1.1": "Création du site comprenant <strong>1 à 5 articles</strong>",
-      "info1.2": "Design <strong>Personnalisé</strong>",
-      "info1.3": "Création d'adresses <strong>mails custom</strong>",
-      "info1.4": "Intégration d'un <strong>module de paiement</strong>",
-      "info2.1": "Jusqu' à <strong>20 articles</strong>",
-      "info3.1": "Nombres d'articles <strong>illimités</strong>",
-      "info3.3": "Design <strong>sur mesure</strong>"
-    },
-    "other": {
-      "main-title": "Autres <strong>services</strong>",
-      "description": "Vous avez un projet en tête ? Je suis à votre disposition pour vous aider.",
-      "price1": "80 €",
-      "price2": "30 €/h",
-      "price3": "300 €",
-      "title1": "Audit de site web",
-      "title2": "Cours/Formation",
-      "title3": "Développement spécifique",
-      "info1.1": "Audit de votre site <strong>Wix</strong>",
-      "info1.2": "Audit de votre site <strong>Wordpress/Shopify</strong>",
-      "info1.3": "Audit de votre <strong>Landing page/Portfolio</strong>",
-      "info1.4": "Audit de votre site <strong>E-commerce</strong>",
-      "info2.1": "Domaine du web <br/>(<strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, PHP, SQL, framework diverse)",
-      "info2.2": "Programmation orienté objet/algorithmique",
-      "info2.3": "Architecture et logiciel",
-      "info2.4": "Abordable pour <strong>tous les niveaux</strong>",
-      "info3.1": "Analysons le besoin <strong>ensemble</strong>",
-      "info3.2": "Développement d'une <strong>application</strong>",
-      "info3.3": "Développement d'un <strong>module</strong>",
-      "info3.4": "Développement d'une <strong>API</strong>"
-    },
-    "title1": "Standard",
-    "info1.1": "Création du site comprenant <strong>1 à 3 pages</strong>",
-    "info1.2": "Design <strong>Personnalisé</strong>",
-    "info1.3": "Création d'adresses <strong>mails custom</strong>",
-    "info1.4": "Certificat <strong>SSL</strong>",
-    "title2": "Personnaliser",
-    "info2.1": "L'offre <strong>Standard</strong>",
-    "info2.2": "Nombres de pages <strong>illimités</strong>",
-    "info2.3": "Module de <strong>réservations/prise de RDV</strong>",
-    "info2.4": "Création d'une <strong>FAQ</strong>",
-    "title3": "Premium",
-    "info3.1": "L'offre <strong>Personnalisé</strong>",
-    "info3.2": "Fonctionnalités sur mesure",
-    "info3.3": "Module de <strong>paiement</strong>",
-    "info3.4": "référencement <strong>Google</strong>",
-    "button": "Demander un devis",
-    "popular": "POPULAIRE",
-    "starting-price": "à partir de"
   },
 
   "footer": {

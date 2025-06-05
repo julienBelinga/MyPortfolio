@@ -38,25 +38,25 @@ export default function Skills() {
           <h3>{t("skills.skill1")}</h3>
           <div className={styles.iconGrid}>
             <div style={{ animationDelay: "0.1s" }}>
-              <IconSkill techno="react" isVisible={isVisible} />
+              <IconSkill techno="react" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "0.2s" }}>
-              <IconSkill techno="next" isVisible={isVisible} />
+              <IconSkill techno="next" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "0.3s" }}>
-              <IconSkill techno="typescript" isVisible={isVisible} />
+              <IconSkill techno="typescript" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "0.4s" }}>
-              <IconSkill techno="html" isVisible={isVisible} />
+              <IconSkill techno="html" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "0.5s" }}>
-              <IconSkill techno="CSS" isVisible={isVisible} />
+              <IconSkill techno="CSS" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "0.6s" }}>
-              <IconSkill techno="javascript" isVisible={isVisible} />
+              <IconSkill techno="javascript" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "0.7s" }}>
-              <IconSkill techno="SCSS" isVisible={isVisible} />
+              <IconSkill techno="SCSS" isVisible={isVisible} size={50} />
             </div>
           </div>
         </div>
@@ -64,13 +64,17 @@ export default function Skills() {
           <h3>{t("skills.skill2")}</h3>
           <div className={styles.iconGrid}>
             <div style={{ animationDelay: "0.8s" }}>
-              <IconSkill techno="flutter" isVisible={isVisible} />
+              <IconSkill techno="flutter" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "0.9s" }}>
-              <IconSkill techno="dart" isVisible={isVisible} />
+              <IconSkill techno="dart" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "1.0s" }}>
-              <IconSkill techno="androidStudio" isVisible={isVisible} />
+              <IconSkill
+                techno="androidStudio"
+                isVisible={isVisible}
+                size={50}
+              />
             </div>
           </div>
         </div>
@@ -78,13 +82,13 @@ export default function Skills() {
           <h3>{t("skills.skill3")}</h3>
           <div className={styles.iconGrid}>
             <div style={{ animationDelay: "1.1s" }}>
-              <IconSkill techno="node" isVisible={isVisible} />
+              <IconSkill techno="node" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "1.2s" }}>
-              <IconSkill techno="sql" isVisible={isVisible} />
+              <IconSkill techno="sql" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "1.3s" }}>
-              <IconSkill techno="spring" isVisible={isVisible} />
+              <IconSkill techno="spring" isVisible={isVisible} size={50} />
             </div>
           </div>
         </div>
@@ -92,22 +96,22 @@ export default function Skills() {
           <h3>{t("skills.skill4")}</h3>
           <div className={styles.iconGrid}>
             <div style={{ animationDelay: "1.4s" }}>
-              <IconSkill techno="github" isVisible={isVisible} />
+              <IconSkill techno="github" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "1.5s" }}>
-              <IconSkill techno="git" isVisible={isVisible} />
+              <IconSkill techno="git" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "1.6s" }}>
-              <IconSkill techno="figma" isVisible={isVisible} />
+              <IconSkill techno="figma" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "1.7s" }}>
-              <IconSkill techno="vscode" isVisible={isVisible} />
+              <IconSkill techno="vscode" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "1.8s" }}>
-              <IconSkill techno="vercel" isVisible={isVisible} />
+              <IconSkill techno="vercel" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "1.9s" }}>
-              <IconSkill techno="cursor" isVisible={isVisible} />
+              <IconSkill techno="cursor" isVisible={isVisible} size={50} />
             </div>
           </div>
         </div>
