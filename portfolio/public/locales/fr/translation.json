@@ -1,9 +1,9 @@
 {
   "navbar": {
-    "link1": "Projet",
-    "link2": "Site vitrine",
-    "link3": "Site E-commerce",
-    "link4": "Autres services",
+    "link1": "Présentation",
+    "link2": "Compétences",
+    "link3": "Projets",
+    "link4": "Expériences",
     "link5": "Contact"
   },
 
@@ -19,18 +19,11 @@
   },
 
   "skills": {
-    "title1": "Qui suis-je ?",
-    "presentation": "Je suis un développeur Front-end spécialisé dans le développement web. Je sais m'adapter à vos besoins en mettant en place certaines méthodes tels que le \"mobile-first\" afin de vous fournir un site responsive répondant parfaitement à vos besoins. Je mettrais mes compétences de DEVOPS à votre service pour mettre en place de l'intégration continue et du déploiement continu.",
-    "title2": "L'approche \"mobile-first\" ?",
-    "text-part1": "Environ 80% des personnes qui consulteront votre site web le feront depuis un smartphone et avec des taux de conversion mobiles en hausse de 63 % par rapport aux taux de conversion moyens des ordinateurs de bureau, et que 35% des achats en ligne se font désormais via les supports mobiles, une stratégie mobile-first peut conduire à davantage de profits pour votre entreprise.",
-    "text-part2": "C'est la raison pour laquelle il est important de ne pas négliger le rendu mobile, c'est sur ce constat sur lequel repose l'approche mobile-first. Il s'agira donc de commencer la conception par la vue mobile.",
-    "title3": "Front-end développeur",
-    "subtitle1": "Compétences",
-    "skills": "PHP, Javascript, HTML & CSS, SQL, UX, UI, AJAX, XML",
-    "subtitle2": "Compétences générales",
-    "softskills": "travail d'équipe, créativité, flexible, pédagogue et autonome",
-    "subtitle3": "Outils",
-    "tools": "Git, Github/Gitlab, Visual Studio Code / IntelIJ, Wamp, PHPMyAdmin, Terminal, Figma, Slack, Trello, Jira, Miro,"
+    "title": "Compétences",
+    "skill1": "Web",
+    "skill2": "Mobile",
+    "skill3": "Back-end",
+    "skill4": "Outils"
   },
 
   "project": {

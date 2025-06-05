@@ -1,0 +1,44 @@
+@import "@styles/variables";
+
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-tertiary;
+  margin: 0 -2rem;
+  padding: 2rem;
+  color: $text-color-light;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .skillsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .skill {
+      flex: 1;
+      min-width: 200px;
+
+      h3 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .iconGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 0 0.4rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
