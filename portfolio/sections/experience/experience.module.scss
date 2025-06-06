@@ -1,0 +1,26 @@
+.experience {
+  padding: 4rem 2rem;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 3rem 1rem;
+
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
