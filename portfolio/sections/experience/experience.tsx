@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./experience.module.scss";
 import JobCard from "@/components/experience/jobCard";
 import { useTranslation } from "react-i18next";
@@ -17,9 +17,33 @@ interface Job {
 
 export default function Experience() {
   const { t } = useTranslation();
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          sectionRef.current?.classList.add(styles.visible);
+        }
+      },
+      {
+        threshold: 0.17,
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
 
   return (
-    <section className={styles.experience}>
+    <section ref={sectionRef} className={styles.experience}>
       <h2 className={styles.experience__title}>{t("experience.title")}</h2>
       <div className={styles.experience__wrapper}>
         <div className={styles.experience__container}>
