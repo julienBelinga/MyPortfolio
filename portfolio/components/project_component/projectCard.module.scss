@@ -6,6 +6,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
 
   &:hover {
     transform: translateY(-5px);
@@ -31,6 +33,10 @@
 
 .content {
   padding: 1.5rem;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 
   h3 {
     font-size: 1.5rem;
@@ -95,6 +101,9 @@
 .links {
   display: flex;
   gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 
   .link {
     display: flex;

@@ -7,7 +7,6 @@ import ProjectCard from "@/components/project_component/projectCard";
 interface Project {
   title: string;
   description: string;
-  imageSrc: string;
   technologies: string[];
   githubLink?: string;
   demoLink?: string;
@@ -31,7 +30,6 @@ export default function project() {
         <ProjectCard
           title={projects.bar.title}
           description={projects.bar.description}
-          imageSrc={projects.bar.imageSrc}
           technologies={projects.bar.technologies}
           githubLink={projects.bar.githubLink}
           demoLink={projects.bar.demoLink}
@@ -39,14 +37,12 @@ export default function project() {
         <ProjectCard
           title={projects.einden.title}
           description={projects.einden.description}
-          imageSrc={projects.einden.imageSrc}
           technologies={projects.einden.technologies}
           demoLink={projects.einden.demoLink}
         />
         <ProjectCard
           title={projects.portfolio.title}
           description={projects.portfolio.description}
-          imageSrc={projects.portfolio.imageSrc}
           technologies={projects.portfolio.technologies}
           githubLink={projects.portfolio.githubLink}
           demoLink={projects.portfolio.demoLink}
@@ -54,7 +50,6 @@ export default function project() {
         <ProjectCard
           title={projects.touchdown.title}
           description={projects.touchdown.description}
-          imageSrc={projects.touchdown.imageSrc}
           technologies={projects.touchdown.technologies}
           githubLink={projects.touchdown.githubLink}
           demoLink={projects.touchdown.demoLink}
