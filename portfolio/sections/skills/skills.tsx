@@ -90,6 +90,9 @@ export default function Skills() {
             <div style={{ animationDelay: "1.3s" }}>
               <IconSkill techno="spring" isVisible={isVisible} size={50} />
             </div>
+            <div style={{ animationDelay: "1.4s" }}>
+              <IconSkill techno="firebase" isVisible={isVisible} size={50} />
+            </div>
           </div>
         </div>
         <div className={styles.skill}>
