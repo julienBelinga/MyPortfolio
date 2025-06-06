@@ -13,10 +13,7 @@ interface Project {
 }
 
 interface Projects {
-  bar: Project;
-  einden: Project;
-  portfolio: Project;
-  touchdown: Project;
+  [key: string]: Project;
 }
 
 export default function project() {
@@ -60,33 +57,16 @@ export default function project() {
         onMouseLeave={handleMouseUp}
         onMouseMove={handleMouseMove}
       >
-        <ProjectCard
-          title={projects.bar.title}
-          description={projects.bar.description}
-          technologies={projects.bar.technologies}
-          githubLink={projects.bar.githubLink}
-          demoLink={projects.bar.demoLink}
-        />
-        <ProjectCard
-          title={projects.einden.title}
-          description={projects.einden.description}
-          technologies={projects.einden.technologies}
-          demoLink={projects.einden.demoLink}
-        />
-        <ProjectCard
-          title={projects.portfolio.title}
-          description={projects.portfolio.description}
-          technologies={projects.portfolio.technologies}
-          githubLink={projects.portfolio.githubLink}
-          demoLink={projects.portfolio.demoLink}
-        />
-        <ProjectCard
-          title={projects.touchdown.title}
-          description={projects.touchdown.description}
-          technologies={projects.touchdown.technologies}
-          githubLink={projects.touchdown.githubLink}
-          demoLink={projects.touchdown.demoLink}
-        />
+        {Object.entries(projects).map(([key, project]) => (
+          <ProjectCard
+            key={key}
+            title={project.title}
+            description={project.description}
+            technologies={project.technologies}
+            githubLink={project.githubLink}
+            demoLink={project.demoLink}
+          />
+        ))}
       </div>
     </section>
   );
