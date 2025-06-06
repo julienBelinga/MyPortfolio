@@ -34,15 +34,43 @@
   },
 
   "project": {
-    "title1": "Einden",
-    "title2": "Portfolio",
-    "title3": "get-touchdown",
-    "title4": "Aux plaisirs démodes",
-    "description1": "I spent just over a year at EINDEN as a web developer where I had the opportunity to work on over thirty projects. My missions consisted of creating responsive websites connected to the EPHOTODAM software via an API. I also had the opportunity to develop some small features, participate in the design of certain modules and sites. I also worked on the scalability of a website model.\n\n The technologies I used were PHP, Javascript, HTML, CSS, and XML, while respecting an AJAX method.",
-    "description2": "For this project, it's simply my portfolio, which is the site you are currently on.\n\n The technologies used for this project are Next.js and vercel (to host the website) while following a \"mobile-first\" approach. I also set up continuous deployment from a Github repository.",
-    "description3": "For this project, it's the e-commerce landing page of get-touchdown, for which I created something very catchy with eye-catching effects, something creative and original.\n\n The Next.js framework was used for this project, which is hosted on Vercel. Continuous integration and continuous deployment (CI/CD) have been implemented. I also linked the site to Stripe (a payment module).",
-    "description4": "For this project, it is the showcase website of a bar in Rennes. I created this website using HTML, CSS, and Javascript. Additionally, I set up continuous deployment from a Github repository. I also integrated the Google Maps API to display the bar's location on a map.",
-    "legend1": "The images presented here are taken from the EINDEN website and not from my own work, as they belong to the company. Therefore, I cannot show them for confidentiality reasons."
+    "title": "Projects",
+    "projects": {
+      "einden": {
+        "title": "Einden",
+        "description": "I spent just over a year at EINDEN as a web developer where I had the opportunity to work on over thirty projects. My missions consisted of creating responsive websites connected to the EPHOTODAM software via an API. I also had the opportunity to develop some small features, participate in the design of certain modules and sites. I also worked on the scalability of a website model.\n\n The technologies I used were PHP, Javascript, HTML, CSS, and XML, while respecting an AJAX method.",
+        "technologies": ["php", "javascript", "html", "CSS"],
+        "demoLink": "https://www.einden.com/"
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "For this project, it's simply my portfolio, which is the site you are currently on.\n\n The technologies used for this project are Next.js and vercel (to host the website) while following a \"mobile-first\" approach. I also set up continuous deployment from a Github repository.",
+        "technologies": ["react", "next", "typescript", "SCSS", "vercel"],
+        "githubLink": "https://github.com/julienBelinga/portfolio",
+        "demoLink": "https://julien-belinga.fr/"
+      },
+      "touchdown": {
+        "title": "get-touchdown",
+        "description": "For this project, it's the e-commerce landing page of get-touchdown, for which I created something very catchy with eye-catching effects, something creative and original.\n\n The Next.js framework was used for this project, which is hosted on Vercel. Continuous integration and continuous deployment (CI/CD) have been implemented. I also linked the site to Stripe (a payment module).",
+        "technologies": [
+          "react",
+          "next",
+          "typescript",
+          "SCSS",
+          "vercel",
+          "stripe"
+        ],
+        "githubLink": "https://github.com/julienBelinga/get-touchdown",
+        "demoLink": "https://get-touchdown.vercel.app/"
+      },
+      "bar": {
+        "title": "Aux plaisirs démodes",
+        "description": "For this project, it is the showcase website of a bar in Rennes. I created this website using HTML, CSS, and Javascript. Additionally, I set up continuous deployment from a Github repository. I also integrated the Google Maps API to display the bar's location on a map.",
+        "technologies": ["html", "CSS", "javascript", "vercel"],
+        "githubLink": "https://github.com/julienBelinga/Aux-plaisirs-demodes",
+        "demoLink": "https://auxplaisirsdemodes.fr/"
+      }
+    }
   },
 
   "pricing": {
