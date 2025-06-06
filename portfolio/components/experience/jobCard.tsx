@@ -16,8 +16,10 @@ interface JobCardProps {
 
 const getCompanyLogo = (logo: string) => {
   try {
-    return require(`@/assets/img/companies/${logo}`).default;
+    const logoName = logo.toLowerCase();
+    return require(`@/assets/img/companies/${logoName}`).default;
   } catch (error) {
+    console.error("Erreur de chargement du logo:", error);
     return null;
   }
 };
@@ -80,9 +82,12 @@ export default function JobCard({
           isHovered ? styles.visible : ""
         }`}
       >
-        {technologies.map((tech, index) => (
-          <IconSkill key={index} techno={tech} isVisible={isHovered} />
-        ))}
+        <h4 className={styles.jobCard__technologiesTitle}>Techno/outils :</h4>
+        <div className={styles.jobCard__technologiesGrid}>
+          {technologies.map((tech, index) => (
+            <IconSkill key={index} techno={tech} isVisible={isHovered} />
+          ))}
+        </div>
       </div>
     </div>
   );
