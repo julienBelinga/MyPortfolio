@@ -88,7 +88,7 @@ export default function Skills() {
               <IconSkill techno="sql" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "1.3s" }}>
-              <IconSkill techno="spring" isVisible={isVisible} size={50} />
+              <IconSkill techno="java" isVisible={isVisible} size={50} />
             </div>
             <div style={{ animationDelay: "1.4s" }}>
               <IconSkill techno="firebase" isVisible={isVisible} size={50} />
