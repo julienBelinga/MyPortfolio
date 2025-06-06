@@ -71,6 +71,11 @@
     @media (max-width: 1024px) {
       width: 100%;
       align-items: center;
+      margin-bottom: 2rem;
+
+      :global(.wakatime-stats) {
+        margin-bottom: 2rem;
+      }
     }
 
     h1 {
