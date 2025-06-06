@@ -117,3 +117,81 @@
     padding-left: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .jobCard {
+    max-width: none;
+    padding: 1.25rem;
+
+    &__description,
+    &__technologies {
+      max-height: none;
+      opacity: 1;
+      overflow: visible;
+    }
+
+    &__description {
+      margin: 1rem 0;
+    }
+
+    &__technologies {
+      padding-top: 1rem;
+      margin-top: 1rem;
+      border-top-color: rgba($color-tertiary, 0.3);
+    }
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .jobCard {
+    padding: 1rem;
+
+    &__header {
+      gap: 0.75rem;
+    }
+
+    &__logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__title {
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+
+      &.noLogo {
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &__dates {
+      font-size: 0.8rem;
+    }
+
+    &__description {
+      font-size: 0.85rem;
+      margin: 0.75rem 0;
+    }
+
+    &__technologiesTitle {
+      font-size: 0.85rem;
+      margin: 0 0 0.75rem;
+    }
+
+    &__technologiesGrid {
+      gap: 0.6rem;
+      padding-left: 0.75rem;
+    }
+  }
+}

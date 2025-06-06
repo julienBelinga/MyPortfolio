@@ -21,26 +21,36 @@ export default function Experience() {
   return (
     <section className={styles.experience}>
       <h2 className={styles.experience__title}>{t("experience.title")}</h2>
-      <div className={styles.experience__container}>
-        {Object.keys(t("experience.jobs", { returnObjects: true })).map(
-          (jobKey, index) => {
-            const job = t(`experience.jobs.${jobKey}`, {
-              returnObjects: true,
-            }) as Job;
-            return (
-              <JobCard
-                key={index}
-                title={job.title}
-                company={job.company}
-                startDate={job.startDate}
-                endDate={job.endDate}
-                description={job.description}
-                technologies={job.technologies}
-                logo={job.logo}
-              />
-            );
-          }
-        )}
+      <div className={styles.experience__wrapper}>
+        <div className={styles.experience__container}>
+          {Object.keys(t("experience.jobs", { returnObjects: true })).map(
+            (jobKey, index) => {
+              const job = t(`experience.jobs.${jobKey}`, {
+                returnObjects: true,
+              }) as Job;
+              return (
+                <div key={index} className={styles.experience__row}>
+                  <div
+                    className={`${styles.experience__card} ${
+                      index % 2 === 0 ? styles.left : styles.right
+                    }`}
+                  >
+                    <JobCard
+                      title={job.title}
+                      company={job.company}
+                      startDate={job.startDate}
+                      endDate={job.endDate}
+                      description={job.description}
+                      technologies={job.technologies}
+                      logo={job.logo}
+                    />
+                  </div>
+                  <div className={styles.experience__dot}></div>
+                </div>
+              );
+            }
+          )}
+        </div>
       </div>
     </section>
   );
