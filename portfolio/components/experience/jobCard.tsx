@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./jobCard.module.scss";
 import IconSkill from "../icon_skill/iconSkill";
@@ -34,7 +34,19 @@ export default function JobCard({
   technologies,
 }: JobCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const companyLogo = logo ? getCompanyLogo(logo) : null;
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <div
@@ -71,7 +83,7 @@ export default function JobCard({
 
       <div
         className={`${styles.jobCard__description} ${
-          isHovered ? styles.visible : ""
+          isHovered || isMobile ? styles.visible : ""
         }`}
       >
         <p>{description}</p>
@@ -79,13 +91,17 @@ export default function JobCard({
 
       <div
         className={`${styles.jobCard__technologies} ${
-          isHovered ? styles.visible : ""
+          isHovered || isMobile ? styles.visible : ""
         }`}
       >
         <h4 className={styles.jobCard__technologiesTitle}>Techno/outils :</h4>
         <div className={styles.jobCard__technologiesGrid}>
           {technologies.map((tech, index) => (
-            <IconSkill key={index} techno={tech} isVisible={isHovered} />
+            <IconSkill
+              key={index}
+              techno={tech}
+              isVisible={isHovered || isMobile}
+            />
           ))}
         </div>
       </div>
