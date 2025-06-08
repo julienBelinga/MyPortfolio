@@ -61,8 +61,7 @@ nav {
           transition: all 0.3s ease;
 
           &:hover {
-            color: $color-dark;
-            transform: translateY(-2px);
+            transform: translateY(-2px) scale(1.05);
           }
         }
       }
