@@ -33,6 +33,7 @@
     margin-bottom: 1.5rem;
     color: $text-color-light;
     font-weight: 600;
+    text-align: center;
   }
 
   p {
@@ -41,11 +42,13 @@
     margin-bottom: 3rem;
     line-height: 1.6;
     font-size: 0.95rem;
+    text-align: center;
   }
 }
 
 .contactDetails {
   margin: 3rem 0;
+  text-align: center;
 
   .detail {
     margin-bottom: 2rem;
