@@ -5,8 +5,10 @@ import styles from "./contact.module.scss";
 import SocialLinks from "@/components/social-links";
 import Link from "next/link";
 import { sendContactEmail } from "@/services/email";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -32,7 +34,9 @@ export default function Contact() {
     // Vérifier le captcha
     const recaptchaToken = recaptchaRef.current?.getValue();
     if (!recaptchaToken) {
-      setErrorMessage("Veuillez compléter le captcha");
+      setErrorMessage(
+        t("contact.error.captcha", "Veuillez compléter le captcha")
+      );
       return;
     }
 
@@ -62,7 +66,9 @@ export default function Contact() {
         setButtonState("idle");
       }
     } catch (error) {
-      setErrorMessage("Erreur lors de l'envoi du message");
+      setErrorMessage(
+        t("contact.error.general", "Erreur lors de l'envoi du message")
+      );
       setButtonState("idle");
     }
   };
@@ -72,19 +78,27 @@ export default function Contact() {
       case "sending":
         return (
           <>
-            <span className={styles.buttonText}>Envoyer</span>
+            <span className={styles.buttonText}>
+              {t("contact.sending", "Envoi en cours...")}
+            </span>
             <span className={styles.checkIcon}>✓</span>
           </>
         );
       case "success":
         return (
           <>
-            <span className={styles.buttonText}>Envoyer</span>
+            <span className={styles.buttonText}>
+              {t("contact.success", "Message envoyé !")}
+            </span>
             <span className={styles.checkIcon}>✓</span>
           </>
         );
       default:
-        return <span className={styles.buttonText}>Envoyer</span>;
+        return (
+          <span className={styles.buttonText}>
+            {t("contact.send", "Envoyer")}
+          </span>
+        );
     }
   };
 
@@ -92,20 +106,21 @@ export default function Contact() {
     <section id="contact" className={styles.contact}>
       <div className={styles.contactContent}>
         <div className={styles.contactInfo}>
-          <h2>Contact</h2>
+          <h2>{t("contact.title", "Contact")}</h2>
           <p>
-            Cliquâ, ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut
+            {t(
+              "contact.description",
+              "Cliquâ, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"
+            )}
           </p>
 
           <div className={styles.contactDetails}>
             <div className={styles.detail}>
-              <h3>Téléphone</h3>
+              <h3>{t("contact.phone", "Téléphone")}</h3>
               <p>06 45 40 54 50</p>
             </div>
             <div className={styles.detail}>
-              <h3>Mail</h3>
+              <h3>{t("contact.email", "Mail")}</h3>
               <Link href="mailto:julienbelinga.pro@gmail.com">
                 julienbelinga.pro@gmail.com
               </Link>
@@ -116,12 +131,12 @@ export default function Contact() {
         </div>
 
         <div className={styles.contactForm}>
-          <h2>Restons en contact</h2>
+          <h2>{t("contact.stayInTouch", "Restons en contact")}</h2>
           <form onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
               <input
                 type="text"
-                placeholder="Nom/Prénom"
+                placeholder={t("contact.lastName", "Nom/Prénom")}
                 value={formData.name}
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
@@ -132,7 +147,7 @@ export default function Contact() {
             <div className={styles.formGroup}>
               <input
                 type="email"
-                placeholder="Email"
+                placeholder={t("contact.email", "Email")}
                 value={formData.email}
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
@@ -142,7 +157,7 @@ export default function Contact() {
             </div>
             <div className={styles.formGroup}>
               <textarea
-                placeholder="Message"
+                placeholder={t("contact.message", "Message")}
                 value={formData.message}
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
