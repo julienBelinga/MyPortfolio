@@ -13,6 +13,11 @@ const Footer: React.FC = () => {
   const params = useParams();
   const lang = params.lang as string;
 
+  const handleDownloadCV = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.open("/CV_julien_belinga.pdf", "_blank");
+  };
+
   useEffect(() => {
     setIsHydrated(true);
   }, []);
@@ -23,7 +28,11 @@ const Footer: React.FC = () => {
     <footer>
       <div className="footer-content">
         <div className="footer-links">
-          <Link href="/CV_Julien_Belinga.pdf" target="_blank" download>
+          <Link
+            href="/CV_julien_belinga.pdf"
+            onClick={handleDownloadCV}
+            className="footer-link"
+          >
             {t("footer.CV")}
           </Link>
           <Link href="mailto:julienbelinga.pro@gmail.com">

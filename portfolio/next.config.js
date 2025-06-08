@@ -22,6 +22,11 @@ const nextConfig = {
         source: "/:locale/wakatime-stats.json",
         destination: "/wakatime-stats.json",
       },
+      // Ajout d'une règle pour le CV
+      {
+        source: "/:locale/CV_julien_belinga.pdf",
+        destination: "/CV_julien_belinga.pdf",
+      },
     ];
   },
 };
