@@ -13,18 +13,15 @@ const LanguageButton = () => {
   const toggleLanguage = () => {
     const newLang = currentLang === "fr" ? "en" : "fr";
 
-    // Gérer le cas où nous sommes à la racine
-    let newPathname;
-    if (pathname === "/") {
-      newPathname = `/${newLang}`;
-    } else {
-      // Si le pathname contient déjà une langue, la remplacer
-      const pathWithoutLang = pathname.split("/").slice(2).join("/");
-      newPathname = `/${newLang}${
-        pathWithoutLang ? `/${pathWithoutLang}` : ""
-      }`;
-    }
+    // Extraire la partie du chemin après la langue
+    const pathParts = pathname.split("/");
+    const pathWithoutLang =
+      pathParts.length > 2 ? `/${pathParts.slice(2).join("/")}` : "";
 
+    // Construire le nouveau chemin avec la nouvelle langue
+    const newPathname = `/${newLang}${pathWithoutLang}`;
+
+    // Changer la langue et rediriger
     i18n.changeLanguage(newLang);
     window.location.href = newPathname;
   };

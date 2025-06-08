@@ -6,20 +6,25 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageButton from "./navbar/language_btn_component";
+import { useParams } from "next/navigation";
 
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
-  <Link href={href}>{children}</Link>
-);
+const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
+  const params = useParams();
+  const lang = params.lang as string;
+  return <Link href={`/${lang}${href}`}>{children}</Link>;
+};
 
 const Navbar: React.FC = () => {
   const [navOpen, setNavOpen] = useState<boolean>(false);
   const navLinksContainerRef = useRef<HTMLDivElement | null>(null);
   const [isHydrated, setIsHydrated] = useState<boolean>(false);
+  const params = useParams();
+  const lang = params.lang as string;
 
   useEffect(() => {
     const handleResize = () => {
@@ -53,7 +58,7 @@ const Navbar: React.FC = () => {
       <div id="nav-bg"></div>
       <nav>
         <Link
-          href="/"
+          href={`/${lang}`}
           className="nav-icon"
           aria-label="homepage"
           aria-current="page"
