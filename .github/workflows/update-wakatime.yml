@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - main
-      - V3-refont
 
 jobs:
   update-stats:
