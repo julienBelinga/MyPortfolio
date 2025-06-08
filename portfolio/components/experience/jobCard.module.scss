@@ -1,0 +1,203 @@
+@import "@/styles/variables";
+
+.jobCard {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba($color-tertiary, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: $color-tertiary;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__logo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    h3 {
+      font-family: $font-title;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      font-family: $font-text;
+      font-size: 0.9rem;
+      margin: 0.2rem 0 0;
+    }
+
+    &.noLogo {
+      padding-left: 0.5rem;
+
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__dates {
+    font-family: $font-special;
+    font-size: 0.85rem;
+  }
+
+  &__description {
+    font-family: $font-text;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: 0;
+
+    &.visible {
+      max-height: 500px;
+      opacity: 1;
+      margin: 1rem 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__technologies {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-top: 1px solid transparent;
+
+    &.visible {
+      max-height: 400px;
+      opacity: 1;
+      padding-top: 1rem;
+      margin-top: 1rem;
+      border-top-color: rgba($color-tertiary, 0.3);
+    }
+  }
+
+  &__technologiesTitle {
+    font-family: $font-special;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0 0 1rem;
+  }
+
+  &__technologiesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .jobCard {
+    max-width: 92%;
+    padding: 1.25rem 1rem;
+
+    &__description {
+      max-height: none;
+      opacity: 1;
+      overflow: visible;
+      margin: 1rem 0;
+    }
+
+    &__technologies {
+      max-height: none;
+      opacity: 1;
+      overflow: visible;
+      padding-top: 1rem;
+      margin-top: 1rem;
+      border-top-color: rgba($color-tertiary, 0.3);
+    }
+
+    &__technologiesGrid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      padding-left: 0.5rem;
+    }
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .jobCard {
+    padding: 1rem 0.75rem;
+
+    &__header {
+      gap: 0.75rem;
+    }
+
+    &__logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__title {
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+
+      &.noLogo {
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &__dates {
+      font-size: 0.8rem;
+    }
+
+    &__description {
+      font-size: 0.85rem;
+      margin: 0.75rem 0;
+    }
+
+    &__technologiesTitle {
+      font-size: 0.85rem;
+      margin: 0 0 0.75rem;
+    }
+
+    &__technologiesGrid {
+      gap: 0.5rem;
+      padding-left: 0.25rem;
+    }
+  }
+}

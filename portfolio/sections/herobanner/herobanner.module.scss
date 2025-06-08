@@ -1,0 +1,187 @@
+@import "@styles/variables";
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.heroBanner {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  overflow: visible;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-out forwards;
+
+  .content {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+      text-align: center;
+      gap: 2rem;
+      justify-content: center;
+    }
+  }
+
+  .textContent {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: slideFromLeft 0.3s ease-out 0.1s forwards;
+
+    @media (max-width: 1200px) {
+      width: 500px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      :global(.wakatime-stats) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+      width: 100%;
+
+      .developer {
+        display: block;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: $text-color-dark;
+        margin-bottom: 0.5rem;
+      }
+
+      .fullstack {
+        display: block;
+        font-size: clamp(3rem, 5vw, 4rem);
+        color: $text-color-dark;
+        font-family: $font-special;
+      }
+    }
+
+    p {
+      color: $text-color-dark;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+      max-width: 600px;
+      line-height: 1.6;
+
+      @media (max-width: 1024px) {
+        margin: 0 auto 3rem auto;
+      }
+    }
+  }
+
+  .imageContainer {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 0;
+    animation: slideFromBottom 0.3s ease-out 0.05s forwards;
+
+    @media (max-width: 1200px) {
+      width: 400px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 300px;
+      height: 500px;
+      overflow: hidden;
+
+      .circleContainer {
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: $color-tertiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 250px;
+      height: 400px;
+      margin-top: 50px;
+
+      .circleContainer {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    .profileImage {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+
+      @media (max-width: 1024px) {
+        position: absolute;
+        object-fit: cover;
+        width: 300px;
+        height: 470px;
+        border-radius: 0 0 150px 150px;
+        transform: translateY(-18%);
+      }
+
+      @media (max-width: 768px) {
+        width: 250px;
+        height: 390px;
+        border-radius: 0 0 125px 125px;
+        transform: translateY(-18%);
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,46 @@
+.projectSection {
+  width: 100%;
+  padding: 2rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: -2em;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.projectContainer {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  user-select: none;
+  padding: 1rem;
+  scroll-behavior: smooth;
+
+  /* Masquer la barre de défilement pour Firefox */
+  scrollbar-width: none;
+
+  /* Masquer la barre de défilement pour Chrome, Safari et Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Style quand on fait un drag */
+  &:active {
+    cursor: grabbing;
+  }
+
+  // Pour que les cartes ne soient pas déformées
+  & > * {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: min(100%, 400px);
+  }
+}

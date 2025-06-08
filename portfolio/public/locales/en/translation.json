@@ -1,132 +1,131 @@
 {
-  "navbar":{
-    "link1": "Project",
-    "link2": "Showcase website",
-    "link3": "E-commerce website",
-    "link4": "Others services",
+  "navbar": {
+    "link1": "About",
+    "link2": "Skills",
+    "link3": "Projects",
+    "link4": "Experience",
     "link5": "Contact"
   },
 
   "presentation": {
     "title": "Web Developer",
     "name": "Julien BELINGA",
-    "description": "I am a",
-    "role1":"Front End Developer",
-    "role2":"Back End Developer",
-    "role3":"DevOps",
-    "role4":"Freelance",
+    "description": "Developer",
+    "role1": "Front-end",
+    "role2": "Back-end",
+    "role3": "& DevOps",
+    "role4": "Freelance",
     "contact": "Contact me"
   },
 
   "skills": {
-    "title1": "Who am I?",
-    "presentation": "I am a Front-end developer specializing in web development. I can adapt to your needs by implementing certain methods such as the \"mobile-first\" approach to provide you with a responsive site that perfectly meets your needs. I will put my DEVOPS skills at your service to set up continuous integration and continuous deployment.",
-    "title2": "What is the \"mobile-first\" approach?",
-    "text-part1": "About 80% of people who visit your website will do so from a smartphone, and with mobile conversion rates up 63% compared to average desktop conversion rates, and 35% of online purchases now made via mobile devices, a mobile-first strategy can lead to greater profits for your business.",
-    "text-part2": "This is why it is important not to neglect mobile rendering. The mobile-first approach is based on this observation. The design process will therefore begin with the mobile view.",
-    "title3": "Front-end developer",
-    "subtitle1": "Skills",
-    "skills": "PHP, Javascript, HTML & CSS, SQL, UX, UI, AJAX, XML",
-    "subtitle2": "Soft Skills",
-    "softskills": "teamwork, creativity, flexibility, pedagogy, and autonomy",
-    "subtitle3": "Tools",
-    "tools": "Git, Github/Gitlab, Visual Studio Code / IntelIJ, Wamp, PHPMyAdmin, Terminal, Figma, Slack, Trello, Jira, Miro,"
+    "title": "Skills",
+    "skill1": "Web",
+    "skill2": "Mobile",
+    "skill3": "Back-end",
+    "skill4": "Tools"
   },
 
   "project": {
-    "title1": "Einden",
-    "title2": "Portfolio",
-    "title3": "get-touchdown",
-    "title4": "Aux plaisirs démodes",
-    "description1": "I spent just over a year at EINDEN as a web developer where I had the opportunity to work on over thirty projects. My missions consisted of creating responsive websites connected to the EPHOTODAM software via an API. I also had the opportunity to develop some small features, participate in the design of certain modules and sites. I also worked on the scalability of a website model.\n\n The technologies I used were PHP, Javascript, HTML, CSS, and XML, while respecting an AJAX method.",
-    "description2": "For this project, it's simply my portfolio, which is the site you are currently on.\n\n The technologies used for this project are Next.js and vercel (to host the website) while following a \"mobile-first\" approach. I also set up continuous deployment from a Github repository.",
-    "description3": "For this project, it's the e-commerce landing page of get-touchdown, for which I created something very catchy with eye-catching effects, something creative and original.\n\n The Next.js framework was used for this project, which is hosted on Vercel. Continuous integration and continuous deployment (CI/CD) have been implemented. I also linked the site to Stripe (a payment module).",
-    "description4": "For this project, it is the showcase website of a bar in Rennes. I created this website using HTML, CSS, and Javascript. Additionally, I set up continuous deployment from a Github repository. I also integrated the Google Maps API to display the bar's location on a map.",
-    "legend1": "The images presented here are taken from the EINDEN website and not from my own work, as they belong to the company. Therefore, I cannot show them for confidentiality reasons."
+    "title": "Projects",
+    "projects": {
+      "BJJI": {
+        "title": "BJJ Insight",
+        "description": "Mobile application connecting Brazilian Jiu-Jitsu practitioners with high-level athletes, available on iOS and Android. The platform allows practitioners to ask all their questions directly to the athletes of their choice. A landing page presents the application, its features, and facilitates downloading from the stores. The application integrates a messaging system and secure transactions.",
+        "technologies": [
+          "flutter",
+          "dart",
+          "typescript",
+          "stripe",
+          "firebase",
+          "android",
+          "ios",
+          "next"
+        ],
+        "githubLink": "https://github.com/BJJ-Insight"
+      },
+      "traiteurcreole": {
+        "title": "Passion créole",
+        "description": "Showcase website for an Antillean caterer in Île-de-France, specializing in events. The site presents catering services, proposed menus, and allows clients to discover authentic Creole cuisine. A dedicated section highlights services for weddings, seminars, and other events. The site also offers a contact form for personalized quotes.",
+        "technologies": ["next", "typescript", "tailwind", "vercel"],
+        "githubLink": "https://github.com/julienBelinga/passionCreole-site",
+        "demoLink": "https://passion-creole-site.vercel.app/"
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Personal portfolio developed with Next.js and TypeScript, showcasing my projects and skills. The site follows a mobile-first approach and uses SCSS for styling. It integrates the WakaTime API to display my real-time development statistics as well as an API for mail service. Deployment is automated via GitHub Actions and hosted on Vercel.",
+        "technologies": [
+          "next",
+          "typescript",
+          "SCSS",
+          "vercel",
+          "api",
+          "github"
+        ],
+        "githubLink": "https://github.com/julienBelinga/MyPortfolio",
+        "demoLink": "https://julien-belinga.fr/"
+      },
+      "process": {
+        "title": "Process",
+        "description": "Website for my former Brazilian Jiu-Jitsu club in Nantes. The site presents class schedules, pricing, and various activities offered by the club. It also allows visitors to discover the sport and the club's philosophy. The site was developed with simple and efficient technologies to ensure easy maintenance by club members.",
+        "technologies": ["html", "javascript", "CSS", "vercel"],
+        "githubLink": "https://github.com/julienBelinga/process",
+        "demoLink": "https://processjj.fr/"
+      },
+      "bar": {
+        "title": "Aux plaisirs démodes",
+        "description": "Showcase website developed for a bar in Rennes. The site was created with HTML, CSS, and JavaScript, integrating the Google Maps API for location. A continuous deployment system was set up via GitHub to facilitate updates.",
+        "technologies": ["html", "CSS", "javascript", "vercel"],
+        "githubLink": "https://github.com/julienBelinga/Aux-plaisirs-demodes",
+        "demoLink": "https://auxplaisirsdemodes.fr/"
+      },
+      "touchdown": {
+        "title": "get-touchdown",
+        "description": "E-commerce landing page developed for get-touchdown with a creative and eye-catching design, emphasizing user experience through animations and visual effects. Developed with Next.js and deployed on Vercel with a CI/CD pipeline. Integration of the Stripe payment system for transaction processing.",
+        "technologies": ["next", "typescript", "SCSS", "vercel", "stripe"],
+        "githubLink": "https://github.com/julienBelinga/sport-evolution"
+      }
+    }
   },
 
-  "pricing": {
-    "showcase":{
-      "main-title": "Showcase <strong>website</strong>",
-      "description": "The best solution to start increasing your visibility on the web.",
-      "price1": "€ 800",
-      "price2": "€ 1,100",
-      "price3": "€ 1,500"
-    },
-    "ecommerce":{
-      "main-title": "E-commerce <strong>website</strong>",
-      "description": "The ideal solution for selling your products online.",
-      "price1": "€ 3,000",
-      "price2": "€ 5,000",
-      "price3": "€ 8,000",
-      "info1.1": "Creation of the site including <strong>1 to 5 articles</strong>",
-      "info1.2": "<strong>Customized</strong> design",
-      "info1.3": "Creation of <strong>custom emails</strong>",
-      "info1.4": "Integration of a <strong>payment module</strong>",
-      "info2.1": "Up to <strong>20 articles</strong>",
-      "info3.1": "<strong>Unlimited</strong> number of articles",
-      "info3.3": "<strong>Bespoke</strong> design"
-    },
-    "other":{
-      "main-title": "Other <strong>services</strong>",
-      "description": "Do you have a project in mind? I am at your disposal to help you.",
-      "price1": "€ 80",
-      "price2": "€ 30/h",
-      "price3": "€ 300",
-      "title1": "Website audit",
-      "title2": "Course/Training",
-      "title3": "Custom development",
-      "info1.1": "Audit of your <strong>Wix</strong> website",
-      "info1.2": "Audit of your <strong>Wordpress/Shopify</strong> website",
-      "info1.3": "Audit of your <strong>Landing page/Portfolio</strong>",
-      "info1.4": "Audit of your <strong>E-commerce</strong> website",
-      "info2.1": "Web domain <br/>(<strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, PHP, diverse framework)",
-      "info2.2": "Object-oriented programming/algorithmic",
-      "info2.3": "Architecture and software",
-      "info2.4": "Affordable for <strong>all levels</strong>",
-      "info3.1": "Let's analyze the need <strong>together</strong>",
-      "info3.2": "Development of an <strong>application</strong>",
-      "info3.3": "Development of a <strong>module</strong>",
-      "info3.4": "Development of an <strong>API</strong>"
-    },
-    "title1": "Standard",
-    "info1.1": "Creation of the site including <strong>1 to 3 pages</strong>",
-    "info1.2": "<strong>Customized</strong> design",
-    "info1.3": "Creation of <strong>custom email addresses</strong>",
-    "info1.4": "<strong>SSL</strong> certificate",
-    "title2": "Customize",
-    "info2.1": "The <strong>Standard</strong> offer",
-    "info2.2": "<strong>Unlimited</strong> number of pages",
-    "info2.3": "Module for <strong>reservations/appointments</strong>",
-    "info2.4": "Creation of a <strong>FAQ</strong>",
-    "title3": "Premium",
-    "info3.1": "The <strong>Customize</strong> offer",
-    "info3.2": "Customized functionalities",
-    "info3.3": "Module for <strong>payment</strong>",
-    "info3.4": "<strong>Google</strong> referencing",
-    "button": "Request a quote",
-    "popular": "POPULAR",
-    "starting-price": "Starting at"
-  },
-
-  "footer":{
-    "CV": "My resume",
+  "footer": {
+    "CV": "My Resume",
     "contact": "Contact",
-    "legal-mentions": "Legal mentions"
+    "legal-mentions": "Legal Notices"
   },
 
   "contact": {
-    "firstName": "Name",
-    "lastName": "Last name",
+    "title": "Contact",
+    "description": "Don't hesitate to contact me for any questions or project proposals. I will respond as soon as possible.",
+    "lastName": "Last Name / First Name",
+    "firstName": "First Name",
     "email": "Email",
     "phone": "Phone",
     "message": "Message",
+    "stayInTouch": "Let's stay in touch",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent!",
+    "error": {
+      "captcha": "Please complete the captcha",
+      "general": "Error sending message"
+    },
     "data": "By submitting this form, you consent to the collection and storage of the submitted data for the purpose of processing your contact request.",
-    "right": "All rights reserved.",
+    "right": "All rights reserved",
     "button": "SEND"
   },
 
-  "legalMentions":{
+  "stats": {
+    "codeHours": "Coding Hours",
+    "last7Days": "last 30 days",
+    "popularLanguages": "My Popular Languages",
+    "loading": "Loading...",
+    "lastUpdated": "Last updated",
+    "hours": "hours",
+    "poweredBy": "Powered by"
+  },
+
+  "legalMentions": {
     "about-us": {
       "title": "Who are we?",
       "content": "The address of my website is: julien-belinga.fr"
@@ -139,13 +138,72 @@
       "title": "Website",
       "creation": {
         "subtitle": "Creation:",
-        "content": "Custom theme creation, branding, referencing, and hosting of any \"turnkey\" service.<br/>Julien Victor Belinga EI<br/>SIRET: 950 698 001 00019<br/>30 rue Alphonse Daudet<br/>44 000 Nantes<br/>Phone: (+33)06 45 20 54 90<br/><a href=\"https://julien-belinga.fr/\">https://julien-belinga.fr/</a>"
+        "content": "Custom theme creation, branding, referencing, and hosting of any \"turnkey\" service.<br/>Julien Victor Belinga EI<br/>SIRET: 950 698 001 00019<br/>30 rue Alphonse Daudet<br/>44 000 Nantes<br/>Phone: (+33)06 45 20 54 90<br/><Link href=\"https://julien-belinga.fr/\">https://julien-belinga.fr/</Link>"
       },
       "hosting": {
         "subtitle": "Hosting:",
-        "content": "VERCEL<br/>Vercel Inc.<br/>340 S Lemon Ave #4133<br/>Walnut, CA 91789<br/><a href=\"https://vercel.com\" target=\"_blank\">https://vercel.com</a>"
+        "content": "VERCEL<br/>Vercel Inc.<br/>340 S Lemon Ave #4133<br/>Walnut, CA 91789<br/><Link href=\"https://vercel.com\" target=\"_blank\">https://vercel.com</Link>"
+      }
+    }
+  },
+
+  "experience": {
+    "title": "Experience",
+    "jobs": {
+      "bjjinsight": {
+        "title": "Owner",
+        "company": "BJJ Insight",
+        "startDate": "2024",
+        "endDate": "Present",
+        "description": "Creation of a sports service application dedicated to Brazilian Jiu-Jitsu. Full-stack development of an innovative platform for the BJJ community.",
+        "technologies": [
+          "flutter",
+          "dart",
+          "stripe",
+          "react",
+          "node",
+          "typescript",
+          "firebase"
+        ]
+      },
+      "capgemini": {
+        "title": "Full-stack Developer",
+        "company": "Capgemini",
+        "startDate": "2022",
+        "endDate": "2024",
+        "logo": "capgemini.png",
+        "description": "As a Java developer at Capgemini in Nantes, I participated in the development and maintenance of enterprise applications, using the latest technologies and agile methodologies.",
+        "technologies": [
+          "java",
+          "spring",
+          "angular",
+          "typescript",
+          "jenkins",
+          "jira",
+          "git",
+          "api",
+          "gitlab",
+          "jest"
+        ]
+      },
+      "einden": {
+        "title": "Web Developer",
+        "company": "Einden",
+        "startDate": "2021",
+        "endDate": "2022",
+        "logo": "einden.png",
+        "description": "Creation and integration of websites connected to software via API. Development of custom features and maintenance of existing web applications.",
+        "technologies": ["html", "CSS", "javascript", "php", "mysql", "api"]
+      },
+      "avancenet": {
+        "title": "Web Developer",
+        "company": "AvanceNet",
+        "startDate": "09/2020",
+        "endDate": "09/2020",
+        "logo": "avancenet.png",
+        "description": "Development of a showcase website with Drupal CMS. Implementation of custom features and integration of dynamic content.",
+        "technologies": ["drupal", "php", "html", "CSS", "javascript"]
       }
     }
   }
 }
-  

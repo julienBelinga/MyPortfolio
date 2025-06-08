@@ -1,0 +1,52 @@
+.typewriter {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: min(3rem, 6vw);
+
+  @media (max-width: 1200px) {
+    font-size: min(2.8rem, 6vw);
+  }
+
+  @media (max-width: 1024px) {
+    font-size: min(2.5rem, 5vw);
+  }
+
+  @media (max-width: 768px) {
+    font-size: min(2rem, 5vw);
+  }
+
+  @media (max-width: 480px) {
+    font-size: min(1.8rem, 4.5vw);
+  }
+
+  .staticText {
+    color: #cc7832;
+    margin-right: 8px;
+  }
+
+  .dynamicText {
+    color: #8888c6;
+    padding-left: 10px;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background-color: #2563eb;
+    margin-left: 4px;
+    animation: blink 0.7s infinite;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

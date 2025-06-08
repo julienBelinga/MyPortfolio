@@ -1,0 +1,207 @@
+@import "@/styles/variables.scss";
+
+.experience {
+  padding: 4rem 2rem;
+  position: relative;
+  overflow-x: hidden;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-family: $font-title;
+  }
+
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      background: $color-tertiary;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transform-origin: top;
+      scale: 0 1;
+      transition: scale 0.3s ease-out;
+    }
+  }
+
+  &.visible {
+    .experience__wrapper::before {
+      scale: 1 1;
+    }
+
+    .experience__dot {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+
+    .experience__card {
+      opacity: 1;
+      transform: translateX(0);
+
+      &.right {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    background: $color-light;
+    border: 2px solid $color-tertiary;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transition-delay: 0.15s;
+    z-index: 1;
+  }
+
+  &__card {
+    width: 45%;
+    position: relative;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transition-delay: 0.2s;
+
+    &.left {
+      padding-right: 380px;
+      transform: translateX(-50px);
+    }
+
+    &.right {
+      margin-left: auto;
+      padding-left: 60px;
+      transform: translateX(50px);
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .experience {
+    padding: 4rem 0;
+
+    &__wrapper {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .experience {
+    &__wrapper {
+      max-width: 1000px;
+    }
+
+    &__card {
+      &.left {
+        padding-right: 450px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 3rem 0.5rem;
+
+    &__wrapper {
+      &::before {
+        left: 12px;
+      }
+    }
+
+    &__row {
+      justify-content: flex-start;
+    }
+
+    &__dot {
+      left: 12.5px;
+      top: 20px;
+      transform: translateX(0);
+    }
+
+    &__card {
+      width: calc(100% - 20px);
+      margin-left: 20px;
+      padding-left: 10px;
+      padding-right: 0;
+
+      &.left,
+      &.right {
+        margin-left: 20px;
+        padding-left: 10px;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 2rem 0.25rem;
+
+    &__title {
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    &__wrapper {
+      padding: 0 0.25rem;
+
+      &::before {
+        left: 8px;
+      }
+    }
+
+    &__container {
+      gap: 3rem;
+    }
+
+    &__dot {
+      left: 1.5%;
+      width: 10px;
+      height: 10px;
+    }
+
+    &__card {
+      width: calc(100% - 18px);
+      margin-left: 18px;
+      padding-left: 8px;
+
+      &.left,
+      &.right {
+        margin-left: 18px;
+        padding-left: 8px;
+      }
+    }
+  }
+}
