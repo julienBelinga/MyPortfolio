@@ -43,7 +43,7 @@ export default function Experience() {
   }, []);
 
   return (
-    <section ref={sectionRef} className={styles.experience}>
+    <section id="experience" ref={sectionRef} className={styles.experience}>
       <h2 className={styles.experience__title}>{t("experience.title")}</h2>
       <div className={styles.experience__wrapper}>
         <div className={styles.experience__container}>

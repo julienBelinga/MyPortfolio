@@ -77,11 +77,11 @@ const Navbar: React.FC = () => {
             className={`navlinks-container ${navOpen ? "open" : ""}`}
           >
             <div className="navlink-container" ref={navLinksContainerRef}>
-              <NavLink href="/#project-container">{t("navbar.link1")}</NavLink>
-              <NavLink href="/#pricing_vitrine">{t("navbar.link2")}</NavLink>
-              <NavLink href="/#pricing_Ecommerce">{t("navbar.link3")}</NavLink>
-              <NavLink href="/#pricing_services">{t("navbar.link4")}</NavLink>
-              <NavLink href="/contact">{t("navbar.link5")}</NavLink>
+              <NavLink href="/#herobanner">{t("navbar.link1")}</NavLink>
+              <NavLink href="/#projects">{t("navbar.link2")}</NavLink>
+              <NavLink href="/#skills">{t("navbar.link3")}</NavLink>
+              <NavLink href="/#experience">{t("navbar.link4")}</NavLink>
+              <NavLink href="/#contact">{t("navbar.link5")}</NavLink>
             </div>
             <div id="flags">
               <LanguageButton />

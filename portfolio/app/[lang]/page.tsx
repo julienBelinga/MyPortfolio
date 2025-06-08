@@ -12,8 +12,8 @@ export default function Home({
   return (
     <div className="home-container">
       <HeroBanner />
-      <Skills />
       <Project />
+      <Skills />
       <Experience />
       <Contact />
     </div>

@@ -19,7 +19,7 @@ export default function HeroBanner() {
   ];
 
   return (
-    <section className={styles.heroBanner}>
+    <section id="herobanner" className={styles.heroBanner}>
       <div className={styles.content}>
         <div className={styles.textContent}>
           <h1>

@@ -175,8 +175,98 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-weight: 500;
+  position: relative;
+  overflow: hidden;
 
   &:hover {
     background-color: darken($color-tertiary, 20%);
+  }
+
+  &.sending {
+    pointer-events: none;
+
+    .buttonText {
+      animation: slideOutLeft 0.3s ease-out forwards;
+    }
+
+    .checkIcon {
+      animation: slideInCenter 0.3s ease-out 0.3s forwards;
+    }
+  }
+
+  &.success {
+    .checkIcon {
+      animation: slideOutLeft 0.3s ease-out forwards;
+    }
+
+    .buttonText {
+      animation: slideInRight 0.3s ease-out 0.3s forwards;
+    }
+  }
+}
+
+.buttonText {
+  display: inline-block;
+  position: relative;
+}
+
+.checkIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(100px);
+  opacity: 0;
+  font-size: 1.2rem;
+}
+
+.recaptcha {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animations
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInCenter {
+  0% {
+    transform: translate(-50%, -50%) translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

@@ -47,7 +47,7 @@ export default function project() {
   };
 
   return (
-    <section className={styles.projectSection}>
+    <section id="projects" className={styles.projectSection}>
       <h2>{t("project.title")}</h2>
       <div
         ref={containerRef}
