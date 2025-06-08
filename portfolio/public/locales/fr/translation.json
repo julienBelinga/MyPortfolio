@@ -29,39 +29,61 @@
   "project": {
     "title": "Projets",
     "projects": {
-      "einden": {
-        "title": "Einden",
-        "description": "J'ai passé un peu plus d'un an au sein d'EINDEN en tant que développeur web où j'ai eu l'occasion de travailler sur plus d'une trentaine de projets. Mes missions consistaient à réaliser des sites web responsive connecté au logiciel EPHOTODAM via une API. J'ai également eu l'occasion de développer quelques petites features, participer à la conception de certains modules et sites. J'ai aussi travaillé sur la scalabilité d'un modèle de site web.\n\n Les technologies que j'ai utilisé sont PHP, Javascript, HTML, CSS et XML en respectant une méthode AJAX.",
-        "technologies": ["php", "javascript", "html", "CSS"],
-        "demoLink": "https://www.einden.com/"
+      "BJJI": {
+        "title": "BJJ Insight",
+        "description": "Application mobile de mise en relation entre pratiquants de Jiu-Jitsu Brésilien et athlètes de haut niveau, disponible sur iOS et Android. La plateforme permet aux pratiquants de poser toutes leurs questions directement aux athlètes de leur choix. Une landing page présente l'application, ses fonctionnalités et facilite le téléchargement sur les stores. L'application intègre un système de messagerie, de transactions sécurisées.",
+        "technologies": [
+          "flutter",
+          "dart",
+          "typescript",
+          "stripe",
+          "firebase",
+          "android",
+          "ios",
+          "next"
+        ],
+        "githubLink": "https://github.com/BJJ-Insight"
+      },
+      "traiteurcreole": {
+        "title": "Passion créole",
+        "description": "Site vitrine pour un traiteur antillais en Île-de-France, spécialisé dans l'événementiel. Le site présente les services de traiteur, les menus proposés et permet aux clients de découvrir la cuisine créole authentique. Une section dédiée met en avant les prestations pour les mariages, séminaires et autres événements. Le site offre également un formulaire de contact pour les devis personnalisés.",
+        "technologies": ["next", "typescript", "tailwind", "vercel"],
+        "githubLink": "https://github.com/julienBelinga/passionCreole-site",
+        "demoLink": "https://passion-creole-site.vercel.app/"
       },
       "portfolio": {
         "title": "Portfolio",
-        "description": "Pour ce projet, il s'agit simplement de mon Portfolio, c'est le site sur lequel vous vous trouvez actuellement.\n\n Les technologies utilisées pour ce projet sont : Next.js et vercel (pour l'hébergement) tout en respectant une approche \"mobile-first\". J'ai également mis en place un déploiement continu depuis un dépôt Github.",
-        "technologies": ["react", "next", "typescript", "SCSS", "vercel"],
-        "githubLink": "https://github.com/julienBelinga/portfolio",
-        "demoLink": "https://julien-belinga.fr/"
-      },
-      "touchdown": {
-        "title": "get-touchdown",
-        "description": "Pour ce projet, il s'agit de la landing-page e-commerce de get-touchdown, pour leur landing page j'ai réalisé quelque chose de très \"catchy\" avec des effets attirants l'oeil, quelque chose de créatif et original.\n\n Le framework Next.js à été utilisé pour ce projet, ce dernier est héberger sur Vercel une intégration continue et un déploiement continue on été mis en place (CI/CD). J'ai également lié le site à Stripe (un module de paiement).",
+        "description": "Portfolio personnel développé avec Next.js et TypeScript, mettant en avant mes projets et compétences. Le site suit une approche mobile-first et utilise SCSS pour le style. Il intègre l'API WakaTime pour afficher mes statistiques de développement en temps réel ainsi qu'une API pour le service de mail. Le déploiement est automatisé via GitHub Actions et hébergé sur Vercel.",
         "technologies": [
-          "react",
           "next",
           "typescript",
           "SCSS",
           "vercel",
-          "stripe"
+          "api",
+          "github"
         ],
-        "githubLink": "https://github.com/julienBelinga/get-touchdown",
-        "demoLink": "https://get-touchdown.vercel.app/"
+        "githubLink": "https://github.com/julienBelinga/MyPortfolio",
+        "demoLink": "https://julien-belinga.fr/"
+      },
+      "process": {
+        "title": "Process",
+        "description": "Site web de mon ancien club de Jiu-Jitsu Brésilien à Nantes. Le site présente les horaires des cours, les tarifs, ainsi que les différentes activités proposées par le club. Il permet également aux visiteurs de découvrir le sport et la philosophie du club. Le site a été développé avec des technologies simples et efficaces pour assurer une maintenance facile par les membres du club.",
+        "technologies": ["html", "javascript", "CSS", "vercel"],
+        "githubLink": "https://github.com/julienBelinga/process",
+        "demoLink": "https://processjj.fr/"
       },
       "bar": {
         "title": "Aux plaisirs démodes",
-        "description": "Pour ce projet, il s'agit du site vitrine d'un bar Rennais, j'ai réalisé ce site en utilisant du HTML, CSS et Javascript, j'ai également mis en place un déploiement continu depuis un dépôt Github. J'ai également ajouté l'API Google Maps pour afficher la localisation du bar sur une carte.",
+        "description": "Site vitrine développé pour un bar à Rennes. Le site a été réalisé avec HTML, CSS et JavaScript, intégrant l'API Google Maps pour la localisation. Un système de déploiement continu a été mis en place via GitHub pour faciliter les mises à jour.",
         "technologies": ["html", "CSS", "javascript", "vercel"],
         "githubLink": "https://github.com/julienBelinga/Aux-plaisirs-demodes",
         "demoLink": "https://auxplaisirsdemodes.fr/"
+      },
+      "touchdown": {
+        "title": "get-touchdown",
+        "description": "Landing page e-commerce développée pour get-touchdown avec un design créatif et accrocheur, mettant l'accent sur l'expérience utilisateur à travers des animations et effets visuels. Développée avec Next.js et déployée sur Vercel avec une pipeline CI/CD. Intégration du système de paiement Stripe pour le traitement des transactions.",
+        "technologies": ["next", "typescript", "SCSS", "vercel", "stripe"],
+        "githubLink": "https://github.com/julienBelinga/sport-evolution"
       }
     }
   },
@@ -73,11 +95,21 @@
   },
 
   "contact": {
-    "lastName": "Nom",
+    "title": "Contact",
+    "description": "N'hésitez pas à me contacter pour toute question ou proposition de projet. Je vous répondrai dans les plus brefs délais.",
+    "lastName": "Nom / Prénom",
     "firstName": "Prénom",
     "email": "E-mail",
     "phone": "Téléphone",
     "message": "Message",
+    "stayInTouch": "Restons en contact",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé !",
+    "error": {
+      "captcha": "Veuillez compléter le captcha",
+      "general": "Erreur lors de l'envoi du message"
+    },
     "data": "Lors de la validation de ce formulaire, vous consentez à ce que les données soumises soient collectées et stockées en vue d'être utilisées pour traiter votre demande de contact.",
     "right": "Tous droits réservés",
     "button": "ENVOYER"

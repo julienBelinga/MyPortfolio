@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import IconSkill from "@/components/icon_skill/iconSkill";
 import github from "@/assets/img/techno/github.png";
-import folder from "@/assets/img/folder.png";
+import folder from "@/assets/img/link.png";
 
 interface ProjectCardProps {
   title: string;
