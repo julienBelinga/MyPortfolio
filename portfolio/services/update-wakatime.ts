@@ -1,9 +1,8 @@
-// update-wakatime.js
 import { config } from "dotenv";
 import fs from "fs";
 import axios from "axios";
 
-config(); // si tu utilises un fichier .env
+config();
 
 const WAKATIME_API_KEY = process.env.WAKATIME_API_ENDPOINT;
 const base64ApiKey = Buffer.from(WAKATIME_API_KEY || "").toString("base64");
