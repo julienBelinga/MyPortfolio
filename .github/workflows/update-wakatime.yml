@@ -1,0 +1,38 @@
+name: Update WakaTime Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Exécution tous les jours à minuit
+  workflow_dispatch: # Permet l'exécution manuelle
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: |
+          cd portfolio
+          npm install
+
+      - name: Update WakaTime stats
+        env:
+          WAKATIME_API_ENDPOINT: ${{ secrets.WAKATIME_API_ENDPOINT }}
+        run: |
+          cd portfolio
+          npx tsx services/update-wakatime.ts
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add portfolio/public/wakatime-stats.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update WakaTime stats" && git push)

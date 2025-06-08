@@ -1,0 +1,33 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+portfolio/node_modules
+portfolio/.pnp
+portfolio/.pnp.js
+
+# testing
+portfolio/coverage
+
+# next.js
+portfolio/.next/
+portfolio/out/
+
+# production
+portfolio/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+portfolio/.env*.local
+portfolio/.env
+
+# vercel
+portfolio/.vercel 
