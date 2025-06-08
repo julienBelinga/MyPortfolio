@@ -4,6 +4,9 @@ import "@styles/main.scss";
 import Navbar from "@components/navbar";
 import I18nProvider from "../i18n/i18n-provider";
 import Footer from "@components/footer";
+import baseMetadata from "@/config/metadata";
+
+export const metadata: Metadata = baseMetadata;
 
 export default function RootLayout({
   children,
