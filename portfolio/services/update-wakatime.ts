@@ -4,7 +4,7 @@ import axios from "axios";
 
 config();
 
-const WAKATIME_API_KEY = process.env.WAKATIME_API_ENDPOINT;
+const WAKATIME_API_KEY = process.env.WAKATIME_API_KEY;
 const base64ApiKey = Buffer.from(WAKATIME_API_KEY || "").toString("base64");
 
 interface WakaTimeLanguage {
@@ -63,16 +63,14 @@ const fetchStats = async (): Promise<void> => {
 
     // Créer une date avec le fuseau horaire local
     const now = new Date();
-    const formatter = new Intl.DateTimeFormat("fr-FR", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: false,
-    });
+    const day = String(now.getDate()).padStart(2, "0");
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const year = now.getFullYear();
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
 
-    console.log("⏰ Date actuelle du système :", formatter.format(now));
+    const formattedDate = `${day}/${month}/${year} ${hours}:${minutes}`;
+    console.log("⏰ Date actuelle du système :", formattedDate);
 
     const stats: Stats = {
       total_seconds: data.total_seconds,
@@ -84,7 +82,7 @@ const fetchStats = async (): Promise<void> => {
           percent: lang.percent,
         }))
         .slice(0, 5),
-      last_updated: formatter.format(now),
+      last_updated: formattedDate,
       range: data.range,
     };
 

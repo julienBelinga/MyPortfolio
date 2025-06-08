@@ -67,8 +67,7 @@ const WakatimeStats: React.FC = () => {
         {stats && (
           <div className={styles.lastUpdated}>
             <span>
-              {t("stats.lastUpdated")}:{" "}
-              {new Date(stats.last_updated).toLocaleDateString()}
+              {t("stats.lastUpdated")}: {stats.last_updated.split(" ")[0]}
             </span>
           </div>
         )}
