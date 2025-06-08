@@ -62,7 +62,9 @@ const fetchStats = async (): Promise<void> => {
           percent: lang.percent,
         }))
         .slice(0, 5),
-      last_updated: new Date().toISOString(),
+      last_updated: new Date().toLocaleString("fr-FR", {
+        timeZone: "Europe/Paris",
+      }),
     };
 
     fs.writeFileSync(
