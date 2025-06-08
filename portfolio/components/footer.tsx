@@ -2,9 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import github from "@/assets/img/techno/github.png";
-import linkedIn from "@/assets/img/linkedIn.png";
-import malt from "@/assets/img/malt.png";
+import SocialLinks from "./social-links";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "next/navigation";
@@ -35,47 +33,7 @@ const Footer: React.FC = () => {
             {t("footer.legal-mentions")}
           </Link>
         </div>
-        <div className="social-links">
-          <Link
-            href="https://github.com/julienBelinga"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="icon"
-              src={github}
-              alt="Github"
-              width={30}
-              height={30}
-            />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/julien-belinga/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="icon"
-              src={linkedIn}
-              alt="LinkedIn"
-              width={30}
-              height={30}
-            />
-          </Link>
-          <Link
-            href="https://www.malt.fr/profile/julienbelinga?overview=true"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="icon"
-              src={malt}
-              alt="Malt"
-              width={30}
-              height={30}
-            />
-          </Link>
-        </div>
+        <SocialLinks className="social-links" imageSize={30} />
       </div>
     </footer>
   );

@@ -1,0 +1,173 @@
+@import "@/styles/variables.scss";
+
+.contact {
+  background-color: $color-tertiary;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.contactContent {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.contactInfo {
+  flex: 1;
+  color: $text-color-light;
+
+  h2 {
+    font-family: $font-title;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: $text-color-light;
+    font-weight: 600;
+  }
+
+  p {
+    font-family: $font-text;
+    color: $text-color-light;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+}
+
+.contactDetails {
+  margin: 3rem 0;
+
+  .detail {
+    margin-bottom: 2rem;
+
+    h3 {
+      font-family: $font-title;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: $text-color-light;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    p,
+    a {
+      font-family: $font-text;
+      color: $text-color-light;
+      margin-bottom: 0;
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: inline-block;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: lighten($color-light, 10%);
+        transform: scale(1.05);
+        text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+
+  a {
+    color: $text-color-light;
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+    width: fit-content;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.contactForm {
+  flex: 0 0 400px;
+  padding: 2.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 768px) {
+    flex: 1;
+  }
+
+  h2 {
+    font-family: $font-title;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: $text-color-light;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: left;
+    width: 95%;
+  }
+}
+
+.formGroup {
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid $color-light;
+    font-family: $font-text;
+    font-size: 0.95rem;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+    color: $color-light;
+
+    &::placeholder {
+      color: $color-light;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $color-light;
+      background-color: transparent;
+    }
+  }
+
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+}
+
+.submitButton {
+  background-color: darken($color-tertiary, 10%);
+  color: $text-color-light;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-family: $font-title;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+
+  &:hover {
+    background-color: darken($color-tertiary, 20%);
+  }
+}
