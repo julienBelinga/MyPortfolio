@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "0 0 * * *" # Exécution tous les jours à minuit
   workflow_dispatch: # Permet l'exécution manuelle
+  push:
+    branches:
+      - main
+      - V3-refont
 
 jobs:
   update-stats:
