@@ -2,26 +2,29 @@
 
 import Image from "next/image";
 import logo from "@assets/img/logo.png";
-import fr from "@assets/img/flag_fr.png";
-import en from "@assets/img/flag_en.png";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { i18n } from "../i18n.js";
+import LanguageButton from "./navbar/language_btn_component";
+import { useParams } from "next/navigation";
 
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
-  <Link href={href}>{children}</Link>
-);
+const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
+  const params = useParams();
+  const lang = params.lang as string;
+  return <Link href={`/${lang}${href}`}>{children}</Link>;
+};
 
 const Navbar: React.FC = () => {
   const [navOpen, setNavOpen] = useState<boolean>(false);
   const navLinksContainerRef = useRef<HTMLDivElement | null>(null);
   const [isHydrated, setIsHydrated] = useState<boolean>(false);
+  const params = useParams();
+  const lang = params.lang as string;
 
   useEffect(() => {
     const handleResize = () => {
@@ -50,16 +53,12 @@ const Navbar: React.FC = () => {
 
   if (!isHydrated) return null;
 
-  const changeLanguage = (lng: "fr" | "en") => {
-    i18n.changeLanguage(lng);
-  };
-
   return (
     <div id="nav-container">
       <div id="nav-bg"></div>
       <nav>
         <Link
-          href="/"
+          href={`/${lang}`}
           className="nav-icon"
           aria-label="homepage"
           aria-current="page"
@@ -83,19 +82,14 @@ const Navbar: React.FC = () => {
             className={`navlinks-container ${navOpen ? "open" : ""}`}
           >
             <div className="navlink-container" ref={navLinksContainerRef}>
-              <NavLink href="/#project-container">{t("navbar.link1")}</NavLink>
-              <NavLink href="/#pricing_vitrine">{t("navbar.link2")}</NavLink>
-              <NavLink href="/#pricing_Ecommerce">{t("navbar.link3")}</NavLink>
-              <NavLink href="/#pricing_services">{t("navbar.link4")}</NavLink>
-              <NavLink href="/contact">{t("navbar.link5")}</NavLink>
+              <NavLink href="/#herobanner">{t("navbar.link1")}</NavLink>
+              <NavLink href="/#projects">{t("navbar.link3")}</NavLink>
+              <NavLink href="/#skills">{t("navbar.link2")}</NavLink>
+              <NavLink href="/#experience">{t("navbar.link4")}</NavLink>
+              <NavLink href="/#contact">{t("navbar.link5")}</NavLink>
             </div>
             <div id="flags">
-              <button type="button" onClick={() => changeLanguage("fr")}>
-                <Image src={fr} alt="Drapeau français" width={30} height={30} />
-              </button>
-              <button type="button" onClick={() => changeLanguage("en")}>
-                <Image src={en} alt="English flag" width={30} height={30} />
-              </button>
+              <LanguageButton />
             </div>
           </div>
         </div>

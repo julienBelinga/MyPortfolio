@@ -17,6 +17,16 @@ const nextConfig = {
         source: "/locales/:path*",
         destination: "/public/locales/:path*",
       },
+      // Ajout d'une règle pour servir wakatime-stats.json depuis n'importe quelle locale
+      {
+        source: "/:locale/wakatime-stats.json",
+        destination: "/wakatime-stats.json",
+      },
+      // Ajout d'une règle pour le CV
+      {
+        source: "/:locale/CV_julien_belinga.pdf",
+        destination: "/CV_julien_belinga.pdf",
+      },
     ];
   },
 };

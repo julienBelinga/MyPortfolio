@@ -1,24 +1,21 @@
-import { Metadata } from "next";
-import { languages } from "../i18n/settings";
-import HomeContent from "@components/home-content";
-
-export async function generateStaticParams() {
-  return languages.map((lang) => ({ lang }));
-}
-
-export const metadata: Metadata = {
-  title: "Julien Belinga - Portfolio",
-  description: "Portfolio de Julien Belinga, développeur web freelance Nantais",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
-};
+import HeroBanner from "@/sections/herobanner/herobanner";
+import Skills from "@/sections/skills/skills";
+import Project from "@/sections/project/project";
+import Experience from "@/sections/experience/experience";
+import Contact from "@/sections/contact/contact";
 
 export default function Home({
   params: { lang },
 }: {
   params: { lang: string };
 }) {
-  return <HomeContent />;
+  return (
+    <div className="home-container">
+      <HeroBanner />
+      <Project />
+      <Skills />
+      <Experience />
+      <Contact />
+    </div>
+  );
 }

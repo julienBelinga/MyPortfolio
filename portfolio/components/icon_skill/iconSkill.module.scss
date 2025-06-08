@@ -1,0 +1,61 @@
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  height: 90px;
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+
+  &.visible {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .imageWrapper {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .technoName {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 1;
+  }
+
+  &:hover {
+    .imageWrapper {
+      transform: translateY(-90%) translateX(-10px) rotate(-45deg);
+    }
+
+    .technoName {
+      opacity: 1;
+    }
+  }
+
+  img {
+    object-fit: contain;
+  }
+}

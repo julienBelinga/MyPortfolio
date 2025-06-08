@@ -1,73 +1,40 @@
-@font-face {
-  font-family: Montserrat;
-  src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: BebasNeue;
-  src: url(../assets/fonts/BebasNeue-Regular.ttf);
-}
-@font-face {
-  font-family: BreeSerif;
-  src: url(../assets/fonts/BreeSerif-Regular.ttf);
-}
-@font-face {
-  font-family: Roboto;
-  src: url(../assets/fonts/Roboto-Regular.ttf);
-}
+@import "variables";
 
 html {
-  scroll-behavior: smooth;
   height: 100%;
-}
-body {
-  background: #ededed;
   margin: 0;
-  min-height: 100vh;
+  padding: 0;
+  scroll-padding-top: 4.5em;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-}
-h1,
-h2,
-h3 {
-  font-family: BreeSerif;
-}
-h4,
-h5,
-h6,
-legend,
-p,
-a {
-  font-family: Montserrat;
-}
+  background-color: $color-primary;
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-legend,
-p,
-a {
-  font-display: block;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-#__next {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-
-  > div {
+  main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+    margin-top: 4.5em; /* Correspond à la hauteur de la navbar */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $font-title;
+    }
+
+    p,
+    span {
+      font-family: $font-text;
+    }
   }
 }

@@ -2,9 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import github from "@assets/img/github.png";
-import linkedIn from "@assets/img/linkedIn.png";
-import malt from "@assets/img/malt.png";
+import SocialLinks from "./social-links";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "next/navigation";
@@ -15,6 +13,11 @@ const Footer: React.FC = () => {
   const params = useParams();
   const lang = params.lang as string;
 
+  const handleDownloadCV = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.open("/CV_julien_belinga.pdf", "_blank");
+  };
+
   useEffect(() => {
     setIsHydrated(true);
   }, []);
@@ -23,70 +26,24 @@ const Footer: React.FC = () => {
 
   return (
     <footer>
-      <ul>
-        <li className="link">
-          <Link href="/CV_Julien_Belinga.pdf" target="_blank" download>
+      <div className="footer-content">
+        <div className="footer-links">
+          <Link
+            href="/CV_julien_belinga.pdf"
+            onClick={handleDownloadCV}
+            className="footer-link"
+          >
             {t("footer.CV")}
           </Link>
-        </li>
-        <li className="link">
-          <Link href={`/${lang}/contact`}>{t("footer.contact")}</Link>
-        </li>
-        <li className="link">
+          <Link href="mailto:julienbelinga.pro@gmail.com">
+            {t("footer.contact")}
+          </Link>
           <Link href={`/${lang}/mentions-legales`}>
             {t("footer.legal-mentions")}
           </Link>
-        </li>
-        <li>
-          <ul className="icon-set">
-            <li>
-              <Link
-                href="https://github.com/julienBelinga"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="icon"
-                  src={github}
-                  alt="Github"
-                  width={30}
-                  height={30}
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://www.linkedin.com/in/julien-belinga/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="icon"
-                  src={linkedIn}
-                  alt="LinkedIn"
-                  width={30}
-                  height={30}
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://www.malt.fr/profile/julienbelinga?overview=true"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="icon"
-                  src={malt}
-                  alt="Malt"
-                  width={30}
-                  height={30}
-                />
-              </Link>
-            </li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+        <SocialLinks className="social-links" imageSize={30} />
+      </div>
     </footer>
   );
 };

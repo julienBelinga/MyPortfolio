@@ -1,0 +1,26 @@
+.socialLinksContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  display: inline-block;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.socialIcon {
+  transition: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialImage {
+  transition: inherit;
+  filter: none !important;
+}
