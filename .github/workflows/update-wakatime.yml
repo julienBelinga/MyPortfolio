@@ -60,15 +60,13 @@ jobs:
               --title "Update WakaTime stats - ${current_date}" \
               --body "Mise à jour automatique des statistiques WakaTime" \
               --base main \
-              --head $branch_name \
-              --label "automated-pr" \
-              --label "wakatime-stats"
+              --head $branch_name
             
             # Attendre quelques secondes pour s'assurer que la PR est créée
             sleep 5
             
             # Merger la PR automatiquement
-            gh pr merge --auto --merge --delete-branch
+            gh pr merge --auto --merge --delete-branch "${GITHUB_REPOSITORY}#$(gh pr list --head $branch_name --json number -q '.[0].number')"
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
