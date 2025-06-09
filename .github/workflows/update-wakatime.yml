@@ -8,6 +8,11 @@ on:
     branches:
       - main
 
+# Solution temporaire : Ce workflow a la permission de pousser directement sur main
+# TODO: Implémenter une meilleure solution avec des Pull Requests automatiques
+permissions:
+  contents: write
+
 jobs:
   update-stats:
     runs-on: ubuntu-latest
@@ -15,6 +20,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,7 +42,10 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git add portfolio/public/wakatime-stats.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update WakaTime stats" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update WakaTime stats" && git push origin main)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
