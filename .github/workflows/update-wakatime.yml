@@ -8,9 +8,11 @@ on:
     branches:
       - main
 
+
 permissions:
   contents: write
   pull-requests: write # Permission pour créer et merger des PRs
+
 
 jobs:
   update-stats:
@@ -68,5 +70,6 @@ jobs:
             # Merger la PR automatiquement
             gh pr merge --auto --merge --delete-branch "${GITHUB_REPOSITORY}#$(gh pr list --head $branch_name --json number -q '.[0].number')"
           fi
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
