@@ -8,10 +8,11 @@ on:
     branches:
       - main
 
-# Solution temporaire : Ce workflow a la permission de pousser directement sur main
-# TODO: Implémenter une meilleure solution avec des Pull Requests automatiques
+
 permissions:
   contents: write
+  pull-requests: write # Permission pour créer et merger des PRs
+
 
 jobs:
   update-stats:
@@ -40,12 +41,37 @@ jobs:
           cd portfolio
           npx tsx services/update-wakatime.ts
 
-      - name: Commit and push if changed
+      - name: Create Pull Request
         run: |
+          # Configurer Git
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+
+          # Créer une nouvelle branche avec un timestamp
+          current_date=$(date +%Y%m%d_%H%M%S)
+          branch_name="update-wakatime-stats-${current_date}"
+          git checkout -b $branch_name
+
+          # Ajouter et commit les changements
           git add portfolio/public/wakatime-stats.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update WakaTime stats" && git push origin main)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update WakaTime stats" && git push origin $branch_name)
+
+          # Créer et merger la PR automatiquement si il y a des changements
+          if [ $? -eq 0 ]; then
+            gh pr create \
+              --title "Update WakaTime stats - ${current_date}" \
+              --body "Mise à jour automatique des statistiques WakaTime" \
+              --base main \
+              --head $branch_name \
+              --label "automated-pr" \
+              --label "wakatime-stats"
+            
+            # Attendre quelques secondes pour s'assurer que la PR est créée
+            sleep 5
+            
+            # Merger la PR automatiquement
+            gh pr merge --auto --merge --delete-branch
+          fi
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
