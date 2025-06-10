@@ -59,10 +59,11 @@ export function generateMetadata(lang: "fr" | "en" = "fr"): Metadata {
       description: t.project.projects.portfolio.description,
       images: [
         {
-          url: "/pp_entier.png",
-          width: 800,
-          height: 800,
+          url: "https://julien-belinga.fr/og-image.png",
+          width: 1200,
+          height: 630,
           alt: t.presentation.name,
+          type: "image/png",
         },
       ],
     },
@@ -70,7 +71,7 @@ export function generateMetadata(lang: "fr" | "en" = "fr"): Metadata {
       card: "summary_large_image",
       title: `${t.presentation.name} - ${t.presentation.title}`,
       description: t.project.projects.portfolio.description,
-      images: ["/pp_entier.png"],
+      images: ["https://julien-belinga.fr/og-image.png"],
       creator: "@julienbelinga",
     },
   };
