@@ -1,20 +1,22 @@
-import { languages } from "../i18n/settings";
 import { Metadata } from "next";
+import { generateMetadata as generateBaseMetadata } from "@/config/metadata";
 import "@styles/main.scss";
 import Navbar from "@components/navbar";
 import I18nProvider from "../i18n/i18n-provider";
 import Footer from "@components/footer";
-import baseMetadata from "@/config/metadata";
 
-export const metadata: Metadata = baseMetadata;
-
-export default function RootLayout({
-  children,
-  params: { lang },
-}: {
+interface Props {
   children: React.ReactNode;
-  params: { lang: string };
-}) {
+  params: {
+    lang: "fr" | "en";
+  };
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  return generateBaseMetadata(params.lang);
+}
+
+export default function Layout({ children, params: { lang } }: Props) {
   return (
     <html lang={lang}>
       <body>
