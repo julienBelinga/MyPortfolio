@@ -53,13 +53,12 @@ export function generateMetadata(lang: "fr" | "en" = "fr"): Metadata {
     openGraph: {
       type: "website",
       locale: lang === "fr" ? "fr_FR" : "en_US",
-      url: "https://julien-belinga.fr",
       siteName: `${t.presentation.name} - Portfolio`,
       title: `${t.presentation.name} - ${t.presentation.title}`,
       description: t.project.projects.portfolio.description,
       images: [
         {
-          url: "https://julien-belinga.fr/og-image.png",
+          url: "/pp_entier.png",
           width: 1200,
           height: 630,
           alt: t.presentation.name,
@@ -71,7 +70,7 @@ export function generateMetadata(lang: "fr" | "en" = "fr"): Metadata {
       card: "summary_large_image",
       title: `${t.presentation.name} - ${t.presentation.title}`,
       description: t.project.projects.portfolio.description,
-      images: ["https://julien-belinga.fr/og-image.png"],
+      images: ["/pp_entier.png"],
       creator: "@julienbelinga",
     },
   };
