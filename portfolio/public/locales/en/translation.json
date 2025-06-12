@@ -59,19 +59,7 @@
         "githubLink": "https://github.com/julienBelinga/llminterface",
         "category": "personal"
       },
-      "llminterface": {
-        "title": "LLM Interface",
-        "description": "Development of a local AI assistant similar to ChatGPT, running entirely offline by integrating open-source models through Ollama (llama3, codellama, etc.). The interface is built with Python (Flask), offering a clean and lightweight web UI that supports markdown, syntax highlighting, and is designed for mobile/offline use — for example, while travelling by train or plane without an internet connection.",
-        "technologies": [
-          "python",
-          "flask",
-          "sqlite",
-          "javascript",
-          "html",
-          "CSS"
-        ],
-        "githubLink": "https://github.com/julienBelinga/llminterface"
-      },
+
       "traiteurcreole": {
         "title": "Passion créole",
         "description": "Showcase website for an Antillean caterer in Île-de-France, specializing in events. The site presents catering services, proposed menus, and allows clients to discover authentic Creole cuisine. A dedicated section highlights services for weddings, seminars, and other events. The site also offers a contact form for personalized quotes.",
