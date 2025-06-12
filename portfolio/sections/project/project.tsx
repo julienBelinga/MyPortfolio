@@ -10,6 +10,7 @@ interface Project {
   technologies: string[];
   githubLink?: string;
   demoLink?: string;
+  category: string;
 }
 
 interface Projects {
@@ -65,6 +66,7 @@ export default function project() {
             technologies={project.technologies}
             githubLink={project.githubLink}
             demoLink={project.demoLink}
+            category={project.category.toLowerCase()}
           />
         ))}
       </div>

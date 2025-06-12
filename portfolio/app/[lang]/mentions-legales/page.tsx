@@ -1,9 +1,17 @@
 import { Metadata } from "next";
 import Mentions from "@components/mentions-legales";
-import { legalMetadata } from "@/config/metadata";
+import { generateLegalMetadata } from "@/config/metadata";
 
-export const metadata: Metadata = legalMetadata;
+interface Props {
+  params: {
+    lang: "fr" | "en";
+  };
+}
 
-export default function MentionsLegales() {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  return generateLegalMetadata(params.lang);
+}
+
+export default function MentionsLegales({ params: { lang } }: Props) {
   return <Mentions />;
 }

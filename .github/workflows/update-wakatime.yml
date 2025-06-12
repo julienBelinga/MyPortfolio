@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  pull-requests: write # Permission pour créer et merger des PRs
+
 jobs:
   update-stats:
     runs-on: ubuntu-latest
@@ -15,6 +19,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -33,9 +39,44 @@ jobs:
           cd portfolio
           npx tsx services/update-wakatime.ts
 
-      - name: Commit and push if changed
+      - name: Create Pull Request
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
+          # Configurer Git
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Créer une nouvelle branche avec un timestamp
+          current_date=$(date +%Y%m%d_%H%M%S)
+          branch_name="update-wakatime-stats-${current_date}"
+          git checkout -b $branch_name
+
+          # Ajouter et commit les changements
           git add portfolio/public/wakatime-stats.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update WakaTime stats" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update WakaTime stats" && git push origin $branch_name)
+
+          # Créer et merger la PR automatiquement si il y a des changements
+          if [ $? -eq 0 ]; then
+            gh pr create \
+              --title "Update WakaTime stats - ${current_date}" \
+              --body "Mise à jour automatique des statistiques WakaTime" \
+              --base main \
+              --head $branch_name
+            
+            # Récupérer le numéro de la PR créée
+            pr_number=$(gh pr list --head $branch_name --json number -q '.[0].number')
+            
+            # Vérifier si la PR a été créée avec succès
+            if [ ! -z "$pr_number" ]; then
+              # Attendre quelques secondes pour s'assurer que la PR est créée
+              sleep 5
+              
+              # Merger la PR automatiquement
+              gh pr merge $pr_number --auto --merge --delete-branch
+            else
+              echo "Erreur: Impossible de trouver le numéro de la PR"
+              exit 1
+            fi
+          fi
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
