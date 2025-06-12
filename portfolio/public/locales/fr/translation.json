@@ -44,6 +44,19 @@
         ],
         "githubLink": "https://github.com/BJJ-Insight"
       },
+      "llminterface": {
+        "title": "LLM Interface",
+        "description": "Développement d’un assistant IA local type ChatGPT, fonctionnant entièrement hors-ligne grâce à l’intégration de modèles open-source via Ollama (llama3, codellama, etc.). L’interface est construite en Python (Flask), avec un rendu web léger et épuré, prenant en charge le markdown, la coloration syntaxique de code, et pensé pour une utilisation nomade (ex : en train, en avion, sans connexion).",
+        "technologies": [
+          "python",
+          "flask",
+          "sqlite",
+          "javascript",
+          "html",
+          "CSS"
+        ],
+        "githubLink": "https://github.com/julienBelinga/LLM-interface"
+      },
       "traiteurcreole": {
         "title": "Passion créole",
         "description": "Site vitrine pour un traiteur antillais en Île-de-France, spécialisé dans l'événementiel. Le site présente les services de traiteur, les menus proposés et permet aux clients de découvrir la cuisine créole authentique. Une section dédiée met en avant les prestations pour les mariages, séminaires et autres événements. Le site offre également un formulaire de contact pour les devis personnalisés.",
