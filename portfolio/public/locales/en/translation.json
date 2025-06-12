@@ -54,7 +54,8 @@
           "sqlite",
           "javascript",
           "html",
-          "CSS"
+          "CSS",
+          "tailwind"
         ],
         "githubLink": "https://github.com/julienBelinga/llminterface",
         "category": "personal"

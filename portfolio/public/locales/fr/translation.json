@@ -60,7 +60,8 @@
           "sqlite",
           "javascript",
           "html",
-          "CSS"
+          "CSS",
+          "tailwind"
         ],
         "githubLink": "https://github.com/julienBelinga/LLM-interface"
       },
