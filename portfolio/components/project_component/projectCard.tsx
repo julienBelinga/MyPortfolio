@@ -5,6 +5,7 @@ import Link from "next/link";
 import IconSkill from "@/components/icon_skill/iconSkill";
 import github from "@/assets/img/techno/github.png";
 import folder from "@/assets/img/link.png";
+import { t } from "i18next";
 
 interface ProjectCardProps {
   title: string;
@@ -12,6 +13,7 @@ interface ProjectCardProps {
   technologies: string[];
   githubLink?: string;
   demoLink?: string;
+  category: string;
 }
 
 const getProjectImage = (title: string) => {
@@ -27,8 +29,15 @@ export default function ProjectCard({
   technologies,
   githubLink,
   demoLink,
+  category,
 }: ProjectCardProps) {
   const projectImage = getProjectImage(title);
+
+  const getCategoryClassName = (category: string): string => {
+    const baseClass = styles.category;
+    const categoryClass = styles[`category${category.toLowerCase()}`];
+    return `${baseClass} ${categoryClass}`;
+  };
 
   return (
     <div className={styles.card}>
@@ -50,17 +59,20 @@ export default function ProjectCard({
             <IconSkill key={index} techno={tech} isVisible={true} size={40} />
           ))}
         </div>
-        <div className={styles.links}>
-          {demoLink && (
-            <Link href={demoLink} className={styles.link} target="_blank">
-              <Image src={folder} alt="Demo Link" width={24} height={24} />
-            </Link>
-          )}
-          {githubLink && (
-            <Link href={githubLink} className={styles.link} target="_blank">
-              <Image src={github} alt="GitHub" width={24} height={24} />
-            </Link>
-          )}
+        <div className={styles.cardFooter}>
+          <div className={getCategoryClassName(category)}>{category}</div>
+          <div className={styles.links}>
+            {demoLink && (
+              <Link href={demoLink} className={styles.link} target="_blank">
+                <Image src={folder} alt="Demo Link" width={24} height={24} />
+              </Link>
+            )}
+            {githubLink && (
+              <Link href={githubLink} className={styles.link} target="_blank">
+                <Image src={github} alt="GitHub" width={24} height={24} />
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>
