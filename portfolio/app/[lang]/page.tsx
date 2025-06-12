@@ -4,15 +4,19 @@ import Project from "@/sections/project/project";
 import Experience from "@/sections/experience/experience";
 import Contact from "@/sections/contact/contact";
 import { Metadata } from "next";
-import { homeMetadata } from "@/config/metadata";
+import { generateHomeMetadata } from "@/config/metadata";
 
-export const metadata: Metadata = homeMetadata;
+interface Props {
+  params: {
+    lang: "fr" | "en";
+  };
+}
 
-export default function Home({
-  params: { lang },
-}: {
-  params: { lang: string };
-}) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  return generateHomeMetadata(params.lang);
+}
+
+export default function Home({ params: { lang } }: Props) {
   return (
     <div className="home-container">
       <HeroBanner />
