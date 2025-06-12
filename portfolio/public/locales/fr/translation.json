@@ -28,9 +28,15 @@
 
   "project": {
     "title": "Projets",
+    "categories": {
+      "personal": "Personnel",
+      "freelance": "Freelance",
+      "saas": "SaaS"
+    },
     "projects": {
       "BJJI": {
         "title": "BJJ Insight",
+        "category": "Saas",
         "description": "Application mobile de mise en relation entre pratiquants de Jiu-Jitsu Brésilien et athlètes de haut niveau, disponible sur iOS et Android. La plateforme permet aux pratiquants de poser toutes leurs questions directement aux athlètes de leur choix. Une landing page présente l'application, ses fonctionnalités et facilite le téléchargement sur les stores. L'application intègre un système de messagerie, de transactions sécurisées.",
         "technologies": [
           "flutter",
@@ -46,6 +52,7 @@
       },
       "llminterface": {
         "title": "LLM Interface",
+        "category": "personnel",
         "description": "Développement d’un assistant IA local type ChatGPT, fonctionnant entièrement hors-ligne grâce à l’intégration de modèles open-source via Ollama (llama3, codellama, etc.). L’interface est construite en Python (Flask), avec un rendu web léger et épuré, prenant en charge le markdown, la coloration syntaxique de code, et pensé pour une utilisation nomade (ex : en train, en avion, sans connexion).",
         "technologies": [
           "python",
@@ -59,6 +66,7 @@
       },
       "traiteurcreole": {
         "title": "Passion créole",
+        "category": "freelance",
         "description": "Site vitrine pour un traiteur antillais en Île-de-France, spécialisé dans l'événementiel. Le site présente les services de traiteur, les menus proposés et permet aux clients de découvrir la cuisine créole authentique. Une section dédiée met en avant les prestations pour les mariages, séminaires et autres événements. Le site offre également un formulaire de contact pour les devis personnalisés.",
         "technologies": ["next", "typescript", "tailwind", "vercel"],
         "githubLink": "https://github.com/julienBelinga/passionCreole-site",
@@ -66,6 +74,7 @@
       },
       "portfolio": {
         "title": "Portfolio",
+        "category": "freelance",
         "description": "Portfolio personnel développé avec Next.js et TypeScript, mettant en avant mes projets et compétences. Le site suit une approche mobile-first et utilise SCSS pour le style. Il intègre l'API WakaTime pour afficher mes statistiques de développement en temps réel ainsi qu'une API pour le service de mail. Le déploiement est automatisé via GitHub Actions et hébergé sur Vercel.",
         "technologies": [
           "next",
@@ -80,6 +89,7 @@
       },
       "process": {
         "title": "Process",
+        "category": "freelance",
         "description": "Site web de mon ancien club de Jiu-Jitsu Brésilien à Nantes. Le site présente les horaires des cours, les tarifs, ainsi que les différentes activités proposées par le club. Il permet également aux visiteurs de découvrir le sport et la philosophie du club. Le site a été développé avec des technologies simples et efficaces pour assurer une maintenance facile par les membres du club.",
         "technologies": ["html", "javascript", "CSS", "vercel"],
         "githubLink": "https://github.com/julienBelinga/process",
@@ -87,6 +97,7 @@
       },
       "bar": {
         "title": "Aux plaisirs démodes",
+        "category": "freelance",
         "description": "Site vitrine développé pour un bar à Rennes. Le site a été réalisé avec HTML, CSS et JavaScript, intégrant l'API Google Maps pour la localisation. Un système de déploiement continu a été mis en place via GitHub pour faciliter les mises à jour.",
         "technologies": ["html", "CSS", "javascript", "vercel"],
         "githubLink": "https://github.com/julienBelinga/Aux-plaisirs-demodes",
@@ -94,6 +105,7 @@
       },
       "touchdown": {
         "title": "get-touchdown",
+        "category": "Saas",
         "description": "Landing page e-commerce développée pour get-touchdown avec un design créatif et accrocheur, mettant l'accent sur l'expérience utilisateur à travers des animations et effets visuels. Développée avec Next.js et déployée sur Vercel avec une pipeline CI/CD. Intégration du système de paiement Stripe pour le traitement des transactions.",
         "technologies": ["next", "typescript", "SCSS", "vercel", "stripe"],
         "githubLink": "https://github.com/julienBelinga/sport-evolution"

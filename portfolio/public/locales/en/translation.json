@@ -42,7 +42,8 @@
           "ios",
           "next"
         ],
-        "githubLink": "https://github.com/BJJ-Insight"
+        "githubLink": "https://github.com/BJJ-Insight",
+        "category": "Saas"
       },
       "llminterface": {
         "title": "LLM Interface",
@@ -55,14 +56,16 @@
           "html",
           "CSS"
         ],
-        "githubLink": "https://github.com/julienBelinga/llminterface"
+        "githubLink": "https://github.com/julienBelinga/llminterface",
+        "category": "personal"
       },
       "traiteurcreole": {
         "title": "Passion créole",
         "description": "Showcase website for an Antillean caterer in Île-de-France, specializing in events. The site presents catering services, proposed menus, and allows clients to discover authentic Creole cuisine. A dedicated section highlights services for weddings, seminars, and other events. The site also offers a contact form for personalized quotes.",
         "technologies": ["next", "typescript", "tailwind", "vercel"],
         "githubLink": "https://github.com/julienBelinga/passionCreole-site",
-        "demoLink": "https://passion-creole-site.vercel.app/"
+        "demoLink": "https://passion-creole-site.vercel.app/",
+        "category": "freelance"
       },
       "portfolio": {
         "title": "Portfolio",
@@ -76,27 +79,31 @@
           "github"
         ],
         "githubLink": "https://github.com/julienBelinga/MyPortfolio",
-        "demoLink": "https://julien-belinga.fr/"
+        "demoLink": "https://julien-belinga.fr/",
+        "category": "freelance"
       },
       "process": {
         "title": "Process",
         "description": "Website for my former Brazilian Jiu-Jitsu club in Nantes. The site presents class schedules, pricing, and various activities offered by the club. It also allows visitors to discover the sport and the club's philosophy. The site was developed with simple and efficient technologies to ensure easy maintenance by club members.",
         "technologies": ["html", "javascript", "CSS", "vercel"],
         "githubLink": "https://github.com/julienBelinga/process",
-        "demoLink": "https://processjj.fr/"
+        "demoLink": "https://processjj.fr/",
+        "category": "freelance"
       },
       "bar": {
         "title": "Aux plaisirs démodes",
         "description": "Showcase website developed for a bar in Rennes. The site was created with HTML, CSS, and JavaScript, integrating the Google Maps API for location. A continuous deployment system was set up via GitHub to facilitate updates.",
         "technologies": ["html", "CSS", "javascript", "vercel"],
         "githubLink": "https://github.com/julienBelinga/Aux-plaisirs-demodes",
-        "demoLink": "https://auxplaisirsdemodes.fr/"
+        "demoLink": "https://auxplaisirsdemodes.fr/",
+        "category": "freelance"
       },
       "touchdown": {
         "title": "get-touchdown",
         "description": "E-commerce landing page developed for get-touchdown with a creative and eye-catching design, emphasizing user experience through animations and visual effects. Developed with Next.js and deployed on Vercel with a CI/CD pipeline. Integration of the Stripe payment system for transaction processing.",
         "technologies": ["next", "typescript", "SCSS", "vercel", "stripe"],
-        "githubLink": "https://github.com/julienBelinga/sport-evolution"
+        "githubLink": "https://github.com/julienBelinga/sport-evolution",
+        "category": "Saas"
       }
     }
   },
