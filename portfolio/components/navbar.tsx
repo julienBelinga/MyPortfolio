@@ -11,12 +11,17 @@ import { useParams } from "next/navigation";
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
+  onLinkClick: () => void;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
+const NavLink: React.FC<NavLinkProps> = ({ href, children, onLinkClick }) => {
   const params = useParams();
   const lang = params.lang as string;
-  return <Link href={`/${lang}${href}`}>{children}</Link>;
+  return (
+    <Link href={`/${lang}${href}`} onClick={onLinkClick}>
+      {children}
+    </Link>
+  );
 };
 
 const Navbar: React.FC = () => {
@@ -82,11 +87,27 @@ const Navbar: React.FC = () => {
             className={`navlinks-container ${navOpen ? "open" : ""}`}
           >
             <div className="navlink-container" ref={navLinksContainerRef}>
-              <NavLink href="/#herobanner">{t("navbar.link1")}</NavLink>
-              <NavLink href="/#projects">{t("navbar.link3")}</NavLink>
-              <NavLink href="/#skills">{t("navbar.link2")}</NavLink>
-              <NavLink href="/#experience">{t("navbar.link4")}</NavLink>
-              <NavLink href="/#contact">{t("navbar.link5")}</NavLink>
+              <NavLink
+                href="/#herobanner"
+                onLinkClick={() => setNavOpen(false)}
+              >
+                {t("navbar.link1")}
+              </NavLink>
+              <NavLink href="/#projects" onLinkClick={() => setNavOpen(false)}>
+                {t("navbar.link3")}
+              </NavLink>
+              <NavLink href="/#skills" onLinkClick={() => setNavOpen(false)}>
+                {t("navbar.link2")}
+              </NavLink>
+              <NavLink
+                href="/#experience"
+                onLinkClick={() => setNavOpen(false)}
+              >
+                {t("navbar.link4")}
+              </NavLink>
+              <NavLink href="/#contact" onLinkClick={() => setNavOpen(false)}>
+                {t("navbar.link5")}
+              </NavLink>
             </div>
             <div id="flags">
               <LanguageButton />
