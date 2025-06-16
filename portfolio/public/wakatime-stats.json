@@ -1,33 +1,33 @@
 {
-  "total_seconds": 283090.582716,
-  "total_hours": "78.64",
+  "total_seconds": 270246.407112,
+  "total_hours": "75.07",
   "languages": [
     {
       "name": "TypeScript",
       "total_seconds": 86468.989023,
-      "percent": 30.23
+      "percent": 31.65
     },
     {
       "name": "Dart",
-      "total_seconds": 83917.892033,
-      "percent": 29.34
+      "total_seconds": 78600.727936,
+      "percent": 28.77
     },
     {
       "name": "SCSS",
       "total_seconds": 57651.564298,
-      "percent": 20.16
+      "percent": 21.1
     },
     {
       "name": "JSON",
       "total_seconds": 15882.536968,
-      "percent": 5.55
+      "percent": 5.81
     },
     {
       "name": "Bash",
       "total_seconds": 7832.791755,
-      "percent": 2.74
+      "percent": 2.87
     }
   ],
-  "last_updated": "15/06/2025 01:16",
+  "last_updated": "16/06/2025 01:10",
   "range": "last_30_days"
 }
