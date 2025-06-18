@@ -182,6 +182,7 @@
         "startDate": "2024",
         "endDate": "Present",
         "description": "Création d'une application de services sportive dédiée au Brazilian Jiu-Jitsu. Développement full-stack d'une plateforme innovante pour la communauté BJJ.",
+        "logo": "bjjinsight.png",
         "technologies": [
           "flutter",
           "dart",
