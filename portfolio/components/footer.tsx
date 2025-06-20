@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
 
   const handleDownloadCV = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    window.open("/CV_julien_belinga.pdf", "_blank");
+    window.open("/CV_Julien_Belinga.pdf", "_blank");
   };
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <div className="footer-links">
           <Link
-            href="/CV_julien_belinga.pdf"
+            href="/CV_Julien_Belinga.pdf"
             onClick={handleDownloadCV}
             className="footer-link"
           >
