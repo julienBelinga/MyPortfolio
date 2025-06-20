@@ -1,33 +1,33 @@
 {
-  "total_seconds": 313267.129659,
-  "total_hours": "87.02",
+  "total_seconds": 307535.558198,
+  "total_hours": "85.43",
   "languages": [
     {
       "name": "Dart",
-      "total_seconds": 110876.232725,
-      "percent": 34.29
+      "total_seconds": 108890.099674,
+      "percent": 34.22
     },
     {
       "name": "TypeScript",
-      "total_seconds": 86535.253432,
-      "percent": 26.77
+      "total_seconds": 84504.020447,
+      "percent": 26.56
     },
     {
       "name": "SCSS",
-      "total_seconds": 57987.381249,
-      "percent": 17.94
+      "total_seconds": 55661.466311,
+      "percent": 17.49
     },
     {
       "name": "JSON",
-      "total_seconds": 16151.801544,
-      "percent": 5
+      "total_seconds": 15924.794442,
+      "percent": 5.01
     },
     {
       "name": "YAML",
-      "total_seconds": 14611.388467,
-      "percent": 4.52
+      "total_seconds": 15245.509375,
+      "percent": 4.79
     }
   ],
-  "last_updated": "20/06/2025 01:08",
+  "last_updated": "20/06/2025 11:50",
   "range": "last_30_days"
 }
