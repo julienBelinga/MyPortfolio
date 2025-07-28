@@ -48,7 +48,8 @@
           "ios",
           "next"
         ],
-        "githubLink": "https://github.com/BJJ-Insight"
+        "githubLink": "https://github.com/BJJ-Insight",
+        "demoLink": "https://landing-page-bjji.vercel.app"
       },
       "llminterface": {
         "title": "LLM Interface",
