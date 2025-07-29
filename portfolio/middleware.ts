@@ -1,31 +1,36 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { fallbackLng, languages } from "./app/i18n/settings";
+
+// Liste des extensions de fichiers statiques à exclure de la redirection
+const PUBLIC_FILE = /\.(.*)$/;
 
 export function middleware(request: NextRequest) {
-  // Check if there is any supported locale in the pathname
-  const pathname = request.nextUrl.pathname;
+  const { pathname } = request.nextUrl;
 
-  // Check if the pathname starts with /public/locales
-  if (pathname.startsWith("/locales/")) {
+  // Exclure les fichiers statiques (img, css, js, etc.) et les dossiers spéciaux
+  if (
+    pathname.startsWith("/_next") ||
+    pathname.startsWith("/api") ||
+    pathname.startsWith("/img") ||
+    pathname.startsWith("/fonts") ||
+    pathname.startsWith("/assets") ||
+    pathname.startsWith("/favicon.ico") ||
+    pathname.startsWith("/robots.txt") ||
+    pathname.startsWith("/sitemap.xml") ||
+    PUBLIC_FILE.test(pathname)
+  ) {
     return NextResponse.next();
   }
 
-  // Check if the pathname already includes a locale
-  const pathnameIsMissingLocale = languages.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-  );
-
-  // Redirect if there is no locale
-  if (pathnameIsMissingLocale) {
-    const locale = fallbackLng;
-
-    // e.g. incoming request is /products
-    // The new URL is now /en/products
-    return NextResponse.redirect(
-      new URL(`/${locale}${pathname === "/" ? "" : pathname}`, request.url)
-    );
+  // Ici, ta logique de redirection de langue (exemple)
+  // Si le chemin ne commence pas par /fr ou /en, on redirige vers /fr par défaut
+  if (!pathname.startsWith("/fr") && !pathname.startsWith("/en")) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/fr${pathname}`;
+    return NextResponse.redirect(url);
   }
+
+  return NextResponse.next();
 }
 
 export const config = {
