@@ -1,33 +1,33 @@
 {
-  "total_seconds": 80180.833826,
-  "total_hours": "22.27",
+  "total_seconds": 78653.728405,
+  "total_hours": "21.85",
   "languages": [
     {
       "name": "Dart",
-      "total_seconds": 28562.164566,
-      "percent": 35.28
+      "total_seconds": 27491.76393,
+      "percent": 34.61
     },
     {
       "name": "TypeScript",
-      "total_seconds": 19182.78971,
-      "percent": 23.69
+      "total_seconds": 18726.084925,
+      "percent": 23.57
     },
     {
       "name": "SCSS",
       "total_seconds": 10003.256887,
-      "percent": 12.36
+      "percent": 12.59
     },
     {
       "name": "Groovy",
       "total_seconds": 4987.467476,
-      "percent": 6.16
+      "percent": 6.28
     },
     {
       "name": "XML",
       "total_seconds": 4562.360713,
-      "percent": 5.64
+      "percent": 5.74
     }
   ],
-  "last_updated": "12/08/2025 01:08",
+  "last_updated": "13/08/2025 01:09",
   "range": "last_30_days"
 }
