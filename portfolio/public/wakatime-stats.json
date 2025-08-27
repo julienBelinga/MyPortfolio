@@ -1,6 +1,6 @@
 {
   "total_seconds": 8295.051203,
-  "total_hours": "60.30",
+  "total_hours": "2.30",
   "languages": [
     {
       "name": "Dart",
@@ -28,6 +28,6 @@
       "percent": 2.27
     }
   ],
-  "last_updated": "27/08/2025 01:03",
+  "last_updated": "27/08/2025 13:33",
   "range": "last_30_days"
 }
