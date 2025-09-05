@@ -4,30 +4,30 @@
   "languages": [
     {
       "name": "Dart",
-      "total_seconds": 7801.672261,
-      "percent": 70.54
+      "total_seconds": 6876.210086,
+      "percent": 67.85
     },
     {
       "name": "JavaScript",
       "total_seconds": 1514.627,
-      "percent": 13.69
+      "percent": 14.94
     },
     {
       "name": "Markdown",
       "total_seconds": 658.392,
-      "percent": 5.95
+      "percent": 6.5
     },
     {
       "name": "JSON",
       "total_seconds": 380.921,
-      "percent": 3.44
+      "percent": 3.76
     },
     {
       "name": "TypeScript",
       "total_seconds": 240.324,
-      "percent": 2.17
+      "percent": 2.37
     }
   ],
-  "last_updated": "04/09/2025 01:00",
+  "last_updated": "05/09/2025 01:01",
   "range": "last_30_days"
 }
