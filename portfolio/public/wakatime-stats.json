@@ -5,29 +5,29 @@
     {
       "name": "Dart",
       "total_seconds": 4312.082,
-      "percent": 58.08
+      "percent": 57.39
     },
     {
       "name": "JavaScript",
       "total_seconds": 1514.627,
-      "percent": 20.4
+      "percent": 20.16
     },
     {
       "name": "Markdown",
       "total_seconds": 555.502,
-      "percent": 7.48
+      "percent": 7.39
     },
     {
       "name": "JSON",
-      "total_seconds": 380.921,
-      "percent": 5.13
+      "total_seconds": 469.951,
+      "percent": 6.25
     },
     {
       "name": "TypeScript",
       "total_seconds": 240.324,
-      "percent": 3.24
+      "percent": 3.2
     }
   ],
-  "last_updated": "06/09/2025 01:00",
+  "last_updated": "07/09/2025 01:06",
   "range": "last_30_days"
 }
