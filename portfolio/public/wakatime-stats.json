@@ -3,31 +3,11 @@
   "total_hours": "60.30",
   "languages": [
     {
-      "name": "Dart",
-      "total_seconds": 3182.196,
-      "percent": 54.47
-    },
-    {
-      "name": "JavaScript",
-      "total_seconds": 1514.627,
-      "percent": 25.92
-    },
-    {
-      "name": "Markdown",
-      "total_seconds": 555.502,
-      "percent": 9.51
-    },
-    {
       "name": "JSON",
-      "total_seconds": 405.39,
-      "percent": 6.94
-    },
-    {
-      "name": "Git Config",
-      "total_seconds": 176.591,
-      "percent": 3.02
+      "total_seconds": 89.03,
+      "percent": 100
     }
   ],
-  "last_updated": "03/10/2025 01:00",
+  "last_updated": "04/10/2025 00:58",
   "range": "last_30_days"
 }
