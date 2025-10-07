@@ -1,13 +1,7 @@
 {
   "total_seconds": 217080,
   "total_hours": "60.30",
-  "languages": [
-    {
-      "name": "JSON",
-      "total_seconds": 89.03,
-      "percent": 100
-    }
-  ],
-  "last_updated": "06/10/2025 01:02",
+  "languages": [],
+  "last_updated": "07/10/2025 01:01",
   "range": "last_30_days"
 }
