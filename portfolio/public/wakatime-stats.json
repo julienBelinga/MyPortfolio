@@ -1,7 +1,33 @@
 {
   "total_seconds": 217080,
   "total_hours": "60.30",
-  "languages": [],
-  "last_updated": "14/10/2025 01:02",
+  "languages": [
+    {
+      "name": "TypeScript",
+      "total_seconds": 2382.936,
+      "percent": 53.43
+    },
+    {
+      "name": "HTML",
+      "total_seconds": 1659.621,
+      "percent": 37.21
+    },
+    {
+      "name": "CSS",
+      "total_seconds": 338.41,
+      "percent": 7.59
+    },
+    {
+      "name": "Git Config",
+      "total_seconds": 63.858,
+      "percent": 1.43
+    },
+    {
+      "name": "Markdown",
+      "total_seconds": 15.121,
+      "percent": 0.34
+    }
+  ],
+  "last_updated": "15/10/2025 01:03",
   "range": "last_30_days"
 }
