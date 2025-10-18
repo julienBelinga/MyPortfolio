@@ -1,33 +1,33 @@
 {
-  "total_seconds": 217080,
-  "total_hours": "60.30",
+  "total_seconds": 9197.403,
+  "total_hours": "2.55",
   "languages": [
     {
       "name": "TypeScript",
-      "total_seconds": 2382.936,
-      "percent": 53.43
+      "total_seconds": 3064.678,
+      "percent": 33.32
     },
     {
       "name": "HTML",
       "total_seconds": 1659.621,
-      "percent": 37.21
+      "percent": 18.04
     },
     {
-      "name": "CSS",
-      "total_seconds": 338.41,
-      "percent": 7.59
-    },
-    {
-      "name": "Git Config",
-      "total_seconds": 63.858,
-      "percent": 1.43
+      "name": "JSON",
+      "total_seconds": 1436.362,
+      "percent": 15.62
     },
     {
       "name": "Markdown",
-      "total_seconds": 15.121,
-      "percent": 0.34
+      "total_seconds": 1359.345,
+      "percent": 14.78
+    },
+    {
+      "name": "YAML",
+      "total_seconds": 841.585,
+      "percent": 9.15
     }
   ],
-  "last_updated": "18/10/2025 01:00",
+  "last_updated": "18/10/2025 13:46",
   "range": "last_30_days"
 }
