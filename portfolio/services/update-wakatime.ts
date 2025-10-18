@@ -45,25 +45,6 @@ const fetchStats = async (): Promise<void> => {
   try {
     console.log("🔄 Début de la récupération des stats WakaTime...");
 
-    // TEMPORAIRE : Lire les stats existantes pour conserver total_seconds et total_hours
-    // Supprimez ce bloc quand vous voudrez remettre le compteur d'heures à jour
-    let existingStats: Stats | null = null;
-    try {
-      const existingData = fs.readFileSync(
-        "public/wakatime-stats.json",
-        "utf-8"
-      );
-      existingStats = JSON.parse(existingData);
-      console.log("📖 Stats existantes lues :", {
-        total_seconds: existingStats?.total_seconds,
-        total_hours: existingStats?.total_hours,
-      });
-    } catch (readError) {
-      console.log(
-        "⚠️ Aucun fichier de stats existant trouvé, utilisation des nouvelles données"
-      );
-    }
-
     const res = await axios.get<WakaTimeResponse>(
       "https://wakatime.com/api/v1/users/current/stats/last_30_days",
       {
@@ -92,14 +73,8 @@ const fetchStats = async (): Promise<void> => {
     console.log("⏰ Date actuelle du système :", formattedDate);
 
     const stats: Stats = {
-      // TEMPORAIRE : Conserver les valeurs existantes ou utiliser les nouvelles si aucune n'existe
-      total_seconds: existingStats?.total_seconds ?? data.total_seconds,
-      total_hours:
-        existingStats?.total_hours ?? (data.total_seconds / 3600).toFixed(2),
-
-      // Code original (décommentez ces lignes et supprimez les lignes ci-dessus pour remettre le compteur à jour) :
-      // total_seconds: data.total_seconds,
-      // total_hours: (data.total_seconds / 3600).toFixed(2),
+      total_seconds: data.total_seconds,
+      total_hours: (data.total_seconds / 3600).toFixed(2),
 
       languages: data.languages
         .map((lang) => ({
@@ -113,13 +88,6 @@ const fetchStats = async (): Promise<void> => {
     };
 
     console.log("📝 Stats formatées :", stats);
-    // TEMPORAIRE : Log des valeurs conservées (supprimez cette ligne quand vous remettrez le compteur à jour)
-    console.log(
-      "🔒 Valeurs conservées - total_seconds:",
-      stats.total_seconds,
-      "total_hours:",
-      stats.total_hours
-    );
 
     fs.writeFileSync(
       "public/wakatime-stats.json",
