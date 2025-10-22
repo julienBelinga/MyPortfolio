@@ -1,33 +1,33 @@
 {
-  "total_seconds": 21122.319,
-  "total_hours": "5.87",
+  "total_seconds": 24865.832,
+  "total_hours": "6.91",
   "languages": [
     {
       "name": "TypeScript",
-      "total_seconds": 11906.655,
-      "percent": 56.37
+      "total_seconds": 15650.168,
+      "percent": 62.94
     },
     {
       "name": "JSON",
       "total_seconds": 3365.471,
-      "percent": 15.93
+      "percent": 13.53
     },
     {
       "name": "Markdown",
       "total_seconds": 2513.175,
-      "percent": 11.9
+      "percent": 10.11
     },
     {
       "name": "HTML",
       "total_seconds": 1659.621,
-      "percent": 7.86
+      "percent": 6.67
     },
     {
       "name": "YAML",
       "total_seconds": 841.585,
-      "percent": 3.98
+      "percent": 3.38
     }
   ],
-  "last_updated": "21/10/2025 01:05",
+  "last_updated": "22/10/2025 01:06",
   "range": "last_30_days"
 }
