@@ -29,6 +29,22 @@
   "project": {
     "title": "Projects",
     "projects": {
+      "nutriflow": {
+        "title": "Nutriflow",
+        "description": "NutriFlow (Beta) is an intelligent nutritional assistant mobile application. It instantly analyzes meals in free text thanks to AI, calculates calories and macronutrients, generates personalized goals (BMR, TDEE) and tracks daily progress. The app also offers a premium subscription system integrated via RevenueCat and a solid architecture based on Flutter, Firebase and embedded AI.",
+        "technologies": [
+          "flutter",
+          "dart",
+          "typescript",
+          "revenueCat",
+          "firebase",
+          "android",
+          "ios",
+          "next"
+        ],
+        "demoLink": "https://landing-page-nutriflow.vercel.app/",
+        "category": "Saas"
+      },
       "BJJI": {
         "title": "BJJ Insight",
         "description": "Mobile application connecting Brazilian Jiu-Jitsu practitioners with high-level athletes, available on iOS and Android. The platform allows practitioners to ask all their questions directly to the athletes of their choice. A landing page presents the application, its features, and facilitates downloading from the stores. The application integrates a messaging system and secure transactions.",

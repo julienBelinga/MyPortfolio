@@ -34,6 +34,22 @@
       "saas": "SaaS"
     },
     "projects": {
+      "nutriflow": {
+        "title": "Nutriflow",
+        "category": "Saas",
+        "description": "NutriFlow (Bêta) est une application mobile d’assistant nutritionnel intelligent. Elle analyse instantanément les repas en texte libre grâce à l’IA, calcule les calories et macronutriments, génère des objectifs personnalisés (BMR, TDEE) et suit la progression quotidienne. L’app propose aussi un système d’abonnement premium intégré via RevenueCat et une architecture solide basée sur Flutter, Firebase et une IA embarquée.",
+        "technologies": [
+          "flutter",
+          "dart",
+          "typescript",
+          "revenueCat",
+          "firebase",
+          "android",
+          "ios",
+          "next"
+        ],
+        "demoLink": "https://landing-page-nutriflow.vercel.app/"
+      },
       "BJJI": {
         "title": "BJJ Insight",
         "category": "Saas",
