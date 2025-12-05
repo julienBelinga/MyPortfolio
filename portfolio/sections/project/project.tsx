@@ -24,6 +24,8 @@ export default function project() {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const cardWidth = 400; // largeur de la carte + gap
+  const gap = 32; // 2rem en px
 
   const handleMouseDown = (e: MouseEvent) => {
     setIsDragging(true);
@@ -47,28 +49,59 @@ export default function project() {
     }
   };
 
+  const scroll = (direction: "left" | "right") => {
+    if (containerRef.current) {
+      const scrollDistance = cardWidth + gap;
+      const targetScroll =
+        direction === "left"
+          ? containerRef.current.scrollLeft - scrollDistance
+          : containerRef.current.scrollLeft + scrollDistance;
+
+      containerRef.current.scrollTo({
+        left: targetScroll,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section id="projects" className={styles.projectSection}>
       <h2>{t("project.title")}</h2>
-      <div
-        ref={containerRef}
-        className={styles.projectContainer}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseUp}
-        onMouseMove={handleMouseMove}
-      >
-        {Object.entries(projects).map(([key, project]) => (
-          <ProjectCard
-            key={key}
-            title={project.title}
-            description={project.description}
-            technologies={project.technologies}
-            githubLink={project.githubLink}
-            demoLink={project.demoLink}
-            category={project.category.toLowerCase()}
-          />
-        ))}
+      <div className={styles.projectWrapper}>
+        <button
+          className={`${styles.scrollButton} ${styles.scrollButtonLeft}`}
+          onClick={() => scroll("left")}
+          aria-label="Scroll projects left"
+        >
+          ❮
+        </button>
+        <div
+          ref={containerRef}
+          className={styles.projectContainer}
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+          onMouseMove={handleMouseMove}
+        >
+          {Object.entries(projects).map(([key, project]) => (
+            <ProjectCard
+              key={key}
+              title={project.title}
+              description={project.description}
+              technologies={project.technologies}
+              githubLink={project.githubLink}
+              demoLink={project.demoLink}
+              category={project.category.toLowerCase()}
+            />
+          ))}
+        </div>
+        <button
+          className={`${styles.scrollButton} ${styles.scrollButtonRight}`}
+          onClick={() => scroll("right")}
+          aria-label="Scroll projects right"
+        >
+          ❯
+        </button>
       </div>
     </section>
   );

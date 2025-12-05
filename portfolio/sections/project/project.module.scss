@@ -14,6 +14,14 @@
   }
 }
 
+.projectWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  width: 100%;
+}
+
 .projectContainer {
   display: flex;
   gap: 2rem;
@@ -23,6 +31,7 @@
   user-select: none;
   padding: 1rem;
   scroll-behavior: smooth;
+  flex: 1;
 
   /* Masquer la barre de défilement pour Firefox */
   scrollbar-width: none;
@@ -42,5 +51,56 @@
     flex: 0 0 auto;
     scroll-snap-align: start;
     width: min(100%, 400px);
+  }
+}
+
+.scrollButton {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--primary-color, #000);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  flex-shrink: 0;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    transform: translateY(-50%) scale(1.2);
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+}
+
+.scrollButtonLeft {
+  left: 0.5rem;
+}
+
+.scrollButtonRight {
+  right: 0.5rem;
+}
+
+/* Afficher les boutons sur mobile et tablette */
+@media (max-width: 1024px) {
+  .scrollButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Optionnel: afficher aussi sur desktop si souhaité */
+@media (min-width: 1024px) {
+  .scrollButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
