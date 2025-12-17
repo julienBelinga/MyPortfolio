@@ -189,6 +189,26 @@
   "experience": {
     "title": "Experience",
     "jobs": {
+      "sofy": {
+        "title": "Mobile Developer Flutter",
+        "company": "SOFY",
+        "startDate": "2025",
+        "endDate": "Present",
+        "description": "Mobile development within the product/tech team: designing and maintaining Flutter (Riverpod) and React Native TypeScript apps, integrating REST APIs (campaigns, analytics, notifications) and handling App Store/Google Play releases. Working with backend, design and product teams to co-build features, optimize UX, and contribute to conversational AI and cloud infrastructure topics.",
+        "logo": "sofy.png",
+        "technologies": [
+          "flutter",
+          "dart",
+          "react",
+          "typescript",
+          "api",
+          "android",
+          "ios",
+          "firebase",
+          "golang",
+          "aws"
+        ]
+      },
       "bjjinsight": {
         "title": "Owner",
         "company": "BJJ Insight",
