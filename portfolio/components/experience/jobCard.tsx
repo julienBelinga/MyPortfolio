@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./jobCard.module.scss";
 import IconSkill from "../icon_skill/iconSkill";
+import { useTranslation } from "react-i18next";
 
 interface JobCardProps {
   title: string;
@@ -36,6 +37,7 @@ export default function JobCard({
   const [isHovered, setIsHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const companyLogo = logo ? getCompanyLogo(logo) : null;
+  const { t } = useTranslation();
 
   useEffect(() => {
     const checkMobile = () => {
@@ -94,7 +96,9 @@ export default function JobCard({
           isHovered || isMobile ? styles.visible : ""
         }`}
       >
-        <h4 className={styles.jobCard__technologiesTitle}>Techno/outils :</h4>
+        <h4 className={styles.jobCard__technologiesTitle}>
+          {t("experience.technologiesTitle")}
+        </h4>
         <div className={styles.jobCard__technologiesGrid}>
           {technologies.map((tech, index) => (
             <IconSkill

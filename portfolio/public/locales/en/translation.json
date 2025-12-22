@@ -188,6 +188,7 @@
 
   "experience": {
     "title": "Experience",
+    "technologiesTitle": "Technologies / Tools:",
     "jobs": {
       "sofy": {
         "title": "Mobile Developer Flutter",
