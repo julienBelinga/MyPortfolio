@@ -41,6 +41,7 @@
         "technologies": [
           "flutter",
           "dart",
+          "riverpod",
           "typescript",
           "revenueCat",
           "firebase",

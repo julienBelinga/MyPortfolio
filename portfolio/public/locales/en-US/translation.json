@@ -51,6 +51,7 @@
         "technologies": [
           "flutter",
           "dart",
+          "riverpod",
           "typescript",
           "stripe",
           "firebase",
