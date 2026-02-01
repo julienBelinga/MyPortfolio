@@ -1,33 +1,33 @@
 {
-  "total_seconds": 388010.769,
-  "total_hours": "107.78",
+  "total_seconds": 386234.959,
+  "total_hours": "107.29",
   "languages": [
     {
       "name": "Dart",
-      "total_seconds": 296534.32,
-      "percent": 75.84
+      "total_seconds": 295522.279,
+      "percent": 76.03
     },
     {
       "name": "TypeScript",
-      "total_seconds": 56203.644,
+      "total_seconds": 55873.376,
       "percent": 14.37
     },
     {
-      "name": "Markdown",
-      "total_seconds": 6370.506,
-      "percent": 1.63
-    },
-    {
       "name": "YAML",
-      "total_seconds": 6070.25,
-      "percent": 1.55
+      "total_seconds": 6534.574,
+      "percent": 1.68
     },
     {
       "name": "Bash",
-      "total_seconds": 5784.469,
-      "percent": 1.48
+      "total_seconds": 5918.394,
+      "percent": 1.52
+    },
+    {
+      "name": "Markdown",
+      "total_seconds": 5332.651,
+      "percent": 1.37
     }
   ],
-  "last_updated": "31/01/2026 01:21",
+  "last_updated": "01/02/2026 01:48",
   "range": "last_30_days"
 }
