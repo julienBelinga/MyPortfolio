@@ -35,7 +35,7 @@ export default function Contact() {
     const recaptchaToken = recaptchaRef.current?.getValue();
     if (!recaptchaToken) {
       setErrorMessage(
-        t("contact.error.captcha", "Veuillez compléter le captcha")
+        t("contact.error.captcha", "Veuillez compléter le captcha"),
       );
       return;
     }
@@ -67,7 +67,7 @@ export default function Contact() {
       }
     } catch (error) {
       setErrorMessage(
-        t("contact.error.general", "Erreur lors de l'envoi du message")
+        t("contact.error.general", "Erreur lors de l'envoi du message"),
       );
       setButtonState("idle");
     }
@@ -110,14 +110,14 @@ export default function Contact() {
           <p>
             {t(
               "contact.description",
-              "Cliquâ, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"
+              "Cliquâ, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
             )}
           </p>
 
           <div className={styles.contactDetails}>
             <div className={styles.detail}>
               <h3>{t("contact.phone", "Téléphone")}</h3>
-              <p>06 45 40 54 50</p>
+              <p>06 45 40 54 90</p>
             </div>
             <div className={styles.detail}>
               <h3>{t("contact.email", "Mail")}</h3>
