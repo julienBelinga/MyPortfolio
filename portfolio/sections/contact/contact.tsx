@@ -117,7 +117,7 @@ export default function Contact() {
           <div className={styles.contactDetails}>
             <div className={styles.detail}>
               <h3>{t("contact.phone", "Téléphone")}</h3>
-              <p>06 45 40 54 90</p>
+              <p>06 45 20 54 90</p>
             </div>
             <div className={styles.detail}>
               <h3>{t("contact.email", "Mail")}</h3>
