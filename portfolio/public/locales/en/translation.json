@@ -192,11 +192,11 @@
     "technologiesTitle": "Technologies / Tools:",
     "jobs": {
       "sofy": {
-        "title": "Mobile Developer Flutter",
+        "title": "Flutter Mobile Developer (mobile lead)",
         "company": "SOFY",
         "startDate": "2025",
         "endDate": "Present",
-        "description": "Mobile development within the product/tech team: designing and maintaining Flutter (Riverpod) and React Native TypeScript apps, integrating REST APIs (campaigns, analytics, notifications) and handling App Store/Google Play releases. Working with backend, design and product teams to co-build features, optimize UX, and contribute to conversational AI and cloud infrastructure topics.",
+        "description": "Mobile lead on the app: React Native → Flutter migration and development of the new iOS/Android app. Driving architecture choices (Flutter/Riverpod), setting up testing (80%+ coverage) and a delivery pipeline (CI/CD: Fastlane, Xcode Cloud) to secure releases and speed up shipping. Collaboration with product & backend (Go APIs), continuous UX improvement and PostHog tracking to inform product decisions. Working with strong autonomy within a distributed team (Paris/Guadeloupe).",
         "logo": "sofy.png",
         "technologies": [
           "flutter",
@@ -212,11 +212,11 @@
         ]
       },
       "bjjinsight": {
-        "title": "Owner",
+        "title": "Founder & Mobile Engineer (Flutter)",
         "company": "BJJ Insight",
         "startDate": "2024",
         "endDate": "Present",
-        "description": "Creation of a sports service application dedicated to Brazilian Jiu-Jitsu. Full-stack development of an innovative platform for the BJJ community.",
+        "description": "End-to-end design and development of a mobile product connecting practitioners and elite athletes through paid messaging. Full product work (ideation, wireframes, mockups, iterations), Flutter iOS/Android development, serverless Firebase backend (auth, database, cloud functions) and monetization via Stripe Connect. App Store release and beta distribution on Google Play, with a dedicated landing page.",
         "logo": "bjjinsight.png",
         "technologies": [
           "flutter",
@@ -229,12 +229,12 @@
         ]
       },
       "capgemini": {
-        "title": "Full-stack Developer",
+        "title": "Fullstack Developer (Java / Angular)",
         "company": "Capgemini",
         "startDate": "2022",
         "endDate": "2024",
         "logo": "capgemini.png",
-        "description": "As a Java developer at Capgemini in Nantes, I participated in the development and maintenance of enterprise applications, using the latest technologies and agile methodologies.",
+        "description": "Contribution to an internal banking platform (Crédit Agricole) used by advisors. REST API development (Java/Spring Boot) documented with Swagger and business UI development in Angular/TypeScript. Working in an Agile Scrum multi-squad environment (100+ collaborators), coordinating with backend, frontend and product teams to deliver high business-constraint features.",
         "technologies": [
           "java",
           "spring",
@@ -249,21 +249,21 @@
         ]
       },
       "einden": {
-        "title": "Web Developer",
+        "title": "Web Developer (Front-offices & automation)",
         "company": "Einden",
         "startDate": "2021",
         "endDate": "2022",
         "logo": "einden.png",
-        "description": "Creation and integration of websites connected to software via API. Development of custom features and maintenance of existing web applications.",
+        "description": "Development of web front-offices connected to the ePhotoDam DAM (REST API) in PHP and vanilla JavaScript. Clearing a large backlog (~2 years behind) by industrializing production: standardization, configuration and automation to reduce delivery time (from about 1 week to 2–3 days). Delivered dozens of client front-offices, improved front-end features to align capabilities with the back-office, and contributed to the V2 redesign.",
         "technologies": ["html", "CSS", "javascript", "php", "mysql", "api"]
       },
       "avancenet": {
-        "title": "Web Developer",
+        "title": "Web Developer (internship)",
         "company": "AvanceNet",
         "startDate": "09/2020",
         "endDate": "09/2020",
         "logo": "avancenet.png",
-        "description": "Development of a showcase website with Drupal CMS. Implementation of custom features and integration of dynamic content.",
+        "description": "Development of a showcase site on Drupal: content integration, page customization and deployment.",
         "technologies": ["drupal", "php", "html", "CSS", "javascript"]
       }
     }

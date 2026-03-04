@@ -196,11 +196,11 @@
     "technologiesTitle": "Technologies / Outils :",
     "jobs": {
       "sofy": {
-        "title": "Développeur mobile Flutter",
+        "title": "Développeur mobile Flutter (référent mobile)",
         "company": "SOFY",
         "startDate": "12/2025",
         "endDate": "Present",
-        "description": "Développement mobile au sein de l'équipe produit/tech : conception et maintenance d'applications Flutter (Riverpod) et React Native TypeScript, intégration d'APIs REST (campagnes, analytics, notifications) et gestion des releases App Store/Google Play. Collaboration avec les équipes backend, design et produit pour co-construire les features, optimiser l'UX et contribuer aux sujets IA conversationnelle et infra cloud.",
+        "description": "Référent mobile sur l'application : migration React Native → Flutter et développement de la nouvelle app iOS/Android. Pilotage des choix d'architecture (Flutter/Riverpod), mise en place des tests (80%+ coverage) et d'une chaîne de delivery (CI/CD : Fastlane, Xcode Cloud) pour sécuriser les releases et accélérer le shipping. Collaboration produit & backend (APIs Go), amélioration continue de l'UX et mise en place du tracking PostHog pour orienter les décisions produit. Travail en forte autonomie au sein d'une équipe distribuée (Paris/Guadeloupe).",
         "logo": "sofy.png",
         "technologies": [
           "flutter",
@@ -216,11 +216,11 @@
         ]
       },
       "bjjinsight": {
-        "title": "Propriétaire",
+        "title": "Fondateur & Mobile Engineer (Flutter)",
         "company": "BJJ Insight",
         "startDate": "2024",
         "endDate": "Present",
-        "description": "Création d'une application de services sportive dédiée au Brazilian Jiu-Jitsu. Développement full-stack d'une plateforme innovante pour la communauté BJJ.",
+        "description": "Conception et développement end-to-end d'un produit mobile reliant pratiquants et athlètes de haut niveau via une messagerie payante. Travail produit complet (idéation, wireframes, maquettes, itérations), développement Flutter iOS/Android, backend serverless Firebase (auth, base de données, cloud functions) et monétisation via Stripe Connect. Publication App Store et distribution bêta sur Google Play, avec une landing page dédiée.",
         "logo": "bjjinsight.png",
         "technologies": [
           "flutter",
@@ -233,12 +233,12 @@
         ]
       },
       "capgemini": {
-        "title": "Développeur full-stack",
+        "title": "Développeur Fullstack (Java / Angular)",
         "company": "Capgemini",
         "startDate": "2022",
         "endDate": "2024",
         "logo": "capgemini.png",
-        "description": "En tant que développeur Java au sein de Capgemini à Nantes, j'ai participé au développement et à la maintenance d'applications d'entreprise, en utilisant les dernières technologies et méthodologies agiles.",
+        "description": "Contribution à une plateforme bancaire interne (Crédit Agricole) utilisée par des conseillers. Développement d'APIs REST (Java/Spring Boot) documentées avec Swagger et développement d'interfaces métiers en Angular/TypeScript. Travail en environnement Agile Scrum multi-squads (100+ collaborateurs), coordination avec les équipes backend, frontend et produit pour livrer des fonctionnalités à forte contrainte métier.",
         "technologies": [
           "java",
           "spring",
@@ -253,21 +253,21 @@
         ]
       },
       "einden": {
-        "title": "Développeur Web",
+        "title": "Développeur web (Front-offices & automatisation)",
         "company": "Einden",
         "startDate": "2021",
         "endDate": "2022",
         "logo": "einden.png",
-        "description": "Création et intégration de sites web connectés à des logiciels via API. Développement de fonctionnalités sur mesure et maintenance d'applications web existantes.",
+        "description": "Développement de front-offices web connectés au DAM ePhotoDam (API REST) en PHP et JavaScript (Vanilla). Rattrapage d'un backlog important (retard ~2 ans) en industrialisant la production : standardisation, paramétrage et automatisation pour réduire le temps de delivery (d'environ 1 semaine à 2–3 jours). Livraison de dizaines de front-offices clients, amélioration de fonctionnalités côté front pour aligner les capacités avec le back-office, et contribution au redesign V2.",
         "technologies": ["html", "CSS", "javascript", "php", "mysql", "api"]
       },
       "avancenet": {
-        "title": "Développeur Web",
+        "title": "Développeur web (stage)",
         "company": "AvanceNet",
         "startDate": "09/2020",
         "endDate": "09/2020",
         "logo": "avancenet.png",
-        "description": "Développement d'un site vitrine avec le CMS Drupal. Mise en place de fonctionnalités personnalisées et intégration de contenu dynamique.",
+        "description": "Développement d'un site vitrine sous Drupal : intégration de contenus, personnalisation de pages et mise en ligne.",
         "technologies": ["drupal", "php", "html", "CSS", "javascript"]
       }
     }
