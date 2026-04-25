@@ -1,33 +1,33 @@
 {
-  "total_seconds": 130973.158,
-  "total_hours": "36.38",
+  "total_seconds": 123089.783,
+  "total_hours": "34.19",
   "languages": [
     {
       "name": "TypeScript",
-      "total_seconds": 78605.734,
-      "percent": 44.25
+      "total_seconds": 71008.334,
+      "percent": 41.76
     },
     {
       "name": "Other",
-      "total_seconds": 46665.069,
-      "percent": 26.27
+      "total_seconds": 46933.275,
+      "percent": 27.6
     },
     {
       "name": "Go",
       "total_seconds": 27640.04,
-      "percent": 15.56
+      "percent": 16.26
     },
     {
       "name": "Markdown",
       "total_seconds": 7622.089,
-      "percent": 4.29
+      "percent": 4.48
     },
     {
       "name": "YAML",
       "total_seconds": 6242.673,
-      "percent": 3.51
+      "percent": 3.67
     }
   ],
-  "last_updated": "24/04/2026 02:02",
+  "last_updated": "25/04/2026 01:52",
   "range": "last_30_days"
 }
