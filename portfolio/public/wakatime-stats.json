@@ -1,33 +1,33 @@
 {
-  "total_seconds": 111148.899,
-  "total_hours": "30.87",
+  "total_seconds": 105648.913,
+  "total_hours": "29.35",
   "languages": [
     {
       "name": "TypeScript",
-      "total_seconds": 66719.625,
-      "percent": 42.21
+      "total_seconds": 64143.581,
+      "percent": 42.11
     },
     {
       "name": "Other",
-      "total_seconds": 46933.275,
-      "percent": 29.69
+      "total_seconds": 46683.832,
+      "percent": 30.65
     },
     {
       "name": "Go",
-      "total_seconds": 24454.662,
-      "percent": 15.47
+      "total_seconds": 21112.238,
+      "percent": 13.86
     },
     {
       "name": "YAML",
       "total_seconds": 6150.881,
-      "percent": 3.89
+      "percent": 4.04
     },
     {
       "name": "Dart",
       "total_seconds": 4191.847,
-      "percent": 2.65
+      "percent": 2.75
     }
   ],
-  "last_updated": "26/04/2026 02:05",
+  "last_updated": "27/04/2026 02:08",
   "range": "last_30_days"
 }
