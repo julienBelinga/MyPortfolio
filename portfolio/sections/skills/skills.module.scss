@@ -34,10 +34,15 @@
       }
 
       .iconGrid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 0 0.4rem;
         padding: 0 1rem;
+
+        > * {
+          flex: 0 0 80px;
+        }
       }
     }
   }
