@@ -34,6 +34,23 @@
       "saas": "SaaS"
     },
     "projects": {
+      "userfid": {
+        "title": "UserFid",
+        "category": "freelance",
+        "description": "Développement d'une plateforme SaaS de fidélisation digitale pour commerçants, permettant de créer et gérer des cartes de fidélité compatibles Apple Wallet et Google Wallet. Le projet intègre un parcours d'inscription client via QR Code, la gestion des clients et transactions, l'envoi de campagnes marketing Wallet/Web Push, des notifications programmées, des rappels d'avis Google automatisés, un espace d'administration, ainsi qu'un système d'abonnement via Stripe. Le projet a été mené de bout en bout, du cadrage fonctionnel à la mise en production, avec une architecture Next.js, Supabase et Vercel pensée pour être maintenable, évolutive et adaptée à un usage SaaS.",
+        "technologies": [
+          "next",
+          "react",
+          "tailwind",
+          "typescript",
+          "supabase",
+          "stripe",
+          "vercel",
+          "appleWallet",
+          "googleWallet"
+        ],
+        "demoLink": "https://www.userfid.fr/"
+      },
       "nutriflow": {
         "title": "Nutriflow",
         "category": "Saas",

@@ -1,40 +1,61 @@
 {
   "navbar": {
-    "link1": "About",
-    "link2": "Skills",
-    "link3": "Projects",
-    "link4": "Experience",
+    "link1": "Présentation",
+    "link2": "Compétences",
+    "link3": "Projets",
+    "link4": "Expériences",
     "link5": "Contact"
   },
-
   "presentation": {
-    "title": "Web Developer",
+    "title": "Développeur web",
     "name": "Julien BELINGA",
     "description": "Developer",
     "role1": "Front-end",
     "role2": "Back-end",
     "role3": "& DevOps",
     "role4": "Freelance",
-    "contact": "Contact me"
+    "contact": "Contactez moi"
   },
-
   "skills": {
-    "title": "Skills",
+    "title": "Compétences",
     "skill1": "Web",
     "skill2": "Mobile",
     "skill3": "Back-end",
-    "skill4": "Tools"
+    "skill4": "Outils"
   },
-
   "project": {
-    "title": "Projects",
+    "title": "Projets",
+    "categories": {
+      "personal": "Personnel",
+      "freelance": "Freelance",
+      "saas": "SaaS"
+    },
     "projects": {
+      "userfid": {
+        "title": "UserFid",
+        "category": "freelance",
+        "description": "Development of a digital loyalty SaaS platform for merchants, allowing them to create and manage loyalty cards compatible with Apple Wallet and Google Wallet. The project includes a customer signup flow via QR Code, client and transaction management, Wallet/Web Push marketing campaigns, scheduled notifications, automated Google review reminders, an admin dashboard, and a Stripe-based subscription system. The project was delivered end-to-end, from functional scoping to production deployment, with a maintainable and scalable architecture based on Next.js, Supabase, and Vercel.",
+        "technologies": [
+          "next",
+          "react",
+          "tailwind",
+          "typescript",
+          "supabase",
+          "stripe",
+          "vercel",
+          "appleWallet",
+          "googleWallet"
+        ],
+        "demoLink": "https://www.userfid.fr/"
+      },
       "nutriflow": {
         "title": "Nutriflow",
+        "category": "Saas",
         "description": "NutriFlow (Beta) is an intelligent nutritional assistant mobile application. It instantly analyzes meals in free text thanks to AI, calculates calories and macronutrients, generates personalized goals (BMR, TDEE) and tracks daily progress. The app also offers a premium subscription system integrated via RevenueCat and a solid architecture based on Flutter, Firebase and embedded AI.",
         "technologies": [
           "flutter",
           "dart",
+          "riverpod",
           "typescript",
           "revenueCat",
           "firebase",
@@ -42,16 +63,15 @@
           "ios",
           "next"
         ],
-        "demoLink": "https://landing-page-nutriflow.vercel.app/",
-        "category": "Saas"
+        "demoLink": "https://landing-page-nutriflow.vercel.app/"
       },
       "BJJI": {
         "title": "BJJ Insight",
+        "category": "Saas",
         "description": "Mobile application connecting Brazilian Jiu-Jitsu practitioners with high-level athletes, available on iOS and Android. The platform allows practitioners to ask all their questions directly to the athletes of their choice. A landing page presents the application, its features, and facilitates downloading from the stores. The application integrates a messaging system and secure transactions.",
         "technologies": [
           "flutter",
           "dart",
-          "riverpod",
           "typescript",
           "stripe",
           "firebase",
@@ -60,11 +80,11 @@
           "next"
         ],
         "githubLink": "https://github.com/BJJ-Insight",
-        "demoLink": "https://landing-page-bjji.vercel.app",
-        "category": "Saas"
+        "demoLink": "https://landing-page-bjji.vercel.app"
       },
       "llminterface": {
         "title": "LLM Interface",
+        "category": "personnel",
         "description": "Development of a local AI assistant similar to ChatGPT, running entirely offline through the integration of open-source models via Ollama (llama3, codellama, etc.). The interface is built using Python (Flask), featuring a clean and lightweight web UI that supports markdown, syntax highlighting, and is designed for on-the-go/offline use — such as during travel by train or airplane without an internet connection.",
         "technologies": [
           "python",
@@ -75,20 +95,24 @@
           "CSS",
           "tailwind"
         ],
-        "githubLink": "https://github.com/julienBelinga/llminterface",
-        "category": "personal"
+        "githubLink": "https://github.com/julienBelinga/LLM-interface"
       },
-
       "traiteurcreole": {
         "title": "Passion créole",
+        "category": "freelance",
         "description": "Showcase website for an Antillean caterer in Île-de-France, specializing in events. The site presents catering services, proposed menus, and allows clients to discover authentic Creole cuisine. A dedicated section highlights services for weddings, seminars, and other events. The site also offers a contact form for personalized quotes.",
-        "technologies": ["next", "typescript", "tailwind", "vercel"],
+        "technologies": [
+          "next",
+          "typescript",
+          "tailwind",
+          "vercel"
+        ],
         "githubLink": "https://github.com/julienBelinga/passionCreole-site",
-        "demoLink": "https://passion-creole-site.vercel.app/",
-        "category": "freelance"
+        "demoLink": "https://passion-creole-site.vercel.app/"
       },
       "portfolio": {
         "title": "Portfolio",
+        "category": "freelance",
         "description": "Personal portfolio developed with Next.js and TypeScript, showcasing my projects and skills. The site follows a mobile-first approach and uses SCSS for styling. It integrates the WakaTime API to display my real-time development statistics as well as an API for mail service. Deployment is automated via GitHub Actions and hosted on Vercel.",
         "technologies": [
           "next",
@@ -99,120 +123,130 @@
           "github"
         ],
         "githubLink": "https://github.com/julienBelinga/MyPortfolio",
-        "demoLink": "https://julien-belinga.fr/",
-        "category": "freelance"
+        "demoLink": "https://julien-belinga.fr/"
       },
       "process": {
         "title": "Process",
+        "category": "freelance",
         "description": "Website for my former Brazilian Jiu-Jitsu club in Nantes. The site presents class schedules, pricing, and various activities offered by the club. It also allows visitors to discover the sport and the club's philosophy. The site was developed with simple and efficient technologies to ensure easy maintenance by club members.",
-        "technologies": ["html", "javascript", "CSS", "vercel"],
+        "technologies": [
+          "html",
+          "javascript",
+          "CSS",
+          "vercel"
+        ],
         "githubLink": "https://github.com/julienBelinga/process",
-        "demoLink": "https://processjj.fr/",
-        "category": "freelance"
+        "demoLink": "https://processjj.fr/"
       },
       "bar": {
         "title": "Aux plaisirs démodes",
+        "category": "freelance",
         "description": "Showcase website developed for a bar in Rennes. The site was created with HTML, CSS, and JavaScript, integrating the Google Maps API for location. A continuous deployment system was set up via GitHub to facilitate updates.",
-        "technologies": ["html", "CSS", "javascript", "vercel"],
+        "technologies": [
+          "html",
+          "CSS",
+          "javascript",
+          "vercel"
+        ],
         "githubLink": "https://github.com/julienBelinga/Aux-plaisirs-demodes",
-        "demoLink": "https://auxplaisirsdemodes.fr/",
-        "category": "freelance"
+        "demoLink": "https://auxplaisirsdemodes.fr/"
       },
       "touchdown": {
         "title": "get-touchdown",
+        "category": "Saas",
         "description": "E-commerce landing page developed for get-touchdown with a creative and eye-catching design, emphasizing user experience through animations and visual effects. Developed with Next.js and deployed on Vercel with a CI/CD pipeline. Integration of the Stripe payment system for transaction processing.",
-        "technologies": ["next", "typescript", "SCSS", "vercel", "stripe"],
-        "githubLink": "https://github.com/julienBelinga/sport-evolution",
-        "category": "Saas"
+        "technologies": [
+          "next",
+          "typescript",
+          "SCSS",
+          "vercel",
+          "stripe"
+        ],
+        "githubLink": "https://github.com/julienBelinga/sport-evolution"
       }
     }
   },
-
   "footer": {
-    "CV": "My Resume",
+    "CV": "Mon CV",
     "contact": "Contact",
-    "legal-mentions": "Legal Notices"
+    "legal-mentions": "Mentions légales"
   },
-
   "contact": {
     "title": "Contact",
     "description": "Don't hesitate to contact me for any questions or project proposals. I will respond as soon as possible.",
-    "lastName": "Last Name / First Name",
-    "firstName": "First Name",
-    "email": "Email",
-    "phone": "Phone",
+    "lastName": "Nom / Prénom",
+    "firstName": "Prénom",
+    "email": "E-mail",
+    "phone": "Téléphone",
     "message": "Message",
-    "stayInTouch": "Let's stay in touch",
-    "send": "Send",
-    "sending": "Sending...",
-    "success": "Message sent!",
+    "stayInTouch": "Restons en contact",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé !",
     "error": {
-      "captcha": "Please complete the captcha",
-      "general": "Error sending message"
+      "captcha": "Veuillez compléter le captcha",
+      "general": "Erreur lors de l'envoi du message"
     },
-    "data": "By submitting this form, you consent to the collection and storage of the submitted data for the purpose of processing your contact request.",
-    "right": "All rights reserved",
-    "button": "SEND"
+    "data": "Lors de la validation de ce formulaire, vous consentez à ce que les données soumises soient collectées et stockées en vue d'être utilisées pour traiter votre demande de contact.",
+    "right": "Tous droits réservés",
+    "button": "ENVOYER"
   },
-
   "stats": {
-    "codeHours": "Coding Hours",
-    "last7Days": "last 30 days",
-    "popularLanguages": "My Popular Languages",
-    "loading": "Loading...",
-    "lastUpdated": "Last updated",
-    "hours": "hours",
-    "poweredBy": "Powered by"
+    "codeHours": "Heures de code",
+    "last7Days": "ces 30 derniers jours",
+    "popularLanguages": "Mes langages populaires",
+    "loading": "Chargement...",
+    "lastUpdated": "Dernière actualisation",
+    "hours": "heures",
+    "poweredBy": "Propulsé par"
   },
-
   "legalMentions": {
     "about-us": {
-      "title": "Who are we?",
-      "content": "The address of my website is: julien-belinga.fr"
+      "title": "Qui sommes nous ?",
+      "content": "L'adresse me mon site est: julien-belinga.fr"
     },
     "copyright": {
-      "title": "Copyright",
-      "content": "This entire site is subject to copyright protection according to Articles L335-2 and following of the Intellectual Property Code. Any total or partial reproduction or representation of its content, images, texts, sounds, by any means used, without the prior authorization of the company \"Julien Victor Belinga EI\" is strictly prohibited. Any violation will result in a sanction and will be subject to prosecution."
+      "title": "Droit d'auteur",
+      "content": "L'ensemble de ce site est soumis à une protection de droits d'auteur selon les Articles L335-2 et suivants du Code de la propriété intellectuelle. Toute reproduction ou représentation totale ou partielle de son contenu, images, textes, sons, par quelque procédé utilisé, sans l'autorisation préalable de la société \"Julien Victor Belinga EI\" est strictement interdite. Toute violation constituera une sanction et fera l'objet de poursuite."
     },
     "website": {
-      "title": "Website",
+      "title": "Site Internet",
       "creation": {
-        "subtitle": "Creation:",
-        "content": "Custom theme creation, branding, referencing, and hosting of any \"turnkey\" service.<br/>Julien Victor Belinga EI<br/>SIRET: 950 698 001 00019<br/>30 rue Alphonse Daudet<br/>44 000 Nantes<br/>Phone: (+33)06 45 20 54 90<br/><Link href=\"https://julien-belinga.fr/\">https://julien-belinga.fr/</Link>"
+        "subtitle": "Création:",
+        "content": "Création de thème personnalisé, d'image de marque, référencement, et hébergement de tout, prestation 'clé en main'.<br/> Julien Victor Belinga EI<br/> SIRET : 950 698 001 00019<br/> 30 rue Alphonse Daudet<br/> 44 000 Nantes<br/> Tel : (+33)06 45 20 54 90<br/> <Link href=\"https://julien-belinga.fr/\">https://julien-belinga.fr/</Link>"
       },
       "hosting": {
-        "subtitle": "Hosting:",
+        "subtitle": "Hébergement:",
         "content": "VERCEL<br/>Vercel Inc.<br/>340 S Lemon Ave #4133<br/>Walnut, CA 91789<br/><Link href=\"https://vercel.com\" target=\"_blank\">https://vercel.com</Link>"
       }
     }
   },
-
   "experience": {
-    "title": "Experience",
-    "technologiesTitle": "Technologies / Tools:",
+    "title": "Expérience",
+    "technologiesTitle": "Technologies / Outils :",
     "jobs": {
       "sofy": {
-        "title": "Mobile Developer Flutter",
+        "title": "Développeur mobile Flutter",
         "company": "SOFY",
-        "startDate": "2025",
+        "startDate": "12/2025",
         "endDate": "Present",
         "description": "Mobile development within the product/tech team: designing and maintaining Flutter (Riverpod) and React Native TypeScript apps, integrating REST APIs (campaigns, analytics, notifications) and handling App Store/Google Play releases. Working with backend, design and product teams to co-build features, optimize UX, and contribute to conversational AI and cloud infrastructure topics.",
         "logo": "sofy.png",
         "technologies": [
           "flutter",
           "dart",
+          "riverpod",
           "react",
           "typescript",
           "api",
           "android",
           "ios",
-          "firebase",
           "golang",
           "aws"
         ]
       },
       "bjjinsight": {
-        "title": "Owner",
+        "title": "Propriétaire",
         "company": "BJJ Insight",
         "startDate": "2024",
         "endDate": "Present",
@@ -229,7 +263,7 @@
         ]
       },
       "capgemini": {
-        "title": "Full-stack Developer",
+        "title": "Développeur full-stack",
         "company": "Capgemini",
         "startDate": "2022",
         "endDate": "2024",
@@ -249,22 +283,35 @@
         ]
       },
       "einden": {
-        "title": "Web Developer",
+        "title": "Développeur Web",
         "company": "Einden",
         "startDate": "2021",
         "endDate": "2022",
         "logo": "einden.png",
         "description": "Creation and integration of websites connected to software via API. Development of custom features and maintenance of existing web applications.",
-        "technologies": ["html", "CSS", "javascript", "php", "mysql", "api"]
+        "technologies": [
+          "html",
+          "CSS",
+          "javascript",
+          "php",
+          "mysql",
+          "api"
+        ]
       },
       "avancenet": {
-        "title": "Web Developer",
+        "title": "Développeur Web",
         "company": "AvanceNet",
         "startDate": "09/2020",
         "endDate": "09/2020",
         "logo": "avancenet.png",
         "description": "Development of a showcase website with Drupal CMS. Implementation of custom features and integration of dynamic content.",
-        "technologies": ["drupal", "php", "html", "CSS", "javascript"]
+        "technologies": [
+          "drupal",
+          "php",
+          "html",
+          "CSS",
+          "javascript"
+        ]
       }
     }
   }
