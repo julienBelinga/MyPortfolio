@@ -57,9 +57,14 @@
 
 .technologies {
   display: flex;
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 7px;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
+
+  > * {
+    flex: 0 0 calc((100% - 12rem) / 7);
+  }
 
   :global(.iconContainer) {
     height: 45px !important;
